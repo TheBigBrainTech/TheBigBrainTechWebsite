@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "topic": "Developer",
+    "name": "Java FullStack Developer",
+    "location": "Virginia",
+    "schedule": "Morning",
+    "format": "In-Class",
+    "link": "/course/1",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/javaDeveloper.jpg",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 2,
+    "topic": "Developer",
+    "name": "Java FullStack Developer",
+    "location": "Virginia",
+    "schedule": "Afternoon",
+    "format": "Online",
+    "link": "/course/1",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/javaDeveloper.jpg",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 3,
+    "topic": "Developer",
+    "name": "React FullStack Developer",
+    "location": "Virginia",
+    "schedule": "Morning",
+    "format": "In-Class",
+    "link": "/course/2",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/ReactDevelopment.webp",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 4,
+    "topic": "Developer",
+    "name": "React FullStack Developer",
+    "location": "Virginia",
+    "schedule": "Afternoon",
+    "format": "Online",
+    "link": "/course/2",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/ReactDevelopment.webp",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 5,
+    "topic": "Developer",
+    "name": "Developer Operations (Dev Ops)",
+    "location": "Virginia",
+    "schedule": "Afternoon",
+    "format": "In-Class",
+    "link": "/course/3",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/DevOps.jpg",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 6,
+    "topic": "Developer",
+    "name": "Developer Operations (Dev Ops)",
+    "location": "Virginia",
+    "schedule": "Afternoon",
+    "format": "Online",
+    "link": "/course/3",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/DevOps.jpg",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 7,
+    "topic": "Business",
+    "name": "Business Analyst",
+    "location": "Virginia",
+    "schedule": "Evening",
+    "format": "Online",
+    "link": "/course/4",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/BusinessAnalyst.jpg",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 8,
+    "topic": "Business",
+    "name": "Business Analyst",
+    "location": "Virginia",
+    "schedule": "Evening",
+    "format": "In-Class",
+    "link": "/course/4",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/BusinessAnalyst.jpg",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 9,
+    "topic": "Business",
+    "name": "Project Manager",
+    "location": "Virginia",
+    "schedule": "Evening",
+    "format": "Online",
+    "link": "/course/5",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/ProjectManager.jpg",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 10,
+    "topic": "Business",
+    "name": "Project Manager",
+    "location": "Virginia",
+    "schedule": "Evening",
+    "format": "In-Class",
+    "link": "/course/5",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/ProjectManager.jpg",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 11,
+    "topic": "Data",
+    "name": "Data Analyst",
+    "location": "Virginia",
+    "schedule": "Evening",
+    "format": "In-Class",
+    "link": "/course/6",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/dataAnalyst.jpg",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 12,
+    "topic": "Data",
+    "name": "Data Analyst",
+    "location": "Virginia",
+    "schedule": "Evening",
+    "format": "Online",
+    "link": "/course/6",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/dataAnalyst.jpg",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 13,
+    "topic": "Data",
+    "name": "Data ETL",
+    "location": "Virginia",
+    "schedule": "Evening",
+    "format": "Online",
+    "link": "/course/7",
+    "image": "https://distantjob.com/wp-content/uploads/2021/06/24th-March-Visual-1-What-is-an-ETL-Developer.jpg",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 14,
+    "topic": "Quality Assurance",
+    "name": "Quality Assurance Automation",
+    "location": "Virginia",
+    "schedule": "Morning",
+    "format": "Online",
+    "link": "/course/8",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/QAICON.jpg",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 15,
+    "topic": "Quality Assurance",
+    "name": "Quality Assurance Automation",
+    "location": "Virginia",
+    "schedule": "Evening",
+    "format": "Online",
+    "link": "/course/8",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/QAICON.jpg",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 16,
+    "topic": "Quality Assurance",
+    "name": "Quality Assurance Automation",
+    "location": "Virginia",
+    "schedule": "Afternoon",
+    "format": "Online",
+    "link": "/course/8",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/QAICON.jpg",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 17,
+    "topic": "Quality Assurance",
+    "name": "Quality Assurance Automation",
+    "location": "Virginia",
+    "schedule": "Morning",
+    "format": "In-Class",
+    "link": "/course/8",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/QAICON.jpg",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 18,
+    "topic": "Quality Assurance",
+    "name": "Quality Assurance Automation",
+    "location": "Virginia",
+    "schedule": "Evening",
+    "format": "In-Class",
+    "link": "/course/8",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/QAICON.jpg",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 19,
+    "topic": "Quality Assurance",
+    "name": "Quality Assurance Automation",
+    "location": "Virginia",
+    "schedule": "Afternoon",
+    "format": "In-Class",
+    "link": "/course/8",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/QAICON.jpg",
+    "description": "This is the description for Topic 1"
+  },
+  {
+    "id": 20,
+    "topic": "Design",
+    "name": "UI / UX Design",
+    "location": "Virginia",
+    "schedule": "Afternoon",
+    "format": "Online",
+    "link": "/course/9",
+    "image": "https://teksyntaxwebimages.s3.amazonaws.com/images/OtherImages/UIUX.jpg",
+    "description": "This is the description for Topic 1"
+  }
+]

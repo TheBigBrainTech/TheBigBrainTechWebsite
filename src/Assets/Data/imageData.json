@@ -1,0 +1,90 @@
+{
+  "Clients": [
+    {
+      "id": 1,
+      "path": "https://logodownload.org/wp-content/uploads/2021/04/chase-logo-0.png",
+      "Name": "Chase"
+    },
+    {
+      "id": 2,
+      "path": "https://1000logos.net/wp-content/uploads/2021/05/Verizon-logo.png",
+      "Name": "Verizon"
+    },
+    {
+      "id": 3,
+      "path": "https://bcassetcdn.com/public/blog/wp-content/uploads/2022/08/29145131/Google-PNG-1024x640.png",
+      "Name": "Google"
+    },
+    {
+      "id": 4,
+      "path": "https://www.freepnglogos.com/uploads/ibm-logo-png/ibm-logo-png-transparent-svg-vector-bie-supply-3.png",
+      "Name": "IBM"
+    },
+    {
+      "id": 5,
+      "path": "https://1000logos.net/wp-content/uploads/2021/07/Fannie-Mae-Logo.png",
+      "Name": "FannieMae"
+    },
+    {
+      "id": 6,
+      "path":"https://www.freepnglogos.com/uploads/microsoft-logo-image-23.png",
+      "Name": "Microsoft"
+    },
+    {
+      "id": 7,
+      "path":"https://www.pngmart.com/files/17/Freddie-Mac-Logo-PNG-File.png",
+      "Name": "FreddieMac"
+    },
+    {
+      "id": 8,
+      "path":"https://www.freepnglogos.com/uploads/nintendo-logo-png/nintendo-logo-vector-format-11.png",
+      "Name": "Nintendo"
+    },
+    {
+      "id": 9,
+      "path":"https://vindy.media.clients.ellingtoncms.com/img/news/tease/2018/09/11/tjx-homegoods_lIsidHF.jpg",
+      "Name": "TJMAXX"
+    },
+    {
+      "id": 10,
+      "path":"https://seeklogo.com/images/U/unitedhealth-group-logo-F4D2CE10C6-seeklogo.com.png",
+      "Name": "United health group"
+    },
+    {
+      "id": 11,
+      "path":"https://tukuz.com/wp-content/uploads/2021/01/carefirst-logo-vector.png",
+      "Name": "Carefirst"
+    },
+    {
+      "id": 12,
+      "path":"https://incomeconductor.com/wp-content/uploads/rj_logo.png",
+      "Name": "Raymond James"
+    },
+    {
+      "id": 13,
+      "path":"https://findlogovector.com/wp-content/uploads/2022/04/wex-inc-logo-vector-2022.png",
+      "Name": "WEX"
+    },
+    {
+      "id": 14,
+      "path":"https://1000logos.net/wp-content/uploads/2016/10/American-Express-logo.png",
+      "Name": "American Express"
+    },
+    {
+      "id": 15,
+      "path":"https://static.vecteezy.com/system/resources/previews/020/975/567/non_2x/visa-logo-visa-icon-transparent-free-png.png",
+      "Name": "Visa"
+    },
+    {
+      "id": 16,
+      "path":"https://www.pngmart.com/files/22/Master-Card-Logo-PNG-Image.png",
+      "Name": "Mastercard"
+    },
+    {
+      "id": 17,
+      "path":"https://logowik.com/content/uploads/images/607_nissan_logo.jpg",
+      "Name": "Nissan"
+    }
+  ]
+}
+

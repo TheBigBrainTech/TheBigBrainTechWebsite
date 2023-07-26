@@ -1,0 +1,44 @@
+[
+  {
+    "jobTitle": "Frontend Developer",
+    "jobDescription": "We are seeking a skilled Frontend Developer to join our talented team...",
+    "location": "Virginia, USA",
+    "jobType": "Full Time",
+    "type": "Online"
+  },
+  {
+    "jobTitle": "Backend Developer",
+    "jobDescription": "Join our team as a Backend Developer and work on exciting projects...",
+    "location": "Kolkata, India",
+    "jobType": "Full Time",
+    "type": "On-site"
+  },
+  {
+    "jobTitle": "Marketing Specialist",
+    "jobDescription": "We are looking for a Marketing Specialist to develop and implement marketing strategies...",
+    "location": "Virginia, USA",
+    "jobType": "Full Time",
+    "type": "Hybrid"
+  },
+  {
+    "jobTitle": "Recruiter",
+    "jobDescription": "As a Recruiter, you will be responsible for sourcing, screening, and hiring candidates...",
+    "location": "Kolkata, India",
+    "jobType": "Part Time",
+    "type": "On-site"
+  },
+  {
+    "jobTitle": "Tutor",
+    "jobDescription": "We are hiring experienced Tutors to provide academic assistance to our students...",
+    "location": "Virginia, USA",
+    "jobType": "Part Time",
+    "type": "Online"
+  },
+  {
+    "jobTitle": "Academic Advisor",
+    "jobDescription": "Join our team as an Academic Advisor to guide and support students in their educational journey...",
+    "location": "Kolkata, India",
+    "jobType": "Full Time",
+    "type": "On-site"
+  }
+]

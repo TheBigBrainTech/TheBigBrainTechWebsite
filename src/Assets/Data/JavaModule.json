@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Paper Work",
+    "heading": "Prepwork: get ready to start the bootcamp",
+    "description": "Our Java development course is very intense. To be prepared and make the most out of the bootcamp, you must complete a 40 hours preparation work to gives you basic tech foundations and culture.",
+    "descriptionbullet": "Web 101, how the web works Terminal and Git basic commands HTML, CSS and JavaScript foundations Tech workflows and tools in a startup",
+    "hours": "40 hours",
+    "warning": "What you will do in practice",
+    "warningBullet": "40 hours of online tutoring and Online quiz to validate basic tech knowledge"
+  },
+  {
+    "name": "Module 1",
+    "heading": "Module 1 Heading",
+    "description": "This is the description for Module 1.",
+    "descriptionbullet": "Module 1 Description Bullet Points",
+    "hours": "4 hours",
+    "warning": "Module 1 Warning",
+    "warningBullet": "Module 1 Warning Bullet Points"
+  },
+  {
+    "name": "Module 2",
+    "heading": "Module 2 Heading",
+    "description": "This is the description for Module 2.",
+    "descriptionbullet": "Module 2 Description Bullet Points",
+    "hours": "3 hours",
+    "warning": "Module 2 Warning",
+    "warningBullet": "Module 2 Warning Bullet Points"
+  },
+  {
+    "name": "Module 3",
+    "heading": "Module 3 Heading",
+    "description": "This is the description for Module 3.",
+    "descriptionbullet": "Module 3 Description Bullet Points",
+    "hours": "5 hours",
+    "warning": "Module 3 Warning",
+    "warningBullet": "Module 3 Warning Bullet Points"
+  },
+  {
+    "name": "Module 4",
+    "heading": "Module 4 Heading",
+    "description": "This is the description for Module 4.",
+    "descriptionbullet": "Module 4 Description Bullet Points",
+    "hours": "2.5 hours",
+    "warning": "Module 4 Warning",
+    "warningBullet": "Module 4 Warning Bullet Points"
+  },
+  {
+    "name": "Module 5",
+    "heading": "Module 5 Heading",
+    "description": "This is the description for Module 5.",
+    "descriptionbullet": "Module 5 Description Bullet Points",
+    "hours": "3.5 hours",
+    "warning": "Module 5 Warning",
+    "warningBullet": "Module 5 Warning Bullet Points"
+  },
+  {
+    "name": "Module 6",
+    "heading": "Module 6 Heading",
+    "description": "This is the description for Module 6.",
+    "descriptionbullet": "Module 6 Description Bullet Points",
+    "hours": "4 hours",
+    "warning": "Module 6 Warning",
+    "warningBullet": "Module 6 Warning Bullet Points"
+  },
+  {
+    "name": "Career Prep",
+    "heading": "Career Prep Heading",
+    "description": "This is the description for Career Prep.",
+    "descriptionbullet": "Career Prep Description Bullet Points",
+    "hours": "2 hours",
+    "warning": "Career Prep Warning",
+    "warningBullet": "Career Prep Warning Bullet Points"
+  }
+]

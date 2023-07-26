@@ -1,0 +1,67 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "imgSrc": "https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg",
+      "name": "John Doe",
+      "rating": 5,
+      "description": "best bootcamp"
+    },
+    {
+      "id": 2,
+      "imgSrc": "https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+      "name": "Jane Smith",
+      "rating": 4,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac urna eget diam aliquam tristique."
+    },
+    {
+      "id": 3,
+      "imgSrc": "https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg",
+      "name": "David Johnson",
+      "rating": 3,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac urna eget diam aliquam tristique."
+    },
+    {
+      "id": 4,
+      "imgSrc": "https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+      "name": "Emily Davis",
+      "rating": 3,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac urna eget diam aliquam tristique."
+    },
+    {
+      "id": 5,
+      "imgSrc": "https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg",
+      "name": "Michael Brown",
+      "rating": 3,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac urna eget diam aliquam tristique."
+    },
+    {
+      "id": 6,
+      "imgSrc": "https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+      "name": "Sarah Johnson",
+      "rating": 3,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac urna eget diam aliquam tristique."
+    },
+    {
+      "id": 7,
+      "imgSrc": "https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg",
+      "name": "Robert Davis",
+      "rating": 3,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac urna eget diam aliquam tristique."
+    },
+    {
+      "id": 8,
+      "imgSrc": "https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+      "name": "Jennifer Smith",
+      "rating": 3,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac urna eget diam aliquam tristique."
+    },
+    {
+      "id": 9,
+      "imgSrc": "https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg",
+      "name": "William Johnson",
+      "rating": 3,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac urna eget diam aliquam tristique."
+    }
+  ]
+}
