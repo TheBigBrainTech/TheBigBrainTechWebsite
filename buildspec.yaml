@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 14
+      nodejs: 18
     commands:
       - npm install
 
@@ -15,8 +15,6 @@ artifacts:
   files:
     - '**/*'
 
-# This section is optional
-# It will be used to deploy the build artifact to an S3 bucket
 deploy:
   commands:
     - aws s3 cp build/ s3://my-bucket/
