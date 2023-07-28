@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Homepage from './Component/Homepage/HomePageRender/Homepage';
 import JobApplicationForm from '../src/Component/JobApplication/JobApplicationForm';
@@ -21,7 +21,29 @@ import FAQ from './Component/About/Questions';
 import Enrollment from './Component/EnrollmentForm/EnrolmentCard'
 
 
+const ws = new window.WebSocket('ws://teksyntax-env.eba-avpbvgps.us-east-1.elasticbeanstalk.com:8080/ws');
+
 function App() {
+  useEffect(() => {
+    ws.onopen = () => {
+      console.log('WebSocket connection established.');
+    };
+
+    ws.onmessage = (event) => {
+      console.log('Message received:', event.data);
+    };
+
+    ws.onerror = (error) => {
+      console.error('WebSocket error:', error);
+    };
+
+    ws.onclose = (event) => {
+      console.log('WebSocket connection closed:', event.code, event.reason);
+    };
+  }, []); // Empty dependency array ensures the effect runs only once when the component mounts
+
+  
+
   return (
     <Router>
       <div className="App">
