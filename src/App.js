@@ -18,7 +18,8 @@ import StudentLogin from './Component/LoginPage/StudentLogin';
 import StudentRegistration from './Component/LoginPage/StudentRegistration';
 import Team from './Component/About/Team';
 import FAQ from './Component/About/Questions';
-import Enrollment from './Component/EnrollmentForm/EnrolmentCard'
+import Enrollment from './Component/EnrollmentForm/EnrolmentCard';
+import Dashboard from './Component/EmployeeDashboard/Dashboard';
 
 
 const ws = new window.WebSocket('ws://teksyntax-env.eba-avpbvgps.us-east-1.elasticbeanstalk.com:8080/ws');
@@ -67,6 +68,7 @@ function App() {
           <Route path='/About/Team' element={<Team/>}/>
           <Route path='/FAQ' element={<FAQ/>}/>
           <Route path='/Enroll/Application' element={<Enrollment/>}/>
+          <Route path='/login/EmployeeLogin/dashboard' element={<Dashboard/>}/>
         </Routes>
       </div>
     </Router>

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/eslint-parser": "^7.22.9",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@emailjs/browser": "^3.11.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
@@ -43,10 +44,9 @@
     "eject": "react-scripts eject",
     "server": "node src/Services/DBConnection.js",
     "EmailServer": "node src/Services/EmailService.js",
-    "SubscribeService": "node src/Services/subscribeService.js",
     "lint": "eslint src --ext .jsx",
     "lint:fix": "npm run lint -- --fix",
-    "dev": "concurrently \"npm run start\" \"npm run server\" \"npm run EmailServer\" \"npm run SubscribeService\""
+    "dev": "concurrently \"npm run start\" \"npm run server\" \"npm run EmailServer\""
   },
   "eslintConfig": {
     "extends": [

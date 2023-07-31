@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 // PostgreSQL database connection configuration
 const pool = new Pool({
   user: 'teksyntax',
-  host: 'teksyntax-1.cnuarrdwikbu.us-east-1.rds.amazonaws.com',
-  database: 'teksyntaxDB',
+  host: 'awseb-e-egpnj6kys3-stack-awsebrdsdatabase-i4rbsvzdqeqv.cnuarrdwikbu.us-east-1.rds.amazonaws.com',
+  database: 'TeksyntaxDB',
   password: 'Teksyntax1760',
   port: 5432,
 });
@@ -29,15 +29,31 @@ pool.connect((err, client, done) => {
   }
 });
 
-// Define a route for the root endpoint
-app.get('/Test', (req, res) => {
-  res.send('Hello, World!');
+app.post('/api/login', (req, res) => {
+  const { email, password } = req.body;
+  const query = 'SELECT * FROM employeeData WHERE email = $1 AND password = $2';
+
+  pool.query(query, [email, password], (err, result) => {
+    if (err) {
+      console.error('Error executing login query:', err);
+      res.status(500).json({ error: 'Error executing login query' });
+    } else {
+      if (result.rowCount === 1) {
+        // If user exists and credentials are correct
+        res.status(200).json({ message: 'Login successful' });
+      } else {
+        // If user doesn't exist or credentials are incorrect
+        res.status(401).json({ error: 'Invalid email or password' });
+      }
+    }
+  });
 });
+
 
 // Create a new student subscription record
 app.post('/api/PostStudentSubscription', (req, res) => {
     const { email } = req.body;
-    const query = 'INSERT INTO studentSubscription(email) VALUES($1)';
+    const query = 'INSERT INTO newsLetter(email) VALUES($1)';
   
     pool.query(query, [email], (err, result) => {
       if (err) {
@@ -51,7 +67,7 @@ app.post('/api/PostStudentSubscription', (req, res) => {
 
   // Read all student subscription records
 app.get('/api/GetStudentSubscription', (req, res) => {
-    const query = 'select * from studentSubscription;';
+    const query = 'select * from newsLetter;';
   
     pool.query(query, (err, result) => {
       if (err) {
