@@ -9,7 +9,7 @@ const port = 3001; // Change this to your desired port
 const pool = new Pool({
   user: 'teksyntax',
   host: 'teksyntax-1.cnuarrdwikbu.us-east-1.rds.amazonaws.com',
-  database: 'teksyntaxDB',
+  database: 'teksyntax',
   password: 'Teksyntax1760',
   port: 5432, // Change this if your PostgreSQL server uses a different port
 });

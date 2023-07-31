@@ -14,7 +14,7 @@ const Footer = () => {
     }
 
     // Send the email to the backend API
-    fetch('http://localhost:3030/api/PostStudentSubscription', {
+    fetch('http://teksyntax-env.eba-avpbvgps.us-east-1.elasticbeanstalk.com//api/PostStudentSubscription', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
