@@ -44,7 +44,7 @@ function Dashboard({ handleLogout }) {
 }
 
 Dashboard.propTypes = {
-  handleLogout: PropTypes.func.isRequired,
+  handleLogout: PropTypes.func,
 };
 
 export default Dashboard;

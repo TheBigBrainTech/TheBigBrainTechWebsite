@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const BootcampTab = () => {
   return (
@@ -30,7 +31,10 @@ const BootcampTab = () => {
                 <h4>In-Class</h4>
                 <p>16 Weeks | Mon-Fri | 30 Hrs/Week</p>
                 <div className="text-center p-3">
+                  <Link to='/course/java/1'>
                   <Button variant="warning">Explore</Button>
+                  </Link>
+                  
                 </div>
               </div>
             </div>
@@ -53,7 +57,9 @@ const BootcampTab = () => {
                 <h4>In-Class</h4>
                 <p>14 Weeks | Mon-Fri | 30 Hrs/Week</p>
                 <div className="text-center p-3">
+                <Link to='/course/react/3'>
                   <Button variant="warning">Explore</Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -76,7 +82,9 @@ const BootcampTab = () => {
                 <h4>In-Class</h4>
                 <p>8 Weeks | Mon-Fri | 30 Hrs/Week</p>
                 <div className="text-center p-3">
+                <Link to='/course/QA/9'>
                   <Button variant="warning">Explore</Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -100,7 +108,9 @@ const BootcampTab = () => {
                 <h4>Online</h4>
                 <p>4 Weeks | Mon-Fri | 12 Hrs/Week</p>
                 <div className="text-center p-3">
+                <Link to='/course/BusinessAnalyst/7'>
                   <Button variant="warning">Explore</Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -120,7 +130,9 @@ const BootcampTab = () => {
                 <h4>Online</h4>
                 <p>8 Weeks | Mon-Fri | 30 Hrs/Week</p>
                 <div className="text-center p-3">
+                <Link to='/course/DevOPS/5'>
                   <Button variant="warning">Explore</Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -140,7 +152,9 @@ const BootcampTab = () => {
                 <h4>Online</h4>
                 <p>8 Weeks | Mon-Fri | 30 Hrs/Week</p>
                 <div className="text-center p-3">
+                <Link to='/course/DataAnalyst/11'>
                   <Button variant="warning">Explore</Button>
+                  </Link>
                 </div>
               </div>
             </div>

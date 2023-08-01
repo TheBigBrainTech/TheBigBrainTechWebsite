@@ -29,7 +29,7 @@ pool.connect((err, client, done) => {
   }
 });
 
-app.post('/api/login', (req, res) => {
+app.post('http://localhost:3000/api/login', (req, res) => {
   const { email, password } = req.body;
   const query = 'SELECT * FROM employeeData WHERE email = $1 AND password = $2';
 

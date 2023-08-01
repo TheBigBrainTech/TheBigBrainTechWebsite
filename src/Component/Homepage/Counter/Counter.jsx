@@ -17,7 +17,7 @@ const StatCounter = () => {
     let placementsCount = 0;
 
     // Set the target count values
-    const happyClientsTarget = 50;
+    const happyClientsTarget = 250;
     const trainedProfessionalsTarget = 600;
     const placementsTarget = 400;
 

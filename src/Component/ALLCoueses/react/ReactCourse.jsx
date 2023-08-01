@@ -3,7 +3,7 @@ import Navigation from "../../Homepage/Navbar/Navbar";
 import Footer from "../../Homepage/Footer/Footer";
 import SecondNavigation from "../reusable/SecondNavi";
 import CourseInfo from "./ReactCourseInfo";
-import CourseModules from "../java/JavacourseModules";
+import CourseModules from "../react/ReactCourseModules";
 import Admission from "../reusable/admissionProcess";
 import Financing from "../reusable/Financing";
 import FAQ from "../reusable/FrequentQuestion";

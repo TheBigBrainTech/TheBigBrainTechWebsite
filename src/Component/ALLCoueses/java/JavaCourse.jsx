@@ -39,7 +39,7 @@ export default function JavaCourse() {
               Enroll Now
             </a>
             <a className="btn btn-outline-dark btn-lg" href="#!" role="button">
-              view Syllabus
+              Download Brochure
             </a>
           </div>
         </div>
