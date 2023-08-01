@@ -76,16 +76,16 @@ fetch('http://localhost:3030/api/PostCourseBrochureDownload', {
                 className="btn btn-md btn-warning mx-2"
                 onClick={() => setIsOpen(true)}
               >
-                <FontAwesomeIcon icon={faDownload} />
-                Free Course Brochure
+                <FontAwesomeIcon icon={faDownload} className="mx-2" />
+                 Course Brochure
               </button>
               <button
                 type="button"
                 className="btn btn-md btn-warning"
                 onClick={() => setIsOpen(true)}
               >
-                <FontAwesomeIcon icon={faDownload} />
-                Free Placement Brochure
+                <FontAwesomeIcon icon={faDownload} className="mx-2" />
+                 Placement Brochure
               </button>
             </div>
           </div>

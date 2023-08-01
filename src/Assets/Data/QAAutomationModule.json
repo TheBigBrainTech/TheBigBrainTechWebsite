@@ -1,0 +1,75 @@
+[
+    {
+      "name": "Prep Work",
+      "heading": "Prep Work: Get Ready to Start the Bootcamp",
+      "description": "Our QA Automation Bootcamp is comprehensive and requires some preparation to ensure a smooth learning experience. You must complete 15 hours of preparation work to get familiar with software testing fundamentals, programming basics, and testing tools.",
+      "descriptionbullet": "Introduction to Software Testing, Types of Software Testing, Testing Life Cycle, Basics of Programming (Python or Java), Test Automation Tools Overview.",
+      "hours": "15 hours",
+      "warning": "What you will do in practice",
+      "warningBullet": "Complete testing exercises using popular test automation tools, Write simple test scripts using Python or Java."
+    },
+    {
+      "name": "Module 1",
+      "heading": "Module 1: Introduction to Software Testing",
+      "description": "This module provides an introduction to software testing, covering different testing types, methodologies, and testing life cycle phases. Participants will learn about the importance of software quality assurance and how testing contributes to it.",
+      "descriptionbullet": "In this module, participants will be introduced to the field of software testing. They will learn about different testing types, methodologies, and testing life cycle phases. Participants will also gain an understanding of the importance of software quality assurance and how testing contributes to it.",
+      "hours": "Hours: 20 hours",
+      "warning": "Learnings:",
+      "warningBullet": "Understand the fundamentals of software testing, \r * Apply various testing techniques for different scenarios, \r * Create test cases and test plans, \r * Analyze test results and report defects effectively."
+    },
+    {
+      "name": "Module 2",
+      "heading": "Module 2: Test Automation Fundamentals",
+      "description": "Description: ",
+      "descriptionbullet": "This module focuses on test automation fundamentals. Participants will learn about the benefits of test automation, different automation tools, and how to select the appropriate tools for specific testing tasks.",
+      "hours": "Hours: 30 hours",
+      "warning": "Learnings:",
+      "warningBullet": "Understand the benefits and challenges of test automation, \r * Explore popular test automation tools (e.g., Selenium, Appium), \r * Create and execute automated test scripts, \r * Integrate test automation into the testing process."
+    },
+    {
+      "name": "Module 3",
+      "heading": "Module 3: Test Scripting with Python or Java",
+      "description": "Description: ",
+      "descriptionbullet": "In this module, participants will learn test scripting using Python or Java. They will gain practical experience in writing automated test scripts and leveraging programming concepts for efficient testing.",
+      "hours": "Hours: 35 hours",
+      "warning": "Learnings: ",
+      "warningBullet": "Write automated test scripts using Python or Java, \r * Implement data-driven and parameterized testing, \r * Use assertions and validations to verify test outcomes, \r * Debug and troubleshoot test scripts for accuracy."
+    },
+    {
+      "name": "Module 4",
+      "heading": "Module 4: Web Application Testing with Selenium",
+      "description": "Description:",
+      "descriptionbullet": "This module delves into web application testing with Selenium. Participants will learn how to automate web testing using Selenium WebDriver and other supporting tools.",
+      "hours": "Hours: 30 hours",
+      "warning": "Learnings: ",
+      "warningBullet": "Set up Selenium WebDriver for web testing, \r * Automate functional and regression tests for web applications, \r * Handle dynamic web elements and browser interactions, \r * Implement advanced Selenium features for robust testing."
+    },
+    {
+      "name": "Module 5",
+      "heading": "Module 5: Mobile Application Testing with Appium",
+      "description": "Description: ",
+      "descriptionbullet": "In this module, participants will learn mobile application testing using Appium. They will explore how to automate testing for Android and iOS mobile apps.",
+      "hours": "Hours: 25 hours",
+      "warning": "Learnings: ",
+      "warningBullet": "Set up Appium for mobile application testing, \r * Automate functional and compatibility tests for Android and iOS apps, \r * Handle mobile-specific challenges in testing, \r * Implement parallel testing for mobile devices."
+    },
+    {
+      "name": "Module 6",
+      "heading": "Module 6: Test Frameworks and CI/CD Integration",
+      "description": "Description: ",
+      "descriptionbullet": "In the final module, participants will learn about test frameworks and integrating test automation into Continuous Integration and Continuous Deployment (CI/CD) pipelines.",
+      "hours": "Hours: 25 hours",
+      "warning": "Learnings: ",
+      "warningBullet": "Explore test frameworks (e.g., TestNG, JUnit) for structured testing, \r * Integrate test automation into CI/CD pipelines for automated testing, \r * Set up test reporting and analytics, \r * Implement test environment management for efficient testing."
+    },
+    {
+      "name": "Interview & Career Prep",
+      "heading": "Module 7: Interview and Career Preparation",
+      "description": "This module is dedicated to preparing participants for successful job interviews and launching their careers in QA Automation. Students will learn essential soft skills, interview techniques, and how to showcase their QA Automation expertise effectively. Additionally, they will receive guidance on building a strong resume and preparing for the job search in the QA Automation field.",
+      "descriptionbullet": "",
+      "hours": "Hours: 15 hours",
+      "warning": "Learnings: ",
+      "warningBullet": "Develop effective communication and presentation skills for interviews, \r * Practice technical and scenario-based interview questions, \r * Demonstrate hands-on QA Automation skills during interviews, \r * Receive guidance on resume building and tailoring it for QA Automation roles, \r * Explore job search strategies and networking techniques in the QA Automation industry. By the end of this module, participants will be well-prepared to excel in job interviews, confidently showcase their QA Automation expertise, and begin a successful career in QA Automation."
+    }
+  ]
+  
