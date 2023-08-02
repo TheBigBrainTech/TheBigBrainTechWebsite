@@ -9,6 +9,20 @@ import Financing from "../reusable/Financing";
 import FAQ from '../reusable/FrequentQuestion';
 
 export default function JavaCourse() {
+  const handleDownloadBrochure = () => {
+    // The URL of the brochure you want to download
+    const brochureURL = "https://teksyntaxbrochures.s3.amazonaws.com/JavaFullStack.pdf";
+
+    // Create a temporary anchor element
+    const tempAnchor = document.createElement("a");
+    tempAnchor.href = brochureURL;
+    tempAnchor.target = "_blank"; // Opens the link in a new tab
+    tempAnchor.download = "JavaFullStackBrochure.pdf"; // Sets the downloaded file name
+
+    // Trigger the click event on the anchor to initiate the download
+    tempAnchor.click();
+  };
+
   return (
     <div>
       <section>
@@ -38,7 +52,12 @@ export default function JavaCourse() {
             >
               Enroll Now
             </a>
-            <a className="btn btn-outline-dark btn-lg" href="#!" role="button">
+            <a
+              className="btn btn-outline-dark btn-lg"
+              href="#!"
+              role="button"
+              onClick={handleDownloadBrochure}
+            >
               Download Brochure
             </a>
           </div>
@@ -78,7 +97,7 @@ export default function JavaCourse() {
           <Financing />
         </section>
         <section className="my-4">
-        <FAQ/>
+          <FAQ />
         </section>
 
         <section>
