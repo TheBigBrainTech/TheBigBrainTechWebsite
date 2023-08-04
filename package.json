@@ -2,6 +2,9 @@
   "name": "teksyntaxinc",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "18.17.0"
+  },
   "dependencies": {
     "@babel/eslint-parser": "^7.22.9",
     "@emailjs/browser": "^3.11.0",
