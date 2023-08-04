@@ -1,4 +1,5 @@
-import React, {useEffect} from 'react';
+import React from 'react';
+//import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Homepage from './Component/Homepage/HomePageRender/Homepage';
 import JobApplicationForm from '../src/Component/JobApplication/JobApplicationForm';
