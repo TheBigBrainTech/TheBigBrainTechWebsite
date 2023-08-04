@@ -22,26 +22,26 @@ import Enrollment from './Component/EnrollmentForm/EnrolmentCard';
 import Dashboard from './Component/EmployeeDashboard/Dashboard';
 
 
-const ws = new window.WebSocket('ws://teksyntax-env.eba-avpbvgps.us-east-1.elasticbeanstalk.com:8080/ws');
+// const ws = new window.WebSocket('ws://teksyntax-env.eba-avpbvgps.us-east-1.elasticbeanstalk.com:80/ws');
 
-function App() {
-  useEffect(() => {
-    ws.onopen = () => {
-      console.log('WebSocket connection established.');
-    };
+ function App() {
+//   useEffect(() => {
+//     ws.onopen = () => {
+//       console.log('WebSocket connection established.');
+//     };
 
-    ws.onmessage = (event) => {
-      console.log('Message received:', event.data);
-    };
+//     ws.onmessage = (event) => {
+//       console.log('Message received:', event.data);
+//     };
 
-    ws.onerror = (error) => {
-      console.error('WebSocket error:', error);
-    };
+//     ws.onerror = (error) => {
+//       console.error('WebSocket error:', error);
+//     };
 
-    ws.onclose = (event) => {
-      console.log('WebSocket connection closed:', event.code, event.reason);
-    };
-  }, []); // Empty dependency array ensures the effect runs only once when the component mounts
+//     ws.onclose = (event) => {
+//       console.log('WebSocket connection closed:', event.code, event.reason);
+//     };
+//   }, []); // Empty dependency array ensures the effect runs only once when the component mounts
 
   
 
