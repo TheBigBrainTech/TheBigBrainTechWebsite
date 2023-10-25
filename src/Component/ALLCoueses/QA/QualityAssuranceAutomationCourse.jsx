@@ -1,14 +1,27 @@
 import React from "react";
+import axios from "axios";
 import Navigation from "../../Homepage/Navbar/Navbar";
 import Footer from "../../Homepage/Footer/Footer";
 import SecondNavi from "../reusable/SecondNavi";
 import QACourseInfo from "./QACourseInfo";
-import Modules from "./ReactCourseModules";
+import Modules from "./QACourseModules";
 import Financing from "../../../Component/ALLCoueses/reusable/Financing";
 import Admissions from "../../../Component/ALLCoueses/reusable/admissionProcess";
 import Faq from "../../../Component/ALLCoueses/reusable/FrequentQuestion";
 
+
+
 export default function QualityAssuranceAutomationCourse() {
+
+  const handleDownloadBrochure = async () => {
+    try {
+      await axios.get("/download-brochure", { responseType: "blob" });
+    } catch (error) {
+      console.error("Error downloading brochure:", error);
+      // Handle the error appropriately
+    }
+  };
+  
   return (
     <div>
       <section>
@@ -24,7 +37,7 @@ export default function QualityAssuranceAutomationCourse() {
         {/* Left side content */}
         <div className="my-4" style={{ flex: 1, paddingLeft: "50px" }}>
           <div className="text-dark">
-            <h1 className="mb-3">QA Test Automation (SDET) course</h1>
+            <h1 className="mb-3">Quality Assurance Automation</h1>
             <h4 className="mb-3">
               Learn the latest and greatest from Automation Testing World
             </h4>
@@ -35,8 +48,13 @@ export default function QualityAssuranceAutomationCourse() {
             >
               Enroll now
             </a>
-            <a className="btn btn-outline-dark btn-lg" href="#!" role="button">
-              view Syllabus
+            <a
+              className="btn btn-outline-dark btn-lg"
+              href="/download-brochure"
+              role="button"
+              onClick={handleDownloadBrochure}
+            >
+              Download Brochure
             </a>
           </div>
         </div>

@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const { Pool } = require('pg');
+const axios = require("axios");
+
 
 const app = express();
 const port = 3030;
@@ -13,8 +15,8 @@ app.use(bodyParser.json());
 // PostgreSQL database connection configuration
 const pool = new Pool({
   user: 'teksyntax',
-  host: 'awseb-e-egpnj6kys3-stack-awsebrdsdatabase-i4rbsvzdqeqv.cnuarrdwikbu.us-east-1.rds.amazonaws.com',
-  database: 'TeksyntaxDB',
+  host: 'teksyntax-1.cnuarrdwikbu.us-east-1.rds.amazonaws.com',
+  database: 'teksyntaxDB',
   password: 'Teksyntax1760',
   port: 5432,
 });
@@ -29,7 +31,7 @@ pool.connect((err, client, done) => {
   }
 });
 
-app.post('http://localhost:3000/api/login', (req, res) => {
+app.post('/api/login', (req, res) => {
   const { email, password } = req.body;
   const query = 'SELECT * FROM employeeData WHERE email = $1 AND password = $2';
 
@@ -107,6 +109,20 @@ app.post('/api/PostCourseBrochureDownload', (req, res) => {
   });
 });
 
+//DOWNLOAD BROCHURE
+app.get("/download-brochure", async (req, res) => {
+  const brochureUrl = "https://teksyntaxbrochures.s3.amazonaws.com/QAAuotmationBrochure.pdf";
+
+  try {
+    const response = await axios.get(brochureUrl, { responseType: "stream" });
+
+    res.setHeader("Content-Disposition", `attachment; filename="QAAutomationBrochure.pdf"`);
+    response.data.pipe(res);
+  } catch (error) {
+    console.error("Error downloading brochure:", error);
+    res.status(500).send("Internal Server Error");
+  }
+});
 
 // Start the server
 app.listen(port, () => {

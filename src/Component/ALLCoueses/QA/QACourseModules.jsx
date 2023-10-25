@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Card } from "react-bootstrap";
-import javaModuleData from "../../../Assets/Data/BusinessAnalystModule.json";
+import javaModuleData from "../../../Assets/Data/QAAutomationModule.json";
 
 function courseModules() {
     const [selectedModule, setSelectedModule] = useState(javaModuleData[0]);

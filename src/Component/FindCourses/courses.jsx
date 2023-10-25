@@ -16,60 +16,27 @@ const CardList = () => {
         navigate(`/course/java/${id}`);
         break;
       case 2:
-        navigate(`/course/java/${id}`);
+        navigate(`/course/react/${id}`);
         break;
       case 3:
-        navigate(`/course/react/${id}`);
+        navigate(`/course/DevOPS/${id}`);
         break;
       case 4:
-        navigate(`/course/react/${id}`);
+        navigate(`/course/BusinessAnalyst/${id}`);
         break;
       case 5:
-        navigate(`/course/DevOPS/${id}`);
+        navigate(`/course/ProjectManagement/${id}`);
         break;
       case 6:
-        navigate(`/course/DevOPS/${id}`);
+        navigate(`/course/DataAnalyst/${id}`);
         break;
       case 7:
-        navigate(`/course/BusinessAnalyst/${id}`);
-        break;
-      case 8:
-        navigate(`/course/BusinessAnalyst/${id}`);
-        break;
-      case 9:
-        navigate(`/course/ProjectManagement/${id}`);
-        break;
-      case 10:
-        navigate(`/course/ProjectManagement/${id}`);
-        break;
-      case 11:
-        navigate(`/course/DataAnalyst/${id}`);
-        break;
-      case 12:
-        navigate(`/course/DataAnalyst/${id}`);
-        break;
-      case 13:
         navigate(`/course/DataETL/${id}`);
         break;
-      case 14:
+      case 8:
         navigate(`/course/QA/${id}`);
         break;
-      case 15:
-        navigate(`/course/QA/${id}`);
-        break;
-      case 16:
-        navigate(`/course/QA/${id}`);
-        break;
-      case 17:
-        navigate(`/course/QA/${id}`);
-        break;
-      case 18:
-        navigate(`/course/QA/${id}`);
-        break;
-      case 19:
-        navigate(`/course/QA/${id}`);
-        break;
-      case 20:
+      case 9:
         navigate(`/course/UIUX/${id}`);
         break;
       default:

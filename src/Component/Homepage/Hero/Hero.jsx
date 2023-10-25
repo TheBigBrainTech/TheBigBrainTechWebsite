@@ -4,37 +4,36 @@ import backGround from "../../../Assets/images/Hero/Hero_Image.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
-
 function HeroImage() {
-  const [isOpen, setIsOpen] = useState(false);  
+  const [isOpen, setIsOpen] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [telephone, setTelephone] = useState("");
 
   const handleSubmit = () => {
-// Make a POST request to the backend server to save 
-// the user data
-    
-fetch('http://localhost:3030/api/PostCourseBrochureDownload', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({ name, email, telephone }),
-})
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error('Failed to download. Please try again later.');
-    }
-    alert('Successfully download!');
-    setEmail('');
-    setTelephone('');
-    setName('');
-  })
-  .catch((error) => {
-    console.error(error);
-    alert('Enter all information. Please try again.');
-  });
+    // Make a POST request to the backend server to save
+    // the user data
+
+    fetch("http://localhost:3030/api/PostCourseBrochureDownload", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, telephone }),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to download. Please try again later.");
+        }
+        alert("Successfully download!");
+        setEmail("");
+        setTelephone("");
+        setName("");
+      })
+      .catch((error) => {
+        console.error(error);
+        alert("Enter all information. Please try again.");
+      });
 
     // After submission, close the window
     setIsOpen(false);
@@ -61,7 +60,11 @@ fetch('http://localhost:3030/api/PostCourseBrochureDownload', {
               className="HeroOverlay"
               src={manImage}
               alt="ManImage"
-              style={{ height: "550px", marginLeft: "200px", marginTop: "100px" }}
+              style={{
+                height: "550px",
+                marginLeft: "200px",
+                marginTop: "100px",
+              }}
             />
           </div>
           <div className="col-md-6" style={{ marginTop: "300px" }}>
@@ -77,7 +80,7 @@ fetch('http://localhost:3030/api/PostCourseBrochureDownload', {
                 onClick={() => setIsOpen(true)}
               >
                 <FontAwesomeIcon icon={faDownload} className="mx-2" />
-                 Course Brochure
+                Course Brochure
               </button>
               <button
                 type="button"
@@ -85,7 +88,7 @@ fetch('http://localhost:3030/api/PostCourseBrochureDownload', {
                 onClick={() => setIsOpen(true)}
               >
                 <FontAwesomeIcon icon={faDownload} className="mx-2" />
-                 Placement Brochure
+                Placement Brochure
               </button>
             </div>
           </div>
@@ -93,12 +96,19 @@ fetch('http://localhost:3030/api/PostCourseBrochureDownload', {
       </div>
 
       {isOpen && (
-        <div className="modal" style={{ display: "block", background: "rgba(0, 0, 0, 0.5)" }}>
+        <div
+          className="modal"
+          style={{ display: "block", background: "rgba(0, 0, 0, 0.5)" }}
+        >
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title">Enter Your Information</h5>
-                <button type="button" className="close" onClick={() => setIsOpen(false)}>
+                <button
+                  type="button"
+                  className="close btn"
+                  onClick={() => setIsOpen(false)}
+                >
                   <span>&times;</span>
                 </button>
               </div>
@@ -134,12 +144,15 @@ fetch('http://localhost:3030/api/PostCourseBrochureDownload', {
                       required
                     />
                   </div>
-                  <div>
+                  <div style={{display:"flex",alignItems:"center"}}>
                     <input type="checkbox" required className="my-3" />
-                    <p><sup>*</sup>Agree to the Terms & conditons</p>
+                    <p className="my-2 mx-2">
+                      Agree to the Terms & conditions<sup>*</sup>
+                    </p>
                   </div>
+
                   <button type="submit" className="btn btn-primary my-4">
-                    Download Now 
+                    Download Now
                   </button>
                 </form>
               </div>

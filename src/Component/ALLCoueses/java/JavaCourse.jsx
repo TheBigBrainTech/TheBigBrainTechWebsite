@@ -54,7 +54,7 @@ export default function JavaCourse() {
             </a>
             <a
               className="btn btn-outline-dark btn-lg"
-              href="#!"
+              href="/#/course/java/1"
               role="button"
               onClick={handleDownloadBrochure}
             >

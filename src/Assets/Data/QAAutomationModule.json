@@ -28,7 +28,7 @@
     },
     {
       "name": "Module 3",
-      "heading": "Module 3: Test Scripting with Python or Java",
+      "heading": "Module 3: Test Scripting with Java",
       "description": "Description: ",
       "descriptionbullet": "In this module, participants will learn test scripting using Python or Java. They will gain practical experience in writing automated test scripts and leveraging programming concepts for efficient testing.",
       "hours": "Hours: 35 hours",
@@ -46,12 +46,12 @@
     },
     {
       "name": "Module 5",
-      "heading": "Module 5: Mobile Application Testing with Appium",
+      "heading": "Module 5: WEB Application Testing cucumber",
       "description": "Description: ",
-      "descriptionbullet": "In this module, participants will learn mobile application testing using Appium. They will explore how to automate testing for Android and iOS mobile apps.",
+      "descriptionbullet": "In this module, participants will learn application testing using cucumber . They will explore how to automate testing for apps.",
       "hours": "Hours: 25 hours",
       "warning": "Learnings: ",
-      "warningBullet": "Set up Appium for mobile application testing, \r * Automate functional and compatibility tests for Android and iOS apps, \r * Handle mobile-specific challenges in testing, \r * Implement parallel testing for mobile devices."
+      "warningBullet": "Set up cucumber framework for application testing, \r * Automate functional and compatibility tests for  apps, \r * Handle specific challenges in testing, \r * Implement parallel testing for multi devices."
     },
     {
       "name": "Module 6",
