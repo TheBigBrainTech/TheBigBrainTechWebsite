@@ -74,15 +74,15 @@ function Navigation() {
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="For Employee" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/login/EmployeeLogin">
+              <NavDropdown.Item as={Link} to="/login/EmployeeLogin">
                 Employee Login
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="About" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/About/AboutUs">
+              <NavDropdown.Item as={Link} to="/About/AboutUs">
                 About Us
               </NavDropdown.Item>
-              <NavDropdown.Item href="/About/Team">
+              <NavDropdown.Item as={Link} to="/About/Team">
                 Join Our Team
               </NavDropdown.Item>
             </NavDropdown>
