@@ -20,7 +20,7 @@ import Team from './Component/About/Team';
 import FAQ from './Component/About/Questions';
 import Enrollment from './Component/EnrollmentForm/EnrolmentCard';
 import Dashboard from './Component/EmployeeDashboard/Dashboard';
-
+import Logout from './Component/LogoutPage/Logout';
 
 function routes() {
   return (
@@ -45,6 +45,7 @@ function routes() {
       <Route path='/FAQ' element={<FAQ />} />
       <Route path='/Enroll/Application' element={<Enrollment />} />
       <Route path='/login/EmployeeLogin/dashboard' element={<Dashboard />} />
+      <Route path='/login/EmployeeLogin/dashboard/logout' element={<Logout />} />
     </Routes>
   );
 }

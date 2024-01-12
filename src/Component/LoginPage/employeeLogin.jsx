@@ -5,7 +5,7 @@ import Logo from "../../Assets/images/logo/FullLogo.png";
 import loginImg from "../../Assets/images/OtherImages/signIn copy.jpg";
 import Navigation from "../Homepage/Navbar/Navbar";
 import Footer from "../Homepage/Footer/Footer";
-import Dashboard from "../EmployeeDashboard/Dashboard"; // Import the Dashboard component
+import Dashboard from "../EmployeeDashboard/Dashboard";
 
 function EmployeeLogin() {
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ function EmployeeLogin() {
     e.preventDefault();
 
     try {
-      const response = await fetch("/api/login", {
+      const response = await fetch("http://localhost:3030/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -36,12 +36,10 @@ function EmployeeLogin() {
 
       if (response.ok) {
         // If login is successful, store the token and set isLoggedIn to true
-        localStorage.setItem("accessToken", data.token); // Replace "token" with the actual token key in the response
+        localStorage.setItem("accessToken", data.token);
         setIsLoggedIn(true);
-        // Navigate to the dashboard component
-        navigate("/login/EmployeeLogin/dashboard"); // Replace '/dashboard' with your desired dashboard component path
+        navigate("/login/EmployeeLogin/dashboard");
       } else {
-        // If login fails, show an error message
         setError(data.error || "Invalid email or password");
       }
     } catch (err) {
@@ -50,11 +48,9 @@ function EmployeeLogin() {
   };
 
   const handleLogout = () => {
-    // Clear the token from localStorage and set isLoggedIn to false
     localStorage.removeItem("accessToken");
-    setIsLoggedIn(false);
-    // You can redirect the user to the login page or any other desired page
-    navigate("/login"); // Replace '/login' with the login page path
+    setIsLoggedIn(false); // Set isLoggedIn to false on logout
+    navigate("/"); // Redirect to the homepage or login page
   };
 
   return (
@@ -99,7 +95,6 @@ function EmployeeLogin() {
                   </Form.Group>
                   {error && <div className="text-danger mb-2">{error}</div>}
                   <div className="d-flex justify-content-between mb-4">
-                    <Form.Check type="checkbox" label="Remember me" />
                     <a href="!#">Forgot password?</a>
                   </div>
                   <div className="text-center text-md-start mt-4 pt-2">
@@ -122,7 +117,7 @@ function EmployeeLogin() {
       <section>
         <Footer />
       </section>
-      {isLoggedIn && <Dashboard handleLogout={handleLogout} />} {/* Pass handleLogout to the Dashboard component */}
+      <Dashboard handleLogout={handleLogout} isLoggedIn={isLoggedIn} />
     </div>
   );
 }
