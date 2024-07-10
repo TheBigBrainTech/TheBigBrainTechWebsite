@@ -5,6 +5,8 @@ phases:
     runtime-versions:
       nodejs: 20.15.0
     commands:
+      - nvm install 20.15.0
+      - nvm use 20.15.0
       - echo Installing dependencies...
         - yarn install --frozen-lockfile
 
