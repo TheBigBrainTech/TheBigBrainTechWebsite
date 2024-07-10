@@ -1,49 +1,45 @@
 import React, { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import questionData from "../../../Assets/Data/FAQ.json";
 
 export default function StaticFaqSection() {
-  const [expandedQuestion, setExpandedQuestion] = useState(null);
+    const [expandedQuestion, setExpandedQuestion] = useState(null);
 
-  const handleQuestionClick = (index) => {
-    if (index === expandedQuestion) {
-      setExpandedQuestion(null); // Collapse the expanded question if clicked again
-    } else {
-      setExpandedQuestion(index);
-    }
-  };
+    const handleQuestionClick = (index) => {
+        if (index === expandedQuestion) {
+            setExpandedQuestion(null); // Collapse the expanded question if clicked again
+        } else {
+            setExpandedQuestion(index);
+        }
+    };
 
-  return (
-    <Container>
-      <section>
-        <h3 className="text-center mb-4 pb-2 text-warning fw-bold">FAQ</h3>
-        <p className="text-center mb-5">
-          Find the answers for the most frequently asked questions below
-        </p>
+    return (
+        <div className="container mx-auto py-8">
+            <section>
+                <h3 className="text-center mb-4 pb-2 text-yellow-500 font-bold">FAQ</h3>
+                <p className="text-center mb-5">
+                    Find the answers for the most frequently asked questions below
+                </p>
 
-        <Row className="text-dark text-center bg-light p-3">
-          {questionData.map((item, index) => (
-            <Col key={index} md="12" className="mb-4">
-              <div>
-                <button
-                  className="mb-1 text-warning cursor-pointer"
-                  onClick={() => handleQuestionClick(index)}
-                  style={{
-                    background: "none",
-                    border: "none",
-                    padding: 0,
-                    cursor: "pointer",
-                  }}
-                >
-                  <i className="fa-solid fa-circle-question"></i> {item.question}
-                  <i className="fa-solid fa-chevron-down p-2"></i>
-                </button>
-              </div>
-              {expandedQuestion === index && <div>{item.answer}</div>}
-            </Col>
-          ))}
-        </Row>
-      </section>
-    </Container>
-  );
+                <div className="text-dark text-center bg-gray-100 p-6 rounded-lg shadow-md">
+                    {questionData.map((item, index) => (
+                        <div key={index} className="mb-4">
+                            <div>
+                                <button
+                                    className="mb-1 text-yellow-500 cursor-pointer flex items-center justify-center w-full text-left"
+                                    onClick={() => handleQuestionClick(index)}
+                                    style={{ background: "none", border: "none", padding: 0 }}
+                                >
+                                    <i className="fa-solid fa-circle-question mr-2"></i> {item.question}
+                                    <i className="fa-solid fa-chevron-down p-2"></i>
+                                </button>
+                            </div>
+                            {expandedQuestion === index && (
+                                <div className="mt-2 text-gray-700">{item.answer}</div>
+                            )}
+                        </div>
+                    ))}
+                </div>
+            </section>
+        </div>
+    );
 }

@@ -1,4 +1,4 @@
-export const Level1Curriculum = [
+export const EarlyLearners1Curriculum = [
     {
         week: 1,
         description: 'Design a Website in Figma',

@@ -2,11 +2,12 @@ import React from 'react';
 import CustomNavbar from '../Navbar/Navbar';
 import Hero from '../Hero/Hero';
 import StatCounter from '../Counter/Counter';
-import CategoryCards from '../selectCards/categoryCards';
+// import CategoryCards from '../selectCards/categoryCards';
 import BootcampCards from '../BootcampCards/Bootcamps';
 import ContactSection from '../inquiry/inquiry';
 import Testimonials from '../Testimonials/Testimonials';
-import Info from '../CompanyInfo/info';
+import Info from '../Info/info';
+import InfoTwo from "../Info/infoTwo";
 import Clients from '../Clients/ClientsScroll';
 import Footer from '../Footer/Footer';
 
@@ -16,11 +17,12 @@ function Homepage() {
       <CustomNavbar />
       <Hero />
       <StatCounter />
-      <CategoryCards />
+        <Info />
+      {/*<CategoryCards />*/}
       <BootcampCards />
+        <InfoTwo/>
       <ContactSection />
       <Testimonials />
-      <Info />
       <Clients />
       <Footer />
     </div>

@@ -1,8 +1,8 @@
 import React from 'react';
 
-const FullstackStudentReview = () => {
+const QAStudentReview = () => {
     return (
         <div>Student Reviews</div>
     )
 }
-export default FullstackStudentReview;
+export default QAStudentReview;

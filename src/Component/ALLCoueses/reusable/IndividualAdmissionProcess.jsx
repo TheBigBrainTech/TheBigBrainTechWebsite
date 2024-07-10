@@ -1,6 +1,6 @@
 import React from "react";
 
-const FullWidthCard = () => {
+const IndividualAdmissionProcess = () => {
     return (
         <div className="container mx-auto py-8">
             <div className="bg-white p-6 rounded-lg shadow-lg h-full">
@@ -70,4 +70,4 @@ const FullWidthCard = () => {
     );
 };
 
-export default FullWidthCard;
+export default IndividualAdmissionProcess;

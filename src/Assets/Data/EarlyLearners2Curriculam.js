@@ -1,4 +1,4 @@
-export const Level2Curriculum = [
+export const EarlyLearners2Curriculum = [
     {
         week: 1,
         description: 'Advanced JavaScript and React',

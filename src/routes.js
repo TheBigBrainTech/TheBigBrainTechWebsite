@@ -1,53 +1,81 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
 import Homepage from './Component/Homepage/HomePageRender/Homepage';
-import JobApplicationForm from './Component/JobApplication/JobApplicationForm';
-import FindCourses from './Component/FindCourses/courses';
-import JavaCourse from './Component/ALLCoueses/java/JavaCourse';
-import ReactCourse from './Component/ALLCoueses/react/ReactCourse';
-import BusinessAnalystCourse from './Component/ALLCoueses/BA/BusinessAnalystCourse';
-import DataAnalystCourse from './Component/ALLCoueses/DataAnalyst/DataAnalystCourse';
-import DataETLCourse from './Component/ALLCoueses/ETL/DataETLCourse';
-import DevOPSCourse from './Component/ALLCoueses/Devops/DevOpsCourse';
-import ProjectManagementCourse from './Component/ALLCoueses/PM/ProjectManagerCourse';
-import QualityAssuranceAutomationCourse from './Component/ALLCoueses/QA/QualityAssuranceAutomationCourse';
-import UIUXCourse from './Component/ALLCoueses/UIUX/UIUXCourse';
-import AboutUs from './Component/About/AboutUs';
-import EmployeeLogin from './Component/LoginPage/employeeLogin';
-import StudentLogin from './Component/LoginPage/StudentLogin';
-import StudentRegistration from './Component/LoginPage/StudentRegistration';
-import Team from './Component/About/Team';
-import FAQ from './Component/About/Questions';
-import Enrollment from './Component/EnrollmentForm/EnrolmentCard';
-import Dashboard from './Component/EmployeeDashboard/Dashboard';
-import Logout from './Component/LogoutPage/Logout';
+import LoginPage from './Component/LoginPage/StudentLogin';
+import InquiryForm from "./Component/Homepage/inquiry/signUpForm";
+import AboutUsPage from './Component/About/AboutUs';
+import Questions from './Component/Questions/Questions';
+import Testimonials from "./Component/About/Testimonials";
+import Blog from "./Component/About/Blog";
+import BlogPost from "./Component/About/BlogPost";
+import Career from "./Component/Careers/career";
+import Press from "./Component/Press/Press";
+import FullstackCourse from "./Component/ALLCoueses/FullStack/FullstackCourse";
+import QAAutomation from "./Component/ALLCoueses/QA/QACourse"
+import FrontendCourse from "./Component/ALLCoueses/react/FrontendCourse";
+import EnrollmentCard from "./Component/EnrollmentForm/EnrolmentCard";
+import EarlyLearners1 from "./Component/ALLCoueses/EarlyLearners1/EarlyLearners1";
+import EarlyLearners2 from "./Component/ALLCoueses/EarlyLearners2/EarlyLearners2";
+import EarlyLearners3 from "./Component/ALLCoueses/EarlyLearners3/EarlyLearners3";
+import EarlyLearnersEnrollmentCard from "./Component/EnrollmentForm/EarlyLearnersEnrollmentCard";
+import FinancingOptions from "./Component/ALLCoueses/reusable/Financing";
+import Support from "./Component/Support/supportPage"
+import ErrorPage from "./Component/Error/ErrorPage";
 
-function routes() {
+function AppRoutes() {
+  const [isInquiryFormOpen, setInquiryFormOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleClose = () => {
+    setInquiryFormOpen(false);
+    navigate('/'); // Navigate to the homepage
+  };
+
+  useEffect(() => {
+    if (location.pathname === '/inquiry') {
+      setInquiryFormOpen(true);
+    } else {
+      setInquiryFormOpen(false);
+    }
+  }, [location.pathname]);
+
   return (
-    <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/job-application-form" element={<JobApplicationForm />} />
-      <Route path="/find-courses" element={<FindCourses />} />
-      <Route path="/course/java/:id" element={<JavaCourse />} />
-      <Route path="/course/react/:id" element={<ReactCourse />} />
-      <Route path="/course/BusinessAnalyst/:id" element={<BusinessAnalystCourse />} />
-      <Route path="/course/DataAnalyst/:id" element={<DataAnalystCourse />} />
-      <Route path="/course/DataETL/:id" element={<DataETLCourse />} />
-      <Route path="/course/DevOPS/:id" element={<DevOPSCourse />} />
-      <Route path="/course/ProjectManagement/:id" element={<ProjectManagementCourse />} />
-      <Route path="/course/QA/:id" element={<QualityAssuranceAutomationCourse />} />
-      <Route path="/course/UIUX/:id" element={<UIUXCourse />} />
-      <Route path='/About/AboutUs' element={<AboutUs />} />
-      <Route path='/login/EmployeeLogin' element={<EmployeeLogin />} />
-      <Route path='/login/StudentLogin' element={<StudentLogin />} />
-      <Route path='/login/StudentLogin/StudentRegister' element={<StudentRegistration />} />
-      <Route path='/About/Team' element={<Team />} />
-      <Route path='/FAQ' element={<FAQ />} />
-      <Route path='/Enroll/Application' element={<Enrollment />} />
-      <Route path='/login/EmployeeLogin/dashboard' element={<Dashboard />} />
-      <Route path='/login/EmployeeLogin/dashboard/logout' element={<Logout />} />
-    </Routes>
+      <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/Error" element={<ErrorPage/>}/>
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/about-us" element={<AboutUsPage />} />
+          <Route path="/Questions" element={<Questions />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
+          <Route path="/careers" element={<Career/>}/>
+          <Route path="/press" element={<Press />} />
+          <Route path="/support" element={<Support />}/>
+          <Route path="/inquiry" element={isInquiryFormOpen ? <InquiryForm onClose={handleClose} /> : <Homepage />} />
+
+          <Route path="/Programs/Individuals/Frontend" element={<FrontendCourse />} />
+          <Route path="/Programs/Individuals/Fullstack" element={<FullstackCourse />} />
+          <Route path="/Programs/Individuals/QAAutomation" element={<QAAutomation />} />
+
+          <Route path="/Programs/EarlyLearners/Basic" element={<EarlyLearners1 />} />
+          <Route path="/Programs/EarlyLearners/Intermediate" element={<EarlyLearners2 />} />
+          <Route path="/Programs/EarlyLearners/Advanced" element={<EarlyLearners3 />} />
+
+          <Route path="/Programs/Individuals/Frontend/enroll" element={<EnrollmentCard />} />
+          <Route path="/Programs/Individuals/Fullstack/enroll" element={<EnrollmentCard />} />
+          <Route path="/Programs/Individuals/QAAutomation/enroll" element={<EnrollmentCard />} />
+
+          <Route path="/Programs/EarlyLearners/Basic/enroll" element={<EarlyLearnersEnrollmentCard />} />
+          <Route path="/Programs/EarlyLearners/Intermediate/enroll" element={<EarlyLearnersEnrollmentCard />} />
+          <Route path="/Programs/EarlyLearners/Advanced/enroll" element={<EarlyLearnersEnrollmentCard />} />
+
+
+          <Route path="/financing" element={<FinancingOptions/>}/>
+          <Route path="/enroll" element={<EnrollmentCard/>}/>
+      </Routes>
   );
 }
 
-export default routes;
+export default AppRoutes;

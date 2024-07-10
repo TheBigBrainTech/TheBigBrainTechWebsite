@@ -1,75 +1,156 @@
-[
+export const FullstackCurriculum = [
   {
-    "name": "Paper Work",
-    "heading": "Prepwork: get ready to start the bootcamp",
-    "description": "Our Java development course is very intense. To be prepared and make the most out of the bootcamp, you must complete a 20 hours preparation work to gives you basic tech foundations and culture.",
-    "descriptionbullet": "Web 101, how the web works Terminal and Git basic commands HTML, CSS and JavaScript foundations Tech workflows and tools in a startup, The Java Full Stack Development Bootcamp is a comprehensive program designed to equip participants with the skills and knowledge needed to become proficient full stack developers using Java technologies. Through a hands-on approach, students will gain a solid foundation in both front-end and back-end development, allowing them to build robust and scalable web applications. This bootcamp is suitable for beginners with basic programming knowledge and experienced developers looking to expand their expertise in Java full stack development.",
-    "hours": "20 hours",
-    "warning": "What you will do in practice",
-    "warningBullet": "10 hours of online discussion and Online quiz to validate basic tech knowledge"
+    week: 1,
+    description: 'Introduction to Web Development, HTML & CSS Basics',
+    days: [
+      'Course introduction and overview, Setting up the development environment (VS Code, Git, GitHub), Introduction to web development, Basic HTML structure and tags (headings, paragraphs, lists, links, images)',
+      'More HTML tags (tables, forms, semantic elements), Introduction to CSS, CSS syntax and selectors, Basic styling (colors, fonts, text alignment)',
+      'CSS box model (margin, border, padding, content), CSS positioning (static, relative, absolute, fixed), Styling HTML forms, Introduction to Flexbox',
+      'Advanced CSS (pseudo-classes, pseudo-elements), CSS Flexbox (flex containers, flex items, alignment, and distribution), CSS Grid basics, Responsive design principles',
+      'Media queries for responsive design, CSS variables, CSS transitions and animations, Mini-project: Build a responsive web page',
+    ],
   },
   {
-    "name": "Module 1",
-    "heading": "Module 1: Introduction to Java Programming",
-    "description": "This module introduces participants to the fundamentals of Java programming, including data types, variables, control structures, and object-oriented programming (OOP) concepts. Students will develop the skills necessary to write efficient and well-structured Java code, setting the groundwork for their full stack development journey.",
-    "descriptionbullet": "In this module, students will be introduced to the fundamentals of Java programming. They will learn about data types, variables, control structures, and object-oriented programming (OOP) concepts. Participants will develop the skills necessary to write efficient and well-structured Java code, setting the groundwork for their full stack development journey.",
-    "hours": "Hours: 20 hours",
-    "warning": "Learnings:",
-    "warningBullet": "Understand Java syntax and basic programming concepts  \r  * Create and manage variables and data structures in Java \r * Implement control structures for decision-making and loops \r * Apply object-oriented principles in Java programming"
+    week: 2,
+    description: 'Advanced CSS & Introduction to Bootstrap',
+    days: [
+      'Review of week 1, Introduction to Bootstrap, Setting up Bootstrap in projects, Bootstrap grid system',
+      'Bootstrap typography and tables, Bootstrap forms and form validation, Bootstrap components (buttons, images, navbars)',
+      'Bootstrap components continued (cards, carousels, modals), Customizing Bootstrap with CSS, Bootstrap utilities and helpers',
+      'Advanced Bootstrap (dropdowns, collapse, tooltips, popovers), Bootstrap project setup, Building a landing page with Bootstrap',
+      'Building and styling forms with Bootstrap, Bootstrap best practices, Mini-project: Create a multi-page responsive website using Bootstrap',
+    ],
   },
   {
-    "name": "Module 2",
-    "heading": "Module 2: Front-End Development with Java",
-    "description": "Description: ",
-    "descriptionbullet": "This module focuses on front-end web development using Java technologies. Students will learn HTML, CSS, and JavaScript, along with popular front-end frameworks such as Angular or React. They will gain hands-on experience building interactive and responsive user interfaces, enabling them to create engaging and user-friendly web applications.",
-    "hours": "Hours: 30 hours",
-    "warning": "Learnings: ",
-    "warningBullet": "Build web pages using HTML and style them with CSS \r *Develop dynamic front-end functionality using JavaScript \r * Utilize front-end frameworks to enhance user interfaces\r * Implement responsive design for various devices"
+    week: 3,
+    description: 'JavaScript Basics',
+    days: [
+      'Introduction to JavaScript, JavaScript syntax and basic operators, Variables and data types',
+      'Control structures (if-else, switch), Loops (for, while, do-while), Functions and scope',
+      'Arrays and array methods, Objects and object methods, DOM manipulation basics',
+      'Events and event handling, Event listeners and event object, Form validation using JavaScript',
+      'JavaScript debugging techniques, Introduction to JavaScript ES6 features (let, const, arrow functions), Template literals and destructuring',
+    ],
   },
   {
-    "name": "Module 3",
-    "heading": "Module 3: Back-End Development with Java",
-    "description": "Description: ",
-    "descriptionbullet": "This module delves into back-end development with Java. Topics covered include server-side programming, database management, and RESTful API development. Students will work with Java frameworks like Spring or JavaEE, learning how to build robust and secure back-end systems to support their web applications.",
-    "hours": "Hours: 40 hours",
-    "warning": "Learnings:",
-    "warningBullet": "Design and implement server-side logic using Java\r * Manage databases and perform CRUD operations \r * Create RESTful APIs for client-server communication \r * Implement security measures to protect back-end resources"
+    week: 4,
+    description: 'Advanced JavaScript',
+    days: [
+      'Advanced functions (callbacks, closures), Asynchronous JavaScript (promises, async/await), Error handling',
+      'Working with APIs (fetch, XMLHttpRequest), JSON and data manipulation, Introduction to local storage and session storage',
+      'JavaScript modules and imports/exports, Working with dates and times in JavaScript, Regular expressions',
+      'JavaScript best practices and coding standards, Introduction to build tools (Webpack, Babel), Setting up a project with build tools',
+      'Mini-project: Build a JavaScript application, Integrating all learned concepts, Review and Q&A',
+    ],
   },
   {
-    "name": "Module 4",
-    "heading": "Module 4: Database Management and ORM",
-    "description": "Description:",
-    "descriptionbullet": "This module focuses on database management and Object-Relational Mapping (ORM) with Java. Participants will learn about database design, SQL queries, and how to interact with databases using Java-based ORM tools like Hibernate. They will gain the skills needed to create efficient and scalable data storage solutions for their applications.",
-    "hours": "Hours: 25 hours",
-    "warning": "Learnings: ",
-    "warningBullet": "Design and optimize relational databases \r * Write SQL queries for data manipulation and retrieval \r * Implement ORM techniques for object-oriented database access \r * Manage database transactions effectively"
+    week: 5,
+    description: 'Introduction to React',
+    days: [
+      'Introduction to React, Setting up a React environment (Create React App), React components and JSX',
+      'Functional components and props, State and lifecycle methods, Handling events in React',
+      'Conditional rendering, Lists and keys in React, Controlled and uncontrolled components',
+      'Form handling in React, Lifting state up, React best practices',
+      'Mini-project: Build a simple React application, Review and Q&A',
+    ],
   },
   {
-    "name": "Module 5",
-    "heading": "Module 5: Web Application Security",
-    "description": "Description: ",
-    "descriptionbullet": "Security is paramount in modern web development. In this module, students will explore various security threats and best practices for securing web applications built with Java. They will learn about authentication, authorization, encryption, and other security mechanisms to protect their applications and user data.",
-    "hours": "Hours: 15 hours",
-    "warning": "Learnings: ",
-    "warningBullet": "Identify common web application security threats\r * Implement secure authentication and authorization mechanisms\r * Utilize encryption techniques to protect sensitive data\r * Apply security best practices to prevent common vulnerabilities"
-  },
-  
-  {
-    "name": "Module 6",
-    "heading": "Module 6: Deployment and DevOps",
-    "description": "Description: ",
-    "descriptionbullet": " In the final module, students will learn about the deployment of Java web applications and the principles of DevOps. They will understand the process of deploying their projects to production servers and utilizing continuous integration and continuous deployment (CI/CD) pipelines. Additionally, participants will learn about application monitoring, debugging, and performance optimization to ensure smooth and efficient operations.",
-    "hours": "Hours: 20 hours",
-    "warning": "Learnings: ",
-    "warningBullet": "Deploy Java applications to production servers\r * Set up and manage CI/CD pipelines for automated deployment\r * Monitor application performance and troubleshoot issues\r * Implement DevOps practices for efficient development and deployment"
+    week: 6,
+    description: 'Advanced React Concepts',
+    days: [
+      'Introduction to React Hooks (useState, useEffect), Working with useState and useEffect, Custom hooks',
+      'Context API for state management, Using the Context API in applications, React Router for navigation',
+      'Routing in React applications, Nested routes and dynamic routing, Programmatic navigation',
+      'Advanced hooks (useMemo, useCallback, useReducer), Performance optimization in React, Code splitting and lazy loading',
+      'Mini-project: Build a complex React application, Review and Q&A',
+    ],
   },
   {
-    "name": "Career Prep",
-    "heading": "Interview and Career Preparation",
-    "description": "This module is dedicated to preparing participants for successful job interviews and kickstarting their careers in Java full stack development. Students will learn essential soft skills, interview techniques, and how to showcase their technical abilities effectively. Additionally, they will receive guidance on building a strong portfolio and resume to stand out in the competitive job market.",
-    "descriptionbullet": "",
-    "hours": "2 hours",
-    "warning": "Learnings: ",
-    "warningBullet": "Develop effective communication and presentation skills for interviews\r * Practice technical interview questions and problem-solving exercises\r * Learn how to demonstrate practical coding skills during technical interviews\r * Receive feedback and guidance on portfolio and resume building\r * Explore job search strategies and networking techniques in the tech industry :: By the end of this module, participants will be well-prepared to excel in job interviews, confidently showcase their technical expertise, and navigate the job market to embark on a successful career in Java full stack development. Upon completing the Java Full Stack Development Bootcamp, participants will possess comprehensive skills in front-end and back-end development with Java. They will be well-equipped to design, build, and deploy full-fledged web applications, positioning them as highly sought-after professionals in the tech industry."
-  }
-]
+    week: 7,
+    description: 'State Management with Redux',
+    days: [
+      'Introduction to Redux, Setting up Redux in a React application, Actions and reducers',
+      'Working with the Redux store, Dispatching actions, Connecting Redux to React components',
+      'Middleware in Redux (Redux Thunk, Redux Saga), Asynchronous actions in Redux, Redux DevTools',
+      'Advanced Redux concepts (normalization, reselect), Structuring Redux applications, Redux best practices',
+      'Mini-project: Build a Redux-powered React application, Review and Q&A',
+    ],
+  },
+  {
+    week: 8,
+    description: 'Node.js and Express.js',
+    days: [
+      'Introduction to Node.js, Setting up a Node.js project, Understanding the event loop and asynchronous programming',
+      'Working with Express.js, Building RESTful APIs, Middleware and routing',
+      'Handling data with MongoDB, Mongoose for schema and model management',
+      'Building a full-stack application: Connecting React with Node.js and Express.js',
+      'Mini-project: Build a RESTful API with Node.js and Express.js, Review and Q&A',
+    ],
+  },
+  {
+    week: 9,
+    description: 'MongoDB and Database Design',
+    days: [
+      'Introduction to MongoDB, Setting up a MongoDB database, Understanding collections and documents',
+      'CRUD operations in MongoDB, Using Mongoose for data modeling, Advanced queries and indexing',
+      'Database design principles, Designing a schema for a full-stack application, Implementing relationships and embedding documents',
+      'Building a full-stack application: Connecting React with MongoDB',
+      'Mini-project: Build a full-stack application with MongoDB, Review and Q&A',
+    ],
+  },
+  {
+    week: 10,
+    description: 'Authentication and Authorization',
+    days: [
+      'Introduction to authentication and authorization, Understanding JWT (JSON Web Tokens)',
+      'Implementing user authentication in a Node.js and Express.js application, Secure password storage and handling',
+      'Implementing user authorization, Role-based access control',
+      'Integrating authentication with React, Managing user sessions and state',
+      'Mini-project: Build a full-stack application with authentication and authorization, Review and Q&A',
+    ],
+  },
+  {
+    week: 11,
+    description: 'Advanced MERN Stack Topics',
+    days: [
+      'Optimizing performance in React applications, Code splitting and lazy loading',
+      'Scaling Node.js applications, Implementing caching and rate limiting',
+      'Working with GraphQL, Setting up a GraphQL server with Node.js and Express.js',
+      'Building a full-stack application with GraphQL and React',
+      'Mini-project: Build a full-stack application with advanced MERN stack topics, Review and Q&A',
+    ],
+  },
+  {
+    week: 12,
+    description: 'Testing and Deployment',
+    days: [
+      'Introduction to testing in JavaScript, Unit testing with Jest, Testing React components with React Testing Library',
+      'Integration testing with Supertest and Jest, Testing Node.js and Express.js applications',
+      'End-to-end testing with Cypress, Writing and running Cypress tests, Debugging tests',
+      'CI/CD pipelines for MERN stack applications, Introduction to popular CI/CD tools (GitHub Actions, Travis CI, CircleCI), Setting up a CI/CD pipeline',
+      'Deployment options for MERN stack applications, Deploying applications using cloud platforms like AWS, Heroku, and Vercel, Final project planning',
+    ],
+  },
+  {
+    week: 13,
+    description: 'Final Project Development',
+    days: [
+      'Project setup and planning, Defining project scope and requirements, Initial project structure and setup',
+      'Building core features of the project, Implementing React components, State management and API integration',
+      'Styling the application with CSS and Bootstrap, Adding interactivity with JavaScript, Integrating advanced React features',
+      'Testing the application, Debugging and optimization, Preparing for deployment',
+      'Final touches and polish, Project presentation preparation, Review and Q&A',
+    ],
+  },
+  {
+    week: 14,
+    description: 'Final Project Presentations and Wrap-Up',
+    days: [
+      'Final project presentations (part 1), Peer reviews and feedback, Instructor feedback',
+      'Final project presentations (part 2), Peer reviews and feedback, Instructor feedback',
+      'Course review and recap, Career advice and next steps, Building a portfolio and resume',
+      'Mock interviews and interview preparation, Networking and job search strategies, Final Q&A',
+      'Course wrap-up, Certificates and celebrations, Final thoughts and feedback',
+    ],
+  },
+];

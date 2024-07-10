@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import Navigation from "../../Homepage/Navbar/Navbar";
 import Footer from "../../Homepage/Footer/Footer";
 import SecondNavigation from "../reusable/SecondNavi";
-import Character from '../../../Assets/images/character/ReactCharacter-bg-1.png';
+import Character from '../../../Assets/images/character/FrontEndBg.png';
 import Modal from '../reusable/CoursePacketDownloadForm';
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { faAws, faBootstrap, faCss3Alt, faHtml5, faReact, faSquareGit } from "@fortawesome/free-brands-svg-icons";
 import FAQList from "./FAQ";
+import {Link} from "react-router-dom";
 
-const ReactCourse = () => {
+const FrontendCourse = () => {
     const [isModalOpen, setModalOpen] = useState(false);
 
     return (
@@ -74,6 +75,7 @@ const ReactCourse = () => {
                             </div>
                         </div>
                         <div className="ml-16">
+                            <Link to="/Programs/Individuals/Frontend/enroll">
                             <motion.button
                                 whileHover={{scale: 1.1}}
                                 whileTap={{scale: 0.9}}
@@ -81,6 +83,7 @@ const ReactCourse = () => {
                             >
                                 Enroll Now
                             </motion.button>
+                        </Link>
                             <motion.button
                                 whileHover={{scale: 1.1}}
                                 whileTap={{scale: 0.9}}
@@ -108,4 +111,4 @@ const ReactCourse = () => {
     );
 };
 
-export default ReactCourse;
+export default FrontendCourse;

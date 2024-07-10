@@ -5,63 +5,72 @@
       "imgSrc": "https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg",
       "name": "Mesfin Mulatu",
       "rating": 5,
-      "description": "I recently completed the QA Automation Bootcamp at Teksyntax Inc. and I am so glad I did! The bootcamp was well-structured and comprehensive, and I learned a lot about the different aspects of QA automation. The instructors were knowledgeable and experienced, and they were always available to answer my questions. I also appreciated the hands-on exercises and projects that we worked on, which helped me to solidify my learning. I am now confident in my ability to automate software tests, and I am excited to start applying my new skills in my career. I would highly recommend this bootcamp to anyone who is interested in learning QA automation."
+      "description": "I recently completed the QA Automation Bootcamp at The Bigbrain Tech and I am so glad I did! The bootcamp was well-structured and comprehensive, and I learned a lot about the different aspects of QA automation. The instructors were knowledgeable and experienced, and they were always available to answer my questions. I also appreciated the hands-on exercises and projects that we worked on, which helped me to solidify my learning. I am now confident in my ability to automate software tests, and I am excited to start applying my new skills in my career. I would highly recommend this bootcamp to anyone who is interested in learning QA automation.",
+      "year": "QA Automation 2022"
     },
     {
       "id": 2,
       "imgSrc": "https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
       "name": "Zach",
       "rating": 4,
-      "description": "I was a complete beginner to QA automation when I started the bootcamp, but I left feeling confident and prepared to start my career. The instructors were great at explaining the concepts in a clear and concise way, and the hands-on projects were really helpful in solidifying my learning. I would definitely recommend this bootcamp to anyone who is interested in learning QA automation."
+      "description": "I was a complete beginner to QA automation when I started the bootcamp, but I left feeling confident and prepared to start my career. The instructors were great at explaining the concepts in a clear and concise way, and the hands-on projects were really helpful in solidifying my learning. I would definitely recommend this bootcamp to anyone who is interested in learning QA automation.",
+      "year": "QA Automation 2022"
     },
     {
       "id": 3,
       "imgSrc": "https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg",
-      "name": "Kaushal Devupalli",
-      "rating": 3,
-      "description": "I was looking for a career change and wanted to learn the skills I needed to become a business analyst. The Business Analyst Bootcamp at Teksyntax Inc. was the perfect way for me to do that. The bootcamp was well-structured and comprehensive, and I learned a lot about the different aspects of business analysis. I also appreciated the hands-on exercises and projects that we worked on, which helped me to solidify my learning.I am now confident in my ability to work as a business analyst, and I am excited to start applying my new skills in my career. I would highly recommend this bootcamp to anyone who is interested in learning business analysis."
+      "name": "mohammad Riffat Uddin",
+      "rating": 4,
+      "description": "I was looking for a career change and wanted to learn the skills I needed to become a Automation Engineer. The QA Automation Bootcamp at The Bigbrain Tech was the perfect way for me to do that. The bootcamp was well-structured and comprehensive, and I learned a lot about the different aspects of business analysis. I also appreciated the hands-on exercises and projects that we worked on, which helped me to solidify my learning.I am now confident in my ability to work as a business analyst, and I am excited to start applying my new skills in my career. I would highly recommend this bootcamp to anyone who is interested in learning business analysis.",
+      "year": "QA Automation 2022"
     },
     {
       "id": 4,
       "imgSrc": "https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
       "name": "Emily Davis",
       "rating": 3,
-      "description": "I was working as a project manager, but I wanted to learn more about the business analysis side of things. The Business Analyst Bootcamp at Teksyntax Inc. was the perfect way for me to do that. I learned about the different business analysis methodologies, and I also got to work on a variety of projects. I am now much more confident in my ability to work as a business analyst, and I am grateful for the skills and knowledge that I gained from the bootcamp.."
+      "description": "I was working as a project manager, but I wanted to learn more about the frontend web development side of things. The frontend React Bootcamp at The Bigbrain Tech was the perfect way for me to do that. I learned about the different business analysis methodologies, and I also got to work on a variety of projects. I am now much more confident in my ability to work as a business analyst, and I am grateful for the skills and knowledge that I gained from the bootcamp..",
+      "year": "Frontend Development 2023"
     },
     {
       "id": 5,
       "imgSrc": "https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg",
       "name": "Sanjay Adhikari",
       "rating": 3,
-      "description": "The instructors were knowledgeable and experienced. They had a deep understanding of the material and were able to explain it clearly and concisely.The bootcamp was comprehensive. I learned about all of the essential aspects of Java full stack development, including Java programming, web development, and database development.The bootcamp was hands-on. We worked on a variety of projects, which helped me to apply my learning and gain practical experience.The bootcamp was supportive. The instructors and classmates were always willing to help, and I never felt like I was struggling on my own."
+      "description": "The instructors were knowledgeable and experienced. They had a deep understanding of the material and were able to explain it clearly and concisely.The bootcamp was comprehensive. I learned about all of the essential aspects of Java full stack development, including Java programming, web development, and database development.The bootcamp was hands-on. We worked on a variety of projects, which helped me to apply my learning and gain practical experience.The bootcamp was supportive. The instructors and classmates were always willing to help, and I never felt like I was struggling on my own.",
+      "year": "Fullstack Development 2023"
     },
     {
       "id": 6,
       "imgSrc": "https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
       "name": "Bill Cammera",
       "rating": 3,
-      "description": "I was a complete newbee to React when I started the bootcamp, but I left feeling confident and prepared to start my career as a React full stack developer. The instructors were great at explaining the concepts in a clear and concise way, and the hands-on projects were really helpful in solidifying my learning. I would definitely recommend this bootcamp to anyone who is interested in learning React full stack development.Here are some specific things that I liked about the bootcamp:The instructors were knowledgeable and experienced. They had a deep understanding of the material and were able to explain it clearly and concisely.The bootcamp was comprehensive. I learned about all of the essential aspects of React full stack development, including React programming, Node.js, and MongoDB.The bootcamp was hands-on. We worked on a variety of projects, which helped me to apply my learning and gain practical experience.The bootcamp was supportive. The instructors and classmates were always willing to help, and I never felt like I was struggling on my own."
+      "description": "I was a complete newbee to React when I started the bootcamp, but I left feeling confident and prepared to start my career as a React full stack developer. The instructors were great at explaining the concepts in a clear and concise way, and the hands-on projects were really helpful in solidifying my learning. I would definitely recommend this bootcamp to anyone who is interested in learning React full stack development.Here are some specific things that I liked about the bootcamp:The instructors were knowledgeable and experienced. They had a deep understanding of the material and were able to explain it clearly and concisely.The bootcamp was comprehensive. I learned about all of the essential aspects of React full stack development, including React programming, Node.js, and MongoDB.The bootcamp was hands-on. We worked on a variety of projects, which helped me to apply my learning and gain practical experience.The bootcamp was supportive. The instructors and classmates were always willing to help, and I never felt like I was struggling on my own.",
+      "year": "QA Automation 2020"
     },
     {
       "id": 7,
       "imgSrc": "https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg",
       "name": "Robert Davis",
-      "rating": 3,
-      "description": "I was looking for a bootcamp that would teach me the skills I need to get a job in QA automation, and I found it at Teksyntax Inc.. The bootcamp was well-paced and comprehensive, and I learned a lot about the different aspects of QA automation. I also appreciated the career support that was offered, which helped me to land a job in QA automation shortly after completing the bootcamp."
+      "rating": 5,
+      "description": "I was looking for a bootcamp that would teach me the skills I need to get a job in QA automation, and I found it at The Bigbrain Tech. The bootcamp was well-paced and comprehensive, and I learned a lot about the different aspects of QA automation. I also appreciated the career support that was offered, which helped me to land a job in QA automation shortly after completing the bootcamp.",
+      "year": "QA Automation 2022"
     },
     {
       "id": 8,
       "imgSrc": "https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
       "name": "Shakshi Ghelani",
       "rating": 3,
-      "description": "I was a complete beginner to UI/UX design when I started the bootcamp, but I left feeling confident and prepared to start my career as a UI/UX designer. The instructors were great at explaining the concepts in a clear and concise way, and the hands-on projects were really helpful in solidifying my learning. I would definitely recommend this bootcamp to anyone who is interested in learning UI/UX design.Here are some specific things that I liked about the bootcamp:The instructors were knowledgeable and experienced. They had a deep understanding of the material and were able to explain it clearly and concisely.The bootcamp was comprehensive. I learned about all of the essential aspects of UI/UX design, including user research, wireframing, prototyping, and visual design.The bootcamp was hands-on. We worked on a variety of projects, which helped me to apply my learning and gain practical experience.The bootcamp was supportive. The instructors and classmates were always willing to help, and I never felt like I was struggling on my own.Overall, I am very happy with the UI/UX Bootcamp at [bootcamp name]. It was a valuable experience that has helped me to launch my career as a UI/UX designer.If you are interested in learning UI/UX design, I highly recommend this bootcamp. It is a great way to gain the skills and knowledge you need to succeed in this field."
+      "description": "I was a complete beginner to UI design development when I started the bootcamp, but I left feeling confident and prepared to start my career as a UI/UX designer. The instructors were great at explaining the concepts in a clear and concise way, and the hands-on projects were really helpful in solidifying my learning. I would definitely recommend this bootcamp to anyone who is interested in learning UI/UX design.Here are some specific things that I liked about the bootcamp:The instructors were knowledgeable and experienced. They had a deep understanding of the material and were able to explain it clearly and concisely.The bootcamp was comprehensive. I learned about all of the essential aspects of UI/UX design, including user research, wireframing, prototyping, and visual design.The bootcamp was hands-on. We worked on a variety of projects, which helped me to apply my learning and gain practical experience.The bootcamp was supportive. The instructors and classmates were always willing to help, and I never felt like I was struggling on my own.Overall, I am very happy with the UI/UX Bootcamp at [bootcamp name]. It was a valuable experience that has helped me to launch my career as a UI/UX designer.If you are interested in learning UI/UX design, I highly recommend this bootcamp. It is a great way to gain the skills and knowledge you need to succeed in this field.",
+      "year": "Frontend Devlopment 2022"
     },
     {
       "id": 9,
       "imgSrc": "https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg",
-      "name": "Kimberly",
-      "rating": 3,
-      "description": "I was working as a manual QA tester, but I wanted to learn more about QA automation. The QA Automation Bootcamp at Teksyntax Inc. was the perfect way for me to do that. I learned about the different automation tools and frameworks, and I also got to work on a variety of projects. I am now much more confident in my ability to automate software tests, and I am grateful for the skills and knowledge that I gained from the bootcamp."
+      "name": "Kimberly Carter",
+      "rating": 5,
+      "description": "I was working as a manual QA tester, but I wanted to learn more about QA automation. The QA Automation Bootcamp at The Bigbrain Tech was the perfect way for me to do that. I learned about the different automation tools and frameworks, and I also got to work on a variety of projects. I am now much more confident in my ability to automate software tests, and I am grateful for the skills and knowledge that I gained from the bootcamp.",
+      "year": "QA Automation 2023"
     }
   ]
 }

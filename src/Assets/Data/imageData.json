@@ -7,12 +7,12 @@
     },
     {
       "id": 2,
-      "path": "https://1000logos.net/wp-content/uploads/2021/05/Verizon-logo.png",
+      "path": "https://upload.wikimedia.org/wikinews/en/b/bc/Verizon_Logo.png",
       "Name": "Verizon"
     },
     {
       "id": 3,
-      "path": "https://bcassetcdn.com/public/blog/wp-content/uploads/2022/08/29145131/Google-PNG-1024x640.png",
+      "path": "https://1000logos.net/wp-content/uploads/2016/10/Best-Buy-logo-2.png",
       "Name": "Google"
     },
     {
@@ -42,7 +42,7 @@
     },
     {
       "id": 9,
-      "path":"https://vindy.media.clients.ellingtoncms.com/img/news/tease/2018/09/11/tjx-homegoods_lIsidHF.jpg",
+      "path":"https://1000logos.net/wp-content/uploads/2021/07/TJX-Logo.png",
       "Name": "TJMAXX"
     },
     {
@@ -52,17 +52,17 @@
     },
     {
       "id": 11,
-      "path":"https://tukuz.com/wp-content/uploads/2021/01/carefirst-logo-vector.png",
+      "path":"https://1000logos.net/wp-content/uploads/2021/07/CVS-Health-Logo.png",
       "Name": "Carefirst"
     },
     {
       "id": 12,
-      "path":"https://incomeconductor.com/wp-content/uploads/rj_logo.png",
+      "path":"https://1000logos.net/wp-content/uploads/2016/10/American-Airlines-Logo.png",
       "Name": "Raymond James"
     },
     {
       "id": 13,
-      "path":"https://findlogovector.com/wp-content/uploads/2022/04/wex-inc-logo-vector-2022.png",
+      "path":"https://1000logos.net/wp-content/uploads/2020/04/ernst-young-ey-logo.png",
       "Name": "WEX"
     },
     {
@@ -72,7 +72,7 @@
     },
     {
       "id": 15,
-      "path":"https://static.vecteezy.com/system/resources/previews/020/975/567/non_2x/visa-logo-visa-icon-transparent-free-png.png",
+      "path":"https://1000logos.net/wp-content/uploads/2018/02/Ford-Logo.png",
       "Name": "Visa"
     },
     {
@@ -82,7 +82,11 @@
     },
     {
       "id": 17,
-      "path":"https://logowik.com/content/uploads/images/607_nissan_logo.jpg",
+      "path":"https://1000logos.net/wp-content/uploads/2020/03/nissan-logo.png",
+      "Name": "Nissan"
+    }, {
+      "id": 17,
+      "path":"https://1000logos.net/wp-content/uploads/2017/11/Fidelity-Logo.png",
       "Name": "Nissan"
     }
   ]

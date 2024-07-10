@@ -1,21 +1,29 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Navigation from "../../Homepage/Navbar/Navbar";
 import Footer from "../../Homepage/Footer/Footer";
 import SecondNavigation from "../reusable/SecondNavi";
-import Character from '../../../Assets/images/character/MernStackBG.png';
+import Character from '../../../Assets/images/character/EarlyLearner1Bg.png';
 import Modal from '../reusable/CoursePacketDownloadForm';
-import {motion} from "framer-motion";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCircleCheck, faCircleNodes, faDatabase} from "@fortawesome/free-solid-svg-icons";
-import {faAws, faBootstrap, faCss3Alt, faHtml5, faNode, faReact, faSquareGit} from "@fortawesome/free-brands-svg-icons";
-import FAQList from "./FAQ";
-import {Link} from "react-router-dom";
+import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import {
+    faBootstrap,
+    faCss3Alt,
+    faFigma,
+    faHtml5, faJs,
+} from "@fortawesome/free-brands-svg-icons";
+import FAQList from "./EarlyLearnerFAQ";
+import { Link } from "react-router-dom";
 
-
-
-
-const EarlyLearnersCourse = () => {
+const EarlyLearners1 = () => {
     const [isModalOpen, setModalOpen] = useState(false);
+
+    const cardAnimation = {
+        initial: { opacity: 0, x: 50 },
+        animate: { opacity: 1, x: 0 },
+        transition: { duration: 0.5 }
+    };
 
     return (
         <div>
@@ -23,144 +31,96 @@ const EarlyLearnersCourse = () => {
                 <Navigation />
             </section>
             <section className="bg-gray-200 h-[800px] flex items-center pt-8 mt-16" style={{ backgroundImage: `url(${Character})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
-                <div className="flex-1"></div>
-                <div className="lg:flex-1 pl-8 text-center bg-gray-100/90 rounded-2xl">
-                    <div className="text-secondary">
-                        <p className="text-3xl text-gray-600 font-bold p-8">Master Fullstack Development with Industry
-                            Experts</p>
-                        <p className="text-gray-600 text-xl p-5">Learn from experienced Fullstack Engineers who bring
-                            real-world knowledge to the classroom. Our instructors provide personalized feedback and
-                            support to help you reach your goals. Each instructor is dedicated to providing personalized
-                            feedback and support, ensuring you achieve your goals every step of the way.</p>
-
-                    </div>
-
-                    <ul className="text-gray-600 text-start p-5">
-                        <li className="flex items-center">
-                            <FontAwesomeIcon icon={faCircleCheck} className="mr-2"/>
-                            <p>Learn coding with <b>No Prior Experience</b></p>
-                        </li>
-                        <li className="flex items-center">
-                            <FontAwesomeIcon icon={faCircleCheck} className="mr-2"/>
-                            <p>Follow a structured roadmap for <b>Successful Learning</b></p>
-                        </li>
-                        <li className="flex items-center">
-                            <FontAwesomeIcon icon={faCircleCheck} className="mr-2"/>
-                            <p> Build <b>real</b> web applications with <b>Impressive Portfolio</b> to showcase</p>
-                        </li>
-                        <li className="flex items-center">
-                            <FontAwesomeIcon icon={faCircleCheck} className="mr-2"/>
-                            <p> Land your <b>Dream Tech Job</b></p>
-                        </li>
-                        <li className="flex items-center">
-                            <FontAwesomeIcon icon={faCircleCheck} className="mr-2"/>
-                            <p>Master <b>Front-End Technologies</b> like HTML, CSS, and JavaScript</p>
-                        </li>
-                        <li className="flex items-center">
-                            <FontAwesomeIcon icon={faCircleCheck} className="mr-2"/>
-                            <p>Develop <b>Back-End Skills</b> with Node.js, Express, and Databases</p>
-                        </li>
-                        <li className="flex items-center">
-                            <FontAwesomeIcon icon={faCircleCheck} className="mr-2"/>
-                            <p>Work with <b>Popular Frameworks</b> like React</p>
-                        </li>
-                        <li className="flex items-center">
-                            <FontAwesomeIcon icon={faCircleCheck} className="mr-2"/>
-                            <p>Implement <b>RESTful APIs</b> and GraphQL for efficient data handling</p>
-                        </li>
-                        <li className="flex items-center">
-                            <FontAwesomeIcon icon={faCircleCheck} className="mr-2"/>
-                            <p>Learn <b>Version Control</b> with GitHub</p>
-                        </li>
-                        <li className="flex items-center">
-                            <FontAwesomeIcon icon={faCircleCheck} className="mr-2"/>
-                            <p>Deploy applications using <b>Cloud Platforms</b> like AWS</p>
-                        </li>
-                        <li className="flex items-center">
-                            <FontAwesomeIcon icon={faCircleCheck} className="mr-2"/>
-                            <p> Understand <b>Agile Development</b> and <b>DevOps Practices</b></p>
-                        </li>
-                        <li className="flex items-center">
-                            <FontAwesomeIcon icon={faCircleCheck} className="mr-2"/>
-                            <p>Collaborate using <b>Team Tools</b> like Slack and Jira</p>
-                        </li>
-                    </ul>
-
-
-                </div>
-                <motion.div
-                    className="flex-1 pl-12"
-                    initial={{opacity: 0, y: 50}}
-                    animate={{opacity: 1, y: 0}}
-                    transition={{duration: 0.5}}
-                >
-                    <div className="bg-white p-4 rounded-lg shadow-lg mr-10 min-h-max">
-                        <h1 className="mb-3 font-bold text-4xl text-center text-gray-600">Early Learners I</h1>
-                        <h4 className="mb-8 text-xl text-start text-gray-500">
-                            Enhance your app development skills, explore advanced frameworks, libraries, and receive
-                            guidance from expert mentors for a successful tech career—all through an online Live
-                            Bootcamp.
+                <div className="flex justify-end items-center w-full max-w-[1600px] mx-auto" style={{ paddingLeft: '300px' }}>
+                    <motion.div
+                        className="flex flex-col items-center justify-between space-y-4 bg-gray-100/90 p-4 rounded-2xl max-w-lg w-full"
+                        initial="initial"
+                        animate="animate"
+                        transition="transition"
+                        variants={cardAnimation}
+                    >
+                        <div className="text-secondary text-center">
+                            <p className="text-3xl text-blue-800 font-bold p-3">Meet Your New Coding Hero: Fun and Friendly Coding Classes for Kids!</p>
+                            <p className="text-blue-600 text-lg p-4">Dive into the exciting world of coding with our Level 1 Kids Coding Bootcamp! Our enthusiastic instructors bring fun and creativity to every lesson, making it easy for young learners to grasp the basics of coding.</p>
+                            <p className="text-blue-600">We offer a clear, kid-friendly roadmap to help budding coders develop essential skills. Our hands-on projects and personalized support ensure every child feels confident and ready to take on new coding challenges.</p>
+                        </div>
+                        <ul className="text-blue-600 text-start p-4">
+                            <li><FontAwesomeIcon icon={faCircleCheck} /> Start coding with <b>Absolutely No Experience Needed</b></li>
+                            <li><FontAwesomeIcon icon={faCircleCheck} /> Enjoy a fun and <b>Structured Learning Path</b></li>
+                            <li><FontAwesomeIcon icon={faCircleCheck} /> Create <b>Exciting Projects</b> to impress your friends and family</li>
+                            <li><FontAwesomeIcon icon={faCircleCheck} /> Discover the joy of coding and build a <b>Foundation for the Future</b></li>
+                        </ul>
+                    </motion.div>
+                    <motion.div
+                        className="flex flex-col items-center justify-between space-y-4 bg-gray-100/80 p-10 rounded-2xl max-w-lg w-full shadow-lg ml-4"
+                        initial="initial"
+                        animate="animate"
+                        transition="transition"
+                        variants={cardAnimation}
+                    >
+                        <h1 className="mb-3 font-bold text-4xl text-center text-blue-800 ">Early Learners I</h1>
+                        <h4 className="mb-8 text-xl text-start text-blue-600 pb-4">
+                            Have fun learning how to build cool websites! Our awesome teachers will help you every step
+                            of the way in our interactive coding camp.
                         </h4>
-                        <p className="text-gray-600">Our structured curriculum covers the most in-demand coding skills,
-                            preparing you for a competitive job market and high-paying roles. Join us to transform your
-                            future and achieve your dreams in full-stack
-                            development.</p>
-                        <div className="flex-1 text-blue-500 p-6">
-                            <div className="grid grid-cols-3 gap-6">
-                                {[
-                                    {icon: faHtml5, label: 'HTML5'},
-                                    {icon: faCss3Alt, label: 'CSS3'},
-                                    {icon: faBootstrap, label: 'Bootstrap'},
-                                    {icon: faReact, label: 'React'},
-                                    {icon: faSquareGit, label: 'Git'},
-                                    {icon: faAws, label: 'AWS'},
-                                    {icon: faNode, label: 'NodeJS'},
-                                    {icon: faDatabase, label: 'Database'},
-                                    {icon: faCircleNodes, label: 'API'}
-                                ].map(({icon, label}, index) => (
-                                    <div className="text-center" key={index}>
-                                        <FontAwesomeIcon icon={icon} size="2xl" className="mb-2"/>
-                                        <p className="text-sm">{label}</p>
-                                    </div>
-                                ))}
+                        <p className="text-xl text-blue-700 font-bold">Level 1: Introduction to Web Development<br></br> (4 Weeks)</p>
+                        <div className="flex-1 text-blue-500 flex justify-around items-center p-3 item-xl">
+                            <div className="text-center p-4">
+                                <FontAwesomeIcon icon={faFigma} size="2xl" className="mb-2" />
+                                <p className="text-sm">Figma</p>
+                            </div>
+                            <div className="text-center p-4">
+                                <FontAwesomeIcon icon={faHtml5} size="2xl" className="mb-2" />
+                                <p className="text-sm">HTML5</p>
+                            </div>
+                            <div className="text-center p-4">
+                                <FontAwesomeIcon icon={faCss3Alt} size="2xl" className="mb-2" />
+                                <p className="text-sm">CSS3</p>
+                            </div>
+                            <div className="text-center p-4">
+                                <FontAwesomeIcon icon={faBootstrap} size="2xl" className="mb-2" />
+                                <p className="text-sm">Bootstrap</p>
+                            </div>
+                            <div className="text-center p-4">
+                                <FontAwesomeIcon icon={faJs} size="2xl" className="mb-2" />
+                                <p className="text-sm">JavaScript</p>
                             </div>
                         </div>
-
-                        <div className="ml-16">
-                            <Link to="/Programs/Individuals/Fullstack/enroll">
+                        <div className="flex justify-center space-x-4">
+                            <Link to="/Programs/EarlyLearners/Basic/enroll">
                                 <motion.button
-                                    whileHover={{scale: 1.1}}
-                                    whileTap={{scale: 0.9}}
-                                    className="bg-yellow-500 text-white py-2 px-4 rounded ml-2 hover:bg-yellow-400"
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    className="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-400"
                                 >
                                     Enroll Now
                                 </motion.button>
                             </Link>
                             <motion.button
-                                whileHover={{scale: 1.1}}
-                                whileTap={{scale: 0.9}}
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.9 }}
                                 onClick={() => setModalOpen(true)}
-                                className="bg-yellow-500 text-white py-2 px-4 rounded ml-2 hover:bg-yellow-400"
+                                className="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-400"
                             >
                                 Download Course Packet
                             </motion.button>
                         </div>
-                    </div>
-                </motion.div>
+                    </motion.div>
+                </div>
             </section>
             <div>
                 <section className="pb-6">
-                    <SecondNavigation module="fullstack"/>
-                    <FAQList/>
+                    <SecondNavigation module="earlylearners1" />
+                    <FAQList />
                 </section>
             </div>
             <section>
-                <Footer/>
+                <Footer />
             </section>
             <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}
-                   downloadUrl="YOUR_S3_BUCKET_FILE_URL_FOR_REACT_COURSE"/>
+                   downloadUrl="YOUR_S3_BUCKET_FILE_URL_FOR_REACT_COURSE" />
         </div>
     );
 };
 
-export default EarlyLearnersCourse;
+export default EarlyLearners1;

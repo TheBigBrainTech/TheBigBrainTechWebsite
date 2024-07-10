@@ -1,7 +1,7 @@
 // src/components/FAQList.js
 import React from 'react';
 import FAQCard from '../reusable/FaqCard';
-import { ReactFAQ } from '../../../Assets/Data/ReactFAQ';
+import {EarlyLearnerFAQ} from "../../../Assets/Data/EarlyLearnerFAQ";
 
 const FAQList = () => {
     return (
@@ -14,7 +14,7 @@ const FAQList = () => {
                 </tr>
                 </thead>
                 <tbody>
-                {ReactFAQ.map((faq, index) => (
+                {EarlyLearnerFAQ.map((faq, index) => (
                     <FAQCard key={index} question={faq.question} answer={faq.answer}/>
                 ))}
                 </tbody>

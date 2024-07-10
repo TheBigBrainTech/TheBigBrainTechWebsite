@@ -1,8 +1,8 @@
 import React from 'react';
 
- const ReactStudentReview = () => {
+ const FrontendStudentReview = () => {
     return (
         <div>Student Reviews</div>
     )
 }
-export default ReactStudentReview;
+export default FrontendStudentReview;

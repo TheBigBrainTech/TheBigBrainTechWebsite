@@ -3,7 +3,7 @@ import React from 'react';
 import WeekCard from '../reusable/WeekCard';
 import { ReactCurriculum } from '../../../Assets/Data/ReacctCurriculam';
 
-function CourseInfo() {
+function FrontendCourseInfo() {
     return (
         <div className="container mx-auto mt-12">
             <h1 className="text-gray-500 font-bold text-3xl text-center">COURSE INFO</h1>
@@ -24,4 +24,4 @@ function CourseInfo() {
     );
 }
 
-export default CourseInfo;
+export default FrontendCourseInfo;
