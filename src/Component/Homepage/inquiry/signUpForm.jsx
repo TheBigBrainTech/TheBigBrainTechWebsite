@@ -46,7 +46,7 @@ const SignupForm = ({ onClose }) => {
         event.preventDefault();
 
         // Make a POST request to the backend server with form data
-        fetch('http://localhost:3035/send-email', {
+        fetch('https://6hcrofrruk.execute-api.us-east-1.amazonaws.com', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

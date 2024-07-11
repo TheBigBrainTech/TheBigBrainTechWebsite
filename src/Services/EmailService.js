@@ -1,52 +1,62 @@
 const express = require('express');
-const nodemailer = require('nodemailer');
-const cors = require('cors');
 const bodyParser = require('body-parser');
+const AWS = require('aws-sdk');
+const cors = require('cors');
 
 const app = express();
+const port = 3035;
+
+// Configure AWS SDK
+AWS.config.update({ region: 'us-east-1' }); // Use your desired region
+
+const ses = new AWS.SES({ apiVersion: '2010-12-01' });
+
 app.use(cors());
 app.use(bodyParser.json());
 
-// Replace these options with your actual email service configuration
-const transporter = nodemailer.createTransport({
-  service: 'Gmail',
-  auth: {
-    user: 'information@teksyntaxinc.com',
-    pass: 'Teksyntax1760',
-  },
-});
-
 app.post('/send-email', (req, res) => {
-  const { fullname, email, contact, city, state, date, time, about } = req.body;
+  const { fullname, email, contact, country, state, city, date, time, about } = req.body;
 
-  const mailOptions = {
-    from: 'information@teksyntaxinc.com',
-    to: 'harsh@collaboraitinc.com', // Replace this with the recipient's email address
-    subject: 'New Signup Form Submission',
-    html: `
-      <p><strong>Full Name:</strong> ${fullname}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Contact Number:</strong> ${contact}</p>
-      <p><strong>City:</strong> ${city}</p>
-      <p><strong>State:</strong> ${state}</p>
-      <p><strong>Preferred Date:</strong> ${date}</p>
-      <p><strong>Preferred Time:</strong> ${time}</p>
-      <p><strong>About:</strong> ${about}</p>
-    `,
+  const params = {
+    Destination: {
+      ToAddresses: ['info@thebigbraintech.com'], // Replace with your recipient email address
+    },
+    Message: {
+      Body: {
+        Text: {
+          Charset: "UTF-8",
+          Data: `
+                        Full Name: ${fullname}\n
+                        Email: ${email}\n
+                        Contact Number: ${contact}\n
+                        Country: ${country}\n
+                        State: ${state}\n
+                        City: ${city}\n
+                        Preferred Date: ${date}\n
+                        Preferred Time: ${time}\n
+                        About: ${about}
+                    `,
+        },
+      },
+      Subject: {
+        Charset: 'UTF-8',
+        Data: 'New Signup Form Submission',
+      },
+    },
+    Source: 'admin@thebigbraintech.com', // Replace with your verified sender email address
   };
 
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.log(error);
-      res.status(500).send('Error sending email');
+  ses.sendEmail(params, (err, data) => {
+    if (err) {
+      console.error(err, err.stack);
+      res.status(500).send('Failed to send email.');
     } else {
-      console.log('Email sent: ' + info.response);
-      res.send('Email sent successfully');
+      console.log(data);
+      res.status(200).send('Form submitted successfully!');
     }
   });
 });
 
-const port = 3035; // Change this to the desired port number
 app.listen(port, () => {
-  console.log(`Server started on http://localhost:${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
