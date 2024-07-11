@@ -46,7 +46,7 @@ const SignupForm = ({ onClose }) => {
         event.preventDefault();
 
         // Make a POST request to the backend server with form data
-        fetch('https://6hcrofrruk.execute-api.us-east-1.amazonaws.com/TheBigBrainTechEmailService', {
+        fetch('https://042zj4gky0.execute-api.us-east-1.amazonaws.com/SendEmailForCallBack', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
