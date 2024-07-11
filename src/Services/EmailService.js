@@ -46,7 +46,7 @@ const SignupForm = ({ onClose }) => {
     event.preventDefault();
 
     // Make a POST request to the backend server with form data
-    fetch('https://042zj4gky0.execute-api.us-east-1.amazonaws.com/SendEmailForCallBack', { // Replace with your API Gateway endpoint
+    fetch('https://79hfkc6d8h.execute-api.us-east-1.amazonaws.com/Prod/send-email', { // Replace with your API Gateway endpoint
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
