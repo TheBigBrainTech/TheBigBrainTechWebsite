@@ -41,6 +41,7 @@ const FullstackCourse = () => {
                         <ul className="text-gray-600 text-start p-2 text-sm">
                             {[
                                 "Learn coding with No Prior Experience",
+                                "Interactive Live Coding Classes on Zoom",
                                 "Follow a structured roadmap for Successful Learning",
                                 "Build real web applications with Impressive Portfolio to showcase",
                                 "Land your Dream Tech Job",

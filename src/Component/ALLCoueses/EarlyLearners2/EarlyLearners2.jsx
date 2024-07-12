@@ -40,10 +40,18 @@ const EarlyLearners2 = () => {
                                 <p className="text-blue-600">We present a clear, engaging roadmap for young coders to develop vital skills. Through hands-on projects and individualized support, we ensure every child feels confident and eager to take on new coding challenges.</p>
                             </div>
                             <ul className="text-blue-600 text-start p-4">
-                                <li><FontAwesomeIcon icon={faCircleCheck} /> Enhance your skills with <b>Advanced Coding Techniques</b></li>
-                                <li><FontAwesomeIcon icon={faCircleCheck} /> Follow a <b>Challenging and Engaging Learning Path</b></li>
-                                <li><FontAwesomeIcon icon={faCircleCheck} /> Develop <b>Complex Projects</b> to showcase your growing expertise</li>
-                                <li><FontAwesomeIcon icon={faCircleCheck} /> Experience the thrill of coding and strengthen your <b>Skills for the Future</b></li>
+                                <li><FontAwesomeIcon icon={faCircleCheck}/> interactive <b>Live coding classes</b> on
+                                    zoom
+                                </li>
+                                <li><FontAwesomeIcon icon={faCircleCheck}/> Enhance your skills with <b>Advanced Coding
+                                    Techniques</b></li>
+                                <li><FontAwesomeIcon icon={faCircleCheck}/> Follow a <b>Challenging and Engaging
+                                    Learning Path</b></li>
+                                <li><FontAwesomeIcon icon={faCircleCheck}/> Develop <b>Complex Projects</b> to showcase
+                                    your growing expertise
+                                </li>
+                                <li><FontAwesomeIcon icon={faCircleCheck}/> Experience the thrill of coding and
+                                    strengthen your <b>Skills for the Future</b></li>
                             </ul>
                         </motion.div>
                         <motion.div

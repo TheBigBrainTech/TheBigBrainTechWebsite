@@ -34,10 +34,14 @@ const FrontendCourse = () => {
                         <p className="text-gray-600">We provide a clear roadmap to learn the most in-demand coding skills and everything necessary to be competitive and land a high-paying coding job.</p>
                     </div>
                     <ul className="text-gray-600 text-start p-5">
-                        <li><FontAwesomeIcon icon={faCircleCheck} /> Learn coding with <b>No Prior Experience</b></li>
-                        <li><FontAwesomeIcon icon={faCircleCheck} /> Follow a structured roadmap for <b>Successful Learning</b></li>
-                        <li><FontAwesomeIcon icon={faCircleCheck} /> Build <b>real</b> web applications with <b>Impressive Portfolio</b> to showcase</li>
-                        <li><FontAwesomeIcon icon={faCircleCheck} /> Land your <b>Dream Tech Job</b></li>
+                        <li><FontAwesomeIcon icon={faCircleCheck}/> Learn coding with <b>No Prior Experience</b></li>
+                        <li><FontAwesomeIcon icon={faCircleCheck}/> interactive <b>Live coding classes</b> on zoom</li>
+                        <li><FontAwesomeIcon icon={faCircleCheck}/> Follow a structured roadmap for <b>Successful
+                            Learning</b></li>
+                        <li><FontAwesomeIcon icon={faCircleCheck}/> Build <b>real</b> web applications with <b>Impressive
+                            Portfolio</b> to showcase
+                        </li>
+                        <li><FontAwesomeIcon icon={faCircleCheck}/> Land your <b>Dream Tech Job</b></li>
                     </ul>
                 </div>
                 <motion.div

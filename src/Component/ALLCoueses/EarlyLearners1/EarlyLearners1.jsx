@@ -46,10 +46,17 @@ const EarlyLearners1 = () => {
                             <p className="text-blue-600">We offer a clear, kid-friendly roadmap to help budding coders develop essential skills. Our hands-on projects and personalized support ensure every child feels confident and ready to take on new coding challenges.</p>
                         </div>
                         <ul className="text-blue-600 text-start p-4">
-                            <li><FontAwesomeIcon icon={faCircleCheck} /> Start coding with <b>Absolutely No Experience Needed</b></li>
-                            <li><FontAwesomeIcon icon={faCircleCheck} /> Enjoy a fun and <b>Structured Learning Path</b></li>
-                            <li><FontAwesomeIcon icon={faCircleCheck} /> Create <b>Exciting Projects</b> to impress your friends and family</li>
-                            <li><FontAwesomeIcon icon={faCircleCheck} /> Discover the joy of coding and build a <b>Foundation for the Future</b></li>
+                            <li><FontAwesomeIcon icon={faCircleCheck}/> Start coding with <b>Absolutely No Experience
+                                Needed</b></li>
+                            <li><FontAwesomeIcon icon={faCircleCheck}/> Enjoy a fun and <b>Structured Learning Path</b>
+                            </li>
+                            <li><FontAwesomeIcon icon={faCircleCheck}/> interactive <b>Live coding classes</b> on zoom
+                            </li>
+                            <li><FontAwesomeIcon icon={faCircleCheck}/> Create <b>Exciting Projects</b> to impress your
+                                friends and family
+                            </li>
+                            <li><FontAwesomeIcon icon={faCircleCheck}/> Discover the joy of coding and build a <b>Foundation
+                                for the Future</b></li>
                         </ul>
                     </motion.div>
                     <motion.div

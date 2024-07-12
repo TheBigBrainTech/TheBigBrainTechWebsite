@@ -4,7 +4,7 @@ import backGround from "../../../Assets/images/Hero/hero_3.png";
 function HeroImage() {
     return (
         <div
-            className="Hero bg-cover bg-no-repeat h-auto w-auto p-8 md:p-16"
+            className="Hero bg-cover bg-no-repeat h-auto w-auto p-8 md:p-16 lg:h-[800px]"
             style={{
                 backgroundImage: `url(${backGround})`,
             }}

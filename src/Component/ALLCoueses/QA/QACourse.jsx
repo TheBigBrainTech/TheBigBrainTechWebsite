@@ -35,17 +35,31 @@ const QACourse = () => {
                         <p className="text-gray-600">We offer a structured path to acquire essential QA automation skills, making you competitive and ready to secure a high-paying job in the tech sector.</p>
                     </div>
                     <ul className="text-gray-600 text-start p-5">
-                        <li><FontAwesomeIcon icon={faCircleCheck} /> Master automation tools like <b>Selenium, TestNG, and Cucumber</b></li>
-                        <li><FontAwesomeIcon icon={faCircleCheck} /> Gain proficiency in <b>writing and maintaining automated test scripts</b></li>
-                        <li><FontAwesomeIcon icon={faCircleCheck} /> Learn to integrate testing frameworks with <b>CI/CD pipelines</b></li>
-                        <li><FontAwesomeIcon icon={faCircleCheck} /> Understand the best practices for <b>test case design and execution</b></li>
-                        <li><FontAwesomeIcon icon={faCircleCheck} /> Develop skills to <b>identify, report, and track defects</b> effectively</li>
-                        <li><FontAwesomeIcon icon={faCircleCheck} /> Build a <b>strong portfolio</b> with real-world QA automation projects</li>
-                        <li><FontAwesomeIcon icon={faCircleCheck} /> Get prepared to <b>ace QA automation job interviews</b> with confidence</li>
-                        <li><FontAwesomeIcon icon={faCircleCheck} /> Learn coding with <b>No Prior Experience</b></li>
-                        <li><FontAwesomeIcon icon={faCircleCheck} /> Follow a structured roadmap for <b>Successful Learning</b></li>
-                        <li><FontAwesomeIcon icon={faCircleCheck} /> Build <b>Real Test</b> applications with <b>Impressive Portfolio</b> to showcase</li>
-                        <li><FontAwesomeIcon icon={faCircleCheck} /> Land your <b>Dream Tech Job</b></li>
+                        <li><FontAwesomeIcon icon={faCircleCheck}/> Master automation tools like <b>Selenium, TestNG,
+                            and Cucumber</b></li>
+                        <li><FontAwesomeIcon icon={faCircleCheck}/> Gain proficiency in <b>writing and maintaining
+                            automated test scripts</b></li>
+                        <li><FontAwesomeIcon icon={faCircleCheck}/> Learn to integrate testing frameworks with <b>CI/CD
+                            pipelines</b></li>
+                        <li><FontAwesomeIcon icon={faCircleCheck}/> Understand the best practices for <b>test case
+                            design and execution</b></li>
+                        <li><FontAwesomeIcon icon={faCircleCheck}/> Develop skills to <b>identify, report, and track
+                            defects</b> effectively
+                        </li>
+                        <li><FontAwesomeIcon icon={faCircleCheck}/> Build a <b>strong portfolio</b> with real-world QA
+                            automation projects
+                        </li>
+                        <li><FontAwesomeIcon icon={faCircleCheck}/> Get prepared to <b>ace QA automation job
+                            interviews</b> with confidence
+                        </li>
+                        <li><FontAwesomeIcon icon={faCircleCheck}/> Learn coding with <b>No Prior Experience</b></li>
+                        <li><FontAwesomeIcon icon={faCircleCheck}/> interactive <b>Live coding classes</b> on zoom</li>
+                        <li><FontAwesomeIcon icon={faCircleCheck}/> Follow a structured roadmap for <b>Successful
+                            Learning</b></li>
+                        <li><FontAwesomeIcon icon={faCircleCheck}/> Build <b>Real Test</b> applications with <b>Impressive
+                            Portfolio</b> to showcase
+                        </li>
+                        <li><FontAwesomeIcon icon={faCircleCheck}/> Land your <b>Dream Tech Job</b></li>
                     </ul>
                 </div>
                 <motion.div
