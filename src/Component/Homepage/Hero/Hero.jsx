@@ -1,10 +1,10 @@
 import React from "react";
-import backGround from "../../../Assets/images/Hero/hero_3.png";
+import backGround from "../../../Assets//images/character/hero.png";
 
 function HeroImage() {
     return (
         <div
-            className="Hero bg-cover bg-no-repeat h-auto w-auto p-8 md:p-16 lg:h-[800px]"
+            className="Hero bg-cover bg-no-repeat h-auto w-auto p-8 md:p-16 lg:h-[800px] lg:w-auto"
             style={{
                 backgroundImage: `url(${backGround})`,
             }}

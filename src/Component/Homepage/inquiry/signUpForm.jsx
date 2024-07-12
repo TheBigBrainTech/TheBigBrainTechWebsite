@@ -52,7 +52,7 @@ const SignupForm = ({ onClose }) => {
         }
 
         // Make a POST request to the backend server with form data
-        fetch('https://qafze322pa.execute-api.us-east-1.amazonaws.com/Prod/', { // Replace with your API Gateway endpoint
+        fetch('https://qafze322pa.execute-api.us-east-1.amazonaws.com/Prod/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
