@@ -1,18 +1,18 @@
 // src/components/WeekCard.js
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faChevronUp, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
-import { motion } from 'framer-motion';
+import React, {useState} from 'react';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faCalendarAlt, faChevronDown, faChevronUp} from '@fortawesome/free-solid-svg-icons';
+import {motion} from 'framer-motion';
 import PropTypes from "prop-types";
 
-const WeekCard = ({ week, description, curriculum }) => {
+const WeekCard = ({week, description, curriculum}) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <div className="border border-gray-300 rounded-lg p-4 mb-4 shadow-lg">
             <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                    <FontAwesomeIcon icon={faCalendarAlt} className="text-blue-500 mr-3" size="2x" />
+                    <FontAwesomeIcon icon={faCalendarAlt} className="text-blue-500 mr-3" size="2x"/>
                     <div>
                         <h2 className="text-xl font-semibold">{`Week ${week}`}</h2>
                         <p className="text-gray-600">{description}</p>
@@ -25,9 +25,9 @@ const WeekCard = ({ week, description, curriculum }) => {
                 />
             </div>
             <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
-                transition={{ duration: 0.3 }}
+                initial={{height: 0, opacity: 0}}
+                animate={{height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0}}
+                transition={{duration: 0.3}}
                 className="overflow-hidden"
             >
                 {isOpen && (

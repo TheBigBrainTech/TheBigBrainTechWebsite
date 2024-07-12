@@ -27,66 +27,67 @@
     },
     {
       "id": 6,
-      "path":"https://www.freepnglogos.com/uploads/microsoft-logo-image-23.png",
+      "path": "https://www.freepnglogos.com/uploads/microsoft-logo-image-23.png",
       "Name": "Microsoft"
     },
     {
       "id": 7,
-      "path":"https://www.pngmart.com/files/17/Freddie-Mac-Logo-PNG-File.png",
+      "path": "https://www.pngmart.com/files/17/Freddie-Mac-Logo-PNG-File.png",
       "Name": "FreddieMac"
     },
     {
       "id": 8,
-      "path":"https://www.freepnglogos.com/uploads/nintendo-logo-png/nintendo-logo-vector-format-11.png",
+      "path": "https://www.freepnglogos.com/uploads/nintendo-logo-png/nintendo-logo-vector-format-11.png",
       "Name": "Nintendo"
     },
     {
       "id": 9,
-      "path":"https://1000logos.net/wp-content/uploads/2021/07/TJX-Logo.png",
+      "path": "https://1000logos.net/wp-content/uploads/2021/07/TJX-Logo.png",
       "Name": "TJMAXX"
     },
     {
       "id": 10,
-      "path":"https://seeklogo.com/images/U/unitedhealth-group-logo-F4D2CE10C6-seeklogo.com.png",
+      "path": "https://seeklogo.com/images/U/unitedhealth-group-logo-F4D2CE10C6-seeklogo.com.png",
       "Name": "United health group"
     },
     {
       "id": 11,
-      "path":"https://1000logos.net/wp-content/uploads/2021/07/CVS-Health-Logo.png",
+      "path": "https://1000logos.net/wp-content/uploads/2021/07/CVS-Health-Logo.png",
       "Name": "Carefirst"
     },
     {
       "id": 12,
-      "path":"https://1000logos.net/wp-content/uploads/2016/10/American-Airlines-Logo.png",
+      "path": "https://1000logos.net/wp-content/uploads/2016/10/American-Airlines-Logo.png",
       "Name": "Raymond James"
     },
     {
       "id": 13,
-      "path":"https://1000logos.net/wp-content/uploads/2020/04/ernst-young-ey-logo.png",
+      "path": "https://1000logos.net/wp-content/uploads/2020/04/ernst-young-ey-logo.png",
       "Name": "WEX"
     },
     {
       "id": 14,
-      "path":"https://1000logos.net/wp-content/uploads/2016/10/American-Express-logo.png",
+      "path": "https://1000logos.net/wp-content/uploads/2016/10/American-Express-logo.png",
       "Name": "American Express"
     },
     {
       "id": 15,
-      "path":"https://1000logos.net/wp-content/uploads/2018/02/Ford-Logo.png",
+      "path": "https://1000logos.net/wp-content/uploads/2018/02/Ford-Logo.png",
       "Name": "Visa"
     },
     {
       "id": 16,
-      "path":"https://www.pngmart.com/files/22/Master-Card-Logo-PNG-Image.png",
+      "path": "https://www.pngmart.com/files/22/Master-Card-Logo-PNG-Image.png",
       "Name": "Mastercard"
     },
     {
       "id": 17,
-      "path":"https://1000logos.net/wp-content/uploads/2020/03/nissan-logo.png",
+      "path": "https://1000logos.net/wp-content/uploads/2020/03/nissan-logo.png",
       "Name": "Nissan"
-    }, {
+    },
+    {
       "id": 17,
-      "path":"https://1000logos.net/wp-content/uploads/2017/11/Fidelity-Logo.png",
+      "path": "https://1000logos.net/wp-content/uploads/2017/11/Fidelity-Logo.png",
       "Name": "Nissan"
     }
   ]

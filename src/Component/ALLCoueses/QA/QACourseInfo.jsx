@@ -1,7 +1,6 @@
-
 import React from 'react';
 import WeekCard from '../reusable/WeekCard';
-import { QACurriculum } from '../../../Assets/Data/QACurriculam';
+import {QACurriculum} from '../../../Assets/Data/QACurriculam';
 
 function QACourseInfo() {
     return (

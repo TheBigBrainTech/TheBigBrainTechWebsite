@@ -1,7 +1,6 @@
 // src/components/FAQList.js
 import React from 'react';
 import FAQCard from '../reusable/FaqCard';
-import { EarlyLearnersFAQ } from '../../../Assets/Data/EarlyLearnerFAQ';
 
 const FAQList = () => {
     return (

@@ -1,21 +1,23 @@
 import React from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
     faCertificate,
-    faCircleCheck,
     faChalkboardUser,
+    faCheck,
+    faCircleCheck,
+    faCodeBranch,
     faLaptopCode,
-    faCodeBranch, faTimes, faCheck
+    faTimes
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function InfoTwo() {
     const advantages = [
-        { name: 'Structured + Project Based', competitors: [true,false,false] },
-        { name: '1:1 Problem Solving', competitors: [true, false, false] },
-        { name: 'Career Assistance', competitors: [true, false, false] },
-        { name: 'Community', competitors: [true, false, false] },
-        { name:  'High Cost', competitors: [false, false, true] },
-        { name: 'At Home Learning', competitors: [true, true, false] },
+        {name: 'Structured + Project Based', competitors: [true, false, false]},
+        {name: '1:1 Problem Solving', competitors: [true, false, false]},
+        {name: 'Career Assistance', competitors: [true, false, false]},
+        {name: 'Community', competitors: [true, false, false]},
+        {name: 'High Cost', competitors: [false, false, true]},
+        {name: 'At Home Learning', competitors: [true, true, false]},
     ];
 
     return (
@@ -25,22 +27,26 @@ export default function InfoTwo() {
             </h1>
             <p className="text-gray-700 items-center mb-4 text-sm">
                 <FontAwesomeIcon icon={faCircleCheck} className="mx-3" style={{color: "#FFD43B"}}/>
-                <b className="text-start text-yellow-700">Career Launchers:</b> Recent Graduates wanting to start a career in a high-growth field and gain exposure to the full
+                <b className="text-start text-yellow-700">Career Launchers:</b> Recent Graduates wanting to start a
+                career in a high-growth field and gain exposure to the full
                 development lifecycle as the launch point with hand on coding experience.
             </p>
             <p className="text-gray-700 items-center mb-4 text-sm">
                 <FontAwesomeIcon icon={faCircleCheck} className="mx-3" style={{color: "#FFD43B"}}/>
-                <b className="text-start text-yellow-700">Career Builders: </b> Professionals ready to build on existing skills in coding, to formalize training, and earn a valued
+                <b className="text-start text-yellow-700">Career Builders: </b> Professionals ready to build on existing
+                skills in coding, to formalize training, and earn a valued
                 certificate.
             </p>
             <p className="text-gray-700 items-center mb-4 text-sm">
                 <FontAwesomeIcon icon={faCircleCheck} className="mx-3" style={{color: "#FFD43B"}}/>
-                <b className="text-start text-yellow-700">Career Switchers: </b> Mid- or later career professionals looking to switch into computer programing from another field, such
+                <b className="text-start text-yellow-700">Career Switchers: </b> Mid- or later career professionals
+                looking to switch into computer programing from another field, such
                 as marketing, sales, operations, or any other field.
             </p>
             <p className="text-gray-700 items-center mb-4 text-sm">
                 <FontAwesomeIcon icon={faCircleCheck} className="mx-3" style={{color: "#FFD43B"}}/>
-                <b className="text-start text-yellow-700">Early Learners: </b> Learning to code offers several benefits for teenagers aged 12 and above: it develops analytical skills, fosters creativity,
+                <b className="text-start text-yellow-700">Early Learners: </b> Learning to code offers several benefits
+                for teenagers aged 12 and above: it develops analytical skills, fosters creativity,
                 enhances critical thinking, provides digital literacy, and opens up career opportunities.
             </p>
             <p className="text-center text-slate-400  mb-5 text-sm">
@@ -48,7 +54,8 @@ export default function InfoTwo() {
                 prior coding experience, including self taught coding and/or beginner-level
                 coding knowledge will be helpful.
             </p>
-            <p className="text-center text-slate-400  mb-5 text-sm">Early Learners should be minimum of age 13 to get enrolled</p>
+            <p className="text-center text-slate-400  mb-5 text-sm">Early Learners should be minimum of age 13 to get
+                enrolled</p>
             <hr/>
 
             <div className="text-secondary mt-3 p-4 container text-center">

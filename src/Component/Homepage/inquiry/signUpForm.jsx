@@ -1,13 +1,9 @@
-import React, { useState } from 'react';
-import {
-    CitySelect,
-    CountrySelect,
-    StateSelect,
-} from "react-country-state-city";
+import React, {useState} from 'react';
+import {CitySelect, CountrySelect, StateSelect,} from "react-country-state-city";
 import "react-country-state-city/dist/react-country-state-city.css";
 import PropTypes from "prop-types";
 
-const SignupForm = ({ onClose }) => {
+const SignupForm = ({onClose}) => {
     const [formData, setFormData] = useState({
         fullname: '',
         email: '',
@@ -24,22 +20,22 @@ const SignupForm = ({ onClose }) => {
     const [stateid, setstateid] = useState(0);
 
     const handleChange = (event) => {
-        const { name, value } = event.target;
-        setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+        const {name, value} = event.target;
+        setFormData((prevFormData) => ({...prevFormData, [name]: value}));
     };
 
     const handleCountryChange = (selectedOption) => {
-        setFormData((prevFormData) => ({ ...prevFormData, country: selectedOption.name }));
+        setFormData((prevFormData) => ({...prevFormData, country: selectedOption.name}));
         setCountryid(selectedOption.id);
     };
 
     const handleStateChange = (selectedOption) => {
-        setFormData((prevFormData) => ({ ...prevFormData, state: selectedOption.name }));
+        setFormData((prevFormData) => ({...prevFormData, state: selectedOption.name}));
         setstateid(selectedOption.id);
     };
 
     const handleCityChange = (selectedOption) => {
-        setFormData((prevFormData) => ({ ...prevFormData, city: selectedOption.name }));
+        setFormData((prevFormData) => ({...prevFormData, city: selectedOption.name}));
     };
 
     const handleSubmit = (event) => {
@@ -99,7 +95,8 @@ const SignupForm = ({ onClose }) => {
                         />
                     </div>
                     <div className="mb-4 w-full md:w-1/2 px-2">
-                        <label htmlFor="contact" className="block text-sm font-medium text-gray-700">Contact Number:</label>
+                        <label htmlFor="contact" className="block text-sm font-medium text-gray-700">Contact
+                            Number:</label>
                         <input
                             type="tel"
                             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
@@ -135,7 +132,8 @@ const SignupForm = ({ onClose }) => {
                         />
                     </div>
                     <div className="mb-4 w-full md:w-1/2 px-2">
-                        <label htmlFor="date" className="block text-sm font-medium text-gray-700">Preferred Date:</label>
+                        <label htmlFor="date" className="block text-sm font-medium text-gray-700">Preferred
+                            Date:</label>
                         <input
                             type="date"
                             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
@@ -147,7 +145,9 @@ const SignupForm = ({ onClose }) => {
                         />
                     </div>
                     <div className="mb-4 w-full md:w-1/2 px-2">
-                        <label htmlFor="time" className="block text-sm font-medium text-gray-700">Preferred Time:</label>
+                        <label htmlFor="time" className="block text-sm font-medium text-gray-700">Preferred
+                            Time:</label>
+                        <p className="text-gray-600 text-sm"><sup>*</sup> USA EST</p>
                         <select
                             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                             id="time"
@@ -157,6 +157,8 @@ const SignupForm = ({ onClose }) => {
                             onChange={handleChange}
                         >
                             <option value="" disabled>Select Preferred Time</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="11:30 AM">10:30 AM</option>
                             <option value="11:00 AM">11:00 AM</option>
                             <option value="11:30 AM">11:30 AM</option>
                             <option value="12:00 PM">12:00 PM</option>
@@ -168,10 +170,12 @@ const SignupForm = ({ onClose }) => {
                             <option value="3:00 PM">3:00 PM</option>
                             <option value="3:30 PM">3:30 PM</option>
                             <option value="4:00 PM">4:00 PM</option>
+                            <option value="4:30 PM">4:30 PM</option>
                         </select>
                     </div>
                     <div className="mb-4 w-full px-2">
-                        <label htmlFor="about" className="block text-sm font-medium text-gray-700">Tell us something about yourself:</label>
+                    <label htmlFor="about" className="block text-sm font-medium text-gray-700">Tell us something
+                            about yourself:</label>
                         <textarea
                             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                             id="about"
@@ -182,8 +186,13 @@ const SignupForm = ({ onClose }) => {
                         ></textarea>
                     </div>
                     <div className="text-center w-full px-2">
-                        <button type="submit" className="btn btn-primary my-3 bg-blue-500 text-white py-2 px-4 rounded">Submit</button>
-                        <button type="button" className="btn btn-secondary my-3 bg-red-500 text-white py-2 px-4 rounded ml-2" onClick={onClose}>Cancel</button>
+                        <button type="submit"
+                                className="btn btn-primary my-3 bg-blue-500 text-white py-2 px-4 rounded">Submit
+                        </button>
+                        <button type="button"
+                                className="btn btn-secondary my-3 bg-red-500 text-white py-2 px-4 rounded ml-2"
+                                onClick={onClose}>Cancel
+                        </button>
                     </div>
                 </form>
             </div>

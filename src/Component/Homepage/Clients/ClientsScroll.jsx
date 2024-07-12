@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 import ImageData from '../../../Assets/Data/imageData.json';
 
 const ImageGrid = () => {
@@ -12,7 +12,7 @@ const ImageGrid = () => {
     return (
         <div className="flex flex-col md:flex-row justify-center items-center bg-gray-200 p-16">
             <div className="w-full md:w-1/3 flex justify-center md:justify-end items-center p-4">
-                <h2 className="text-center my-3 md:text-left" style={{ color: 'darkgray' }}>
+                <h2 className="text-center my-3 md:text-left" style={{color: 'darkgray'}}>
                     <strong>Where Our Students Work?</strong>
                 </h2>
             </div>

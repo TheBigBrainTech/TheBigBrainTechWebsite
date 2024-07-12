@@ -1,16 +1,11 @@
 import React, { useState } from "react";
-import { FiMenu, FiArrowRight, FiX, FiChevronDown } from "react-icons/fi";
-import {FaHeadset, FaUserCircle} from "react-icons/fa";
-import {
-    useMotionValueEvent,
-    AnimatePresence,
-    useScroll,
-    motion,
-} from "framer-motion";
+import { FiArrowRight, FiChevronDown, FiMenu, FiX } from "react-icons/fi";
+import { FaHeadset, FaUserCircle } from "react-icons/fa";
+import { AnimatePresence, motion, useMotionValueEvent, useScroll } from "framer-motion";
 import useMeasure from "react-use-measure";
 import PropTypes from "prop-types";
-import BrandImage from "../../../Assets/images/logo/BigBrainLogoBlue.png"
-import { useNavigate, Link } from 'react-router-dom';
+import BrandImage from "../../../Assets/images/logo/BigBrainLogoBlue.png";
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navigation = () => {
     return (
@@ -32,10 +27,7 @@ const FlyoutNav = () => {
         <nav
             className={`fixed top-0 z-50 w-full px-6 text-black 
       transition-all duration-300 ease-out lg:px-12
-      ${
-                scrolled
-                    ? "bg-white py-3 shadow-xl"
-                    : "bg-white/0 py-6 shadow-none"
+      ${scrolled ? "bg-white py-3 shadow-xl" : "bg-white/0 py-6 shadow-none"
             }`}
         >
             <div className="mx-auto flex max-w-7xl items-center justify-between">
@@ -54,7 +46,7 @@ const Logo = () => {
     return (
         <div className="flex items-center gap-2">
             <Link to="/">
-                <img src={BrandImage} alt={"Brandlogo"} style={{height: "50px", width: "100px"}}/>
+                <img src={BrandImage} alt={"Brandlogo"} style={{ height: "50px", width: "100px" }} />
             </Link>
         </div>
     );
@@ -93,7 +85,7 @@ const NavLink = ({ children, href, FlyoutContent }) => {
                     style={{
                         transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
                     }}
-                    className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-indigo-300 transition-transform duration-300 ease-out"
+                    className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-yellow-300 transition-transform duration-300 ease-out"
                 />
             </a>
             <AnimatePresence>
@@ -107,7 +99,8 @@ const NavLink = ({ children, href, FlyoutContent }) => {
                         className="absolute left-1/2 top-12 bg-white text-black"
                     >
                         <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
-                        <div className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white" />
+                        <div
+                            className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white" />
                         <FlyoutContent />
                     </motion.div>
                 )}
@@ -121,9 +114,6 @@ NavLink.propTypes = {
     href: PropTypes.string.isRequired,
     FlyoutContent: PropTypes.elementType,
 };
-
-
-
 
 const CTAs = () => {
     const navigate = useNavigate();
@@ -139,16 +129,18 @@ const CTAs = () => {
         <div className="flex items-center gap-3">
             <button
                 onClick={handleSignInClick}
-                className="flex items-center gap-2 rounded-lg border-2 border-blue-950 px-4 py-2 font-semibold text-black transition-colors hover:bg-[#DCAD32] hover:text-white">
-                <FaUserCircle/>
+                className="flex items-center gap-2 rounded-lg border-2 border-blue-950 px-4 py-2 font-semibold text-black transition-colors hover:bg-[#DCAD32] hover:text-white md:bg-yellow-300/10 md:text-black md:hover:bg-[#DCAD32] md:hover:text-white"
+            >
+                <FaUserCircle />
                 <span>Sign in</span>
             </button>
 
             <button
                 onClick={handleScheduleCallClick}
-                className="flex items-center gap-2 rounded-lg border-2 border-blue-950 px-4 py-2 font-semibold text-black transition-colors hover:bg-[#DCAD32] hover:text-white">
-                <FaHeadset/>
-               <span>Schedule a Call</span>
+                className="flex items-center gap-2 rounded-lg border-2 border-blue-950 px-4 py-2 font-semibold text-black transition-colors hover:bg-[#DCAD32] hover:text-white md:bg-yellow-300/10 md:text-black md:hover:bg-[#DCAD32] md:hover:text-white"
+            >
+                <FaHeadset />
+                <span>Schedule a Call</span>
             </button>
         </div>
     );
@@ -157,30 +149,31 @@ const CTAs = () => {
 const AboutUsContent = () => {
     return (
         <div className="grid h-fit w-full grid-cols-12 shadow-xl lg:h-72 lg:w-[600px] lg:shadow-none xl:w-[750px]">
-            <div className="col-span-12 flex flex-col justify-between bg-neutral-950 p-6 lg:col-span-4">
+            <div className="col-span-12 flex flex-col justify-between bg-yellow-500 p-6 lg:col-span-4">
                 <div>
-                    <h2 className="mb-2 text-xl font-semibold text-white">About us</h2>
-                    <p className="mb-6 max-w-xs text-sm text-neutral-400">
+                    <h2 className="mb-2 text-xl font-semibold text-black">About us</h2>
+                    <p className="mb-6 max-w-xs text-sm text-neutral-850">
                         The Big Brain Tech: Elevating Education with Innovation
                     </p>
                 </div>
                 <Link
                     to="/about-us"
-                    className="flex items-center gap-1 text-xs text-indigo-300 hover:underline"
+                    className="flex items-center gap-1 text-xs text-indigo-750 hover:underline hover:text-blue-800"
                 >
                     Learn more <FiArrowRight />
                 </Link>
             </div>
             <div className="col-span-12 grid grid-cols-2 grid-rows-2 gap-3 bg-white p-6 lg:col-span-8">
+                <Link to="/Questions"
+                      className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100">
+                    <h3 className="mb-1 font-semibold">Questions?</h3>
+                    <p className="text-xs">
+                        Why choose The Bigbrain Tech over any thing else.
+                    </p>
+                </Link>
 
-                    <Link to="/Questions" className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100">
-                        <h3 className="mb-1 font-semibold">Questions?</h3>
-                        <p className="text-xs">
-                            Why choose The Bigbrain Tech over any thing else.
-                        </p>
-                    </Link>
-
-                <Link to="/testimonials" className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100" >
+                <Link to="/testimonials"
+                      className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100">
                     <h3 className="mb-1 font-semibold">Testimonials</h3>
                     <p className="text-xs">
                         What Our Learners Has To Say About Us
@@ -209,27 +202,17 @@ const AboutUsContent = () => {
 const PricingContent = () => {
     return (
         <div className="w-full bg-white p-6 shadow-none lg:w-[250px] lg:shadow-xl">
-        <div className="grid grid-cols-2 lg:grid-cols-1">
+            <div className="grid grid-cols-2 lg:grid-cols-1">
                 <div className="mb-3 space-y-3">
                     <h3 className="font-semibold">Tuition and financing</h3>
                     <Link to="/financing" className="block text-sm hover:underline pt-4 pb-5">
                         Explore Options
                     </Link>
-
                 </div>
-                {/*<div className="mb-6 space-y-3">*/}
-                {/*    <h3 className="font-semibold">Early Learners</h3>*/}
-                {/*    <a href="./" className="block text-sm hover:underline">*/}
-                {/*        Pay In Full*/}
-                {/*    </a>*/}
-                {/*    <a href="./" className="block text-sm hover:underline">*/}
-                {/*        Pay as You GO*/}
-                {/*    </a>*/}
-
-                {/*</div>*/}
             </div>
             <button
-                className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
+                className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-yellow-500 hover:text-black"
+            >
                 Contact Admissions
             </button>
         </div>
@@ -239,36 +222,38 @@ const PricingContent = () => {
 const CareersContent = () => {
     return (
         <div className="grid w-full grid-cols-12 shadow-xl lg:w-[750px]">
-            <div className="col-span-12 flex flex-col justify-between bg-indigo-600 p-6 lg:col-span-4">
+            <div className="col-span-12 flex flex-col justify-between bg-yellow-500 p-6 lg:col-span-4">
                 <div className="mb-6">
-                    <h2 className="mb-2 text-xl font-semibold text-white">Careers</h2>
-                    <p className="text-sm text-indigo-100">
+                    <h2 className="mb-2 text-xl font-semibold text-black">Careers</h2>
+                    <p className="text-sm text-neutral-950">
                         Work With The Bigbrain Tech And Transform Coding Education.
                     </p>
                 </div>
-                    <Link to="/careers" className="flex items-center gap-1 text-xs text-indigo-200 hover:underline" >
-                        Careers site <FiArrowRight />
-                    </Link>
+                <Link to="/careers" className="flex items-center gap-1 text-xs text-indigo-900 hover:underline hover:text-blue-800">
+                    Careers site <FiArrowRight />
+                </Link>
             </div>
             <div className="col-span-12 grid grid-cols-2 gap-3 bg-white p-6 lg:col-span-8 lg:grid-cols-3">
                 <div className="space-y-3">
                     <h3 className="font-semibold">Individuals</h3>
-                    <Link to="/Programs/Individuals/Frontend" className="flex items-center gap-1 text-xs text-indigo-100">
+                    <Link to="/Programs/Individuals/Frontend"
+                          className="flex items-center gap-1 text-xs text-indigo-100">
                         <p className="block text-sm hover:underline text-gray-600">
                             Frontend Development
                         </p>
                     </Link>
-                    <Link to="/Programs/Individuals/Fullstack" className="flex items-center gap-1 text-xs text-indigo-100">
+                    <Link to="/Programs/Individuals/Fullstack"
+                          className="flex items-center gap-1 text-xs text-indigo-100">
                         <p className="block text-sm hover:underline text-gray-600">
                             Fullstack Development
                         </p>
                     </Link>
-                    <Link to="/Programs/Individuals/QAAutomation" className="flex items-center gap-1 text-xs text-indigo-100">
+                    <Link to="/Programs/Individuals/QAAutomation"
+                          className="flex items-center gap-1 text-xs text-indigo-100">
                         <p className="block text-sm hover:underline text-gray-600">
                             QA Automation
                         </p>
                     </Link>
-
                 </div>
                 <div className="space-y-3">
                     <h3 className="font-semibold">Early Learners</h3>
@@ -281,19 +266,11 @@ const CareersContent = () => {
                     <Link to="/Programs/EarlyLearners/Advanced" className="block text-sm hover:underline">
                         Advanced Learners
                     </Link>
-
-                    <a href="./" className="block text-sm hover:underline">
-
-                    </a>
-                    <a href="./" className="block text-sm hover:underline">
-
-                    </a>
-
                 </div>
                 <div className="space-y-3">
-                <h3 className="font-semibold">More</h3>
-                   <Link to="/Support" className="block text-sm hover:underline">Support</Link>
-                    <Link to="/Error"  className="block text-sm hover:underline">
+                    <h3 className="font-semibold">More</h3>
+                    <Link to="/Support" className="block text-sm hover:underline">Support</Link>
+                    <Link to="/Error" className="block text-sm hover:underline">
                         Student Resources
                     </Link>
                     <Link to="/Error" className="block text-sm hover:underline">
@@ -316,7 +293,7 @@ const MobileMenuLink = ({ children, href, FoldContent, setMenuOpen }) => {
     };
 
     return (
-        <div className="relative text-neutral-950">
+        <div className="relative text-neutral-400">
             {FoldContent ? (
                 <div
                     className="flex w-full cursor-pointer items-center justify-between border-b border-neutral-300 py-6 text-start text-2xl font-semibold"
@@ -383,7 +360,6 @@ MobileMenuLink.propTypes = {
     setMenuOpen: PropTypes.func.isRequired,
 };
 
-
 const MobileMenu = () => {
     const [open, setOpen] = useState(false);
     return (
@@ -418,7 +394,7 @@ const MobileMenu = () => {
                                 </MobileMenuLink>
                             ))}
                         </div>
-                        <div className="flex justify-end bg-neutral-950 p-6">
+                        <div className="flex justify-end bg-yellow-500 text-black p-6">
                             <CTAs />
                         </div>
                     </motion.nav>
@@ -437,7 +413,7 @@ const LINKS = [
         component: CareersContent,
     },
     {
-        text: "Tution",
+        text: "Tuition",
         href: "./",
         component: PricingContent,
     },
@@ -451,4 +427,3 @@ const LINKS = [
         href: "./",
     },
 ];
-

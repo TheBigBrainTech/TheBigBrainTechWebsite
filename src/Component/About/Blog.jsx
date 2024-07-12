@@ -1,6 +1,6 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import {motion} from 'framer-motion';
+import {Link} from 'react-router-dom';
 import Navbar from "../Homepage/Navbar/Navbar";
 import Footer from "../Homepage/Footer/Footer";
 
@@ -45,7 +45,7 @@ const BlogPage = () => {
 
     return (
         <div>
-            <Navbar />
+            <Navbar/>
             <div className="bg-gray-100 py-12">
                 <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
                     <h2 className="text-center text-4xl font-bold text-gray-800 mb-12">Our Blog</h2>
@@ -56,7 +56,7 @@ const BlogPage = () => {
                                 className="p-8 bg-white rounded-lg shadow-lg"
                                 initial="offscreen"
                                 whileInView="onscreen"
-                                viewport={{ once: true, amount: 0.8 }}
+                                viewport={{once: true, amount: 0.8}}
                                 variants={cardVariants}
                             >
                                 <Link to={`/blog/${post.id}`}>
@@ -69,7 +69,7 @@ const BlogPage = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            <Footer/>
         </div>
     );
 };

@@ -1,7 +1,7 @@
 // src/components/FAQList.js
 import React from 'react';
 import FAQCard from '../reusable/FaqCard';
-import { ReactFAQ } from '../../../Assets/Data/ReactFAQ';
+import {ReactFAQ} from '../../../Assets/Data/ReactFAQ';
 
 const FAQList = () => {
     return (

@@ -17,13 +17,13 @@ const icons = {
     restassured: RestAssuredIcon,
 };
 
-const Icon = ({ name, size = '32px', color = 'currentColor', className }) => {
+const Icon = ({name, size = '32px', color = 'currentColor', className}) => {
     const SvgIcon = icons[name];
     return SvgIcon ? (
         <SvgIcon
             width={size}
             height={size}
-            style={{ fill: color }}
+            style={{fill: color}}
             className={className}
         />
     ) : null;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 
 const FullStackFinancing = () => {
     const [key, setKey] = useState("tuition");
@@ -73,7 +73,8 @@ const FullStackFinancing = () => {
                             <p className="mt-4 text-gray-400">
                                 <sup>*</sup>The $100 enrollment fee is NOT a part of your overall tuition.<br></br>
                                 Enrollment Fee is non-refundable and due at the time of enrollment.<br></br>
-                                Tuition installment is due every start of the week prior to your session time of your bootcamp.
+                                Tuition installment is due every start of the week prior to your session time of your
+                                bootcamp.
                             </p>
                         </div>
                     )}
@@ -111,14 +112,17 @@ const FullStackFinancing = () => {
                             <h1 className="text-2xl font-bold">College Students Program</h1>
                             <h3 className="text-lg font-bold mt-4">Special Discount for College Students</h3>
                             <p>
-                                We offer a special discount of $500 for current college students. To qualify, please provide a valid student ID and proof of enrollment.
+                                We offer a special discount of $500 for current college students. To qualify, please
+                                provide a valid student ID and proof of enrollment.
                             </p>
                             <h3 className="text-lg font-bold mt-4">How to Apply:</h3>
                             <p>
-                                Submit your application along with a copy of your student ID and current enrollment status. Once verified, you will receive the discount on your tuition fee.
+                                Submit your application along with a copy of your student ID and current enrollment
+                                status. Once verified, you will receive the discount on your tuition fee.
                             </p>
                             <p className="text-gray-500 mt-4">
-                                <sup>*</sup>The discount is only applicable for full-time college students and cannot be combined with other scholarships or financial aids.
+                                <sup>*</sup>The discount is only applicable for full-time college students and cannot be
+                                combined with other scholarships or financial aids.
                             </p>
                         </div>
                     )}

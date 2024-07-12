@@ -1,6 +1,6 @@
 import React from 'react';
 
- const FrontendStudentReview = () => {
+const FrontendStudentReview = () => {
     return (
         <div>Student Reviews</div>
     )

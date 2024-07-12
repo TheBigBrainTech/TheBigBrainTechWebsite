@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 import Navbar from "../Homepage/Navbar/Navbar";
 import Footer from "../Homepage/Footer/Footer";
 
@@ -28,7 +28,7 @@ const posts = [
 ];
 
 const BlogPost = () => {
-    const { id } = useParams();
+    const {id} = useParams();
     const post = posts.find((post) => post.id === id);
 
     if (!post) {
@@ -37,7 +37,7 @@ const BlogPost = () => {
 
     return (
         <div>
-            <Navbar />
+            <Navbar/>
             <div className="bg-gray-100 py-12">
                 <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
                     <h2 className="text-center text-4xl font-bold text-gray-800 mb-12">{post.title}</h2>
@@ -45,7 +45,7 @@ const BlogPost = () => {
                     <p className="text-sm text-gray-500">By {post.author} on {post.date}</p>
                 </div>
             </div>
-            <Footer />
+            <Footer/>
         </div>
     );
 };

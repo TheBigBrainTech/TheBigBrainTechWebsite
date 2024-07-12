@@ -1,10 +1,10 @@
 import React from "react";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 import Navigation from "../Homepage/Navbar/Navbar";
 import Footer from "../Homepage/Footer/Footer";
 import AboutText from "../../Assets/Data/AboutData.json";
-import { faMedal, faPeopleRoof, faRankingStar } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faMedal, faPeopleRoof, faRankingStar} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import AboutCharacter from '../../Assets/images/character/About_character_1.png'
 import ContactUs from "../ContactForm/ContactUs";
 
@@ -156,7 +156,7 @@ const AboutUs = () => {
             <div className="container-fluid mx-auto py-10 bg-gray-100 mb-8">
                 <div className="flex flex-wrap">
                     <div className="w-full">
-                        <h1 className="text-center text-gray-500" >What goes on in the The BigBrain Tech community?</h1>
+                        <h1 className="text-center text-gray-500">What goes on in the The BigBrain Tech community?</h1>
                         <h3 className="text-center text-gray-500">
                             You&apos;ll find plenty of the support you need at the BigBrain Tech
                             community, as well as sociable gatherings and the chance to make
@@ -168,7 +168,8 @@ const AboutUs = () => {
                         <ul className={textStyles}>
                             <li>
                                 <h2 className={textStyles}>
-                                    <i className="fa-solid fa-chalkboard-user fa-2xl" style={{color:"#eab308"}}></i> Support
+                                    <i className="fa-solid fa-chalkboard-user fa-2xl"
+                                       style={{color: "#eab308"}}></i> Support
                                     & Mentorship
                                 </h2>
                                 <p className={textStyles}>
@@ -179,7 +180,8 @@ const AboutUs = () => {
                             </li>
                             <li>
                                 <h2 className={textStyles}>
-                                    <i className="fa-brands fa-stack-overflow fa-2xl" style={{color:"#eab308"}}></i> Talks &
+                                    <i className="fa-brands fa-stack-overflow fa-2xl"
+                                       style={{color: "#eab308"}}></i> Talks &
                                     Hackathons
                                 </h2>
                                 <p className={textStyles}>
@@ -195,7 +197,8 @@ const AboutUs = () => {
                         <ul className={textStyles}>
                             <li>
                                 <h2 className={textStyles}>
-                                    <i className="fa-solid fa-people-arrows fa-2xl" style={{color:"#eab308"}}></i> Social
+                                    <i className="fa-solid fa-people-arrows fa-2xl"
+                                       style={{color: "#eab308"}}></i> Social
                                     Gatherings
                                 </h2>
                                 <p className={textStyles}>
@@ -206,7 +209,8 @@ const AboutUs = () => {
                             </li>
                             <li>
                                 <h2 className={textStyles}>
-                                    <i className="fa-solid fa-arrows-down-to-people fa-2xl" style={{color:"#eab308"}}></i> An Inclusive Atmosphere
+                                    <i className="fa-solid fa-arrows-down-to-people fa-2xl"
+                                       style={{color: "#eab308"}}></i> An Inclusive Atmosphere
                                 </h2>
                                 <p className={textStyles}>
                                     The Bigbrain Tech embraces diversity in all its forms, and provides a warm,
@@ -226,7 +230,8 @@ const AboutUs = () => {
                     At The Bigbrain Tech, we are more than just an coding bootcamp; we are a
                     thriving community of passionate technologists on a mission to change
                     lives for the better. As a leading organization in the tech industry,
-                    we specialize in offering cutting-edge coding bootcamps, paving the way for aspiring programmers to embark
+                    we specialize in offering cutting-edge coding bootcamps, paving the way for aspiring programmers to
+                    embark
                     on their dream tech careers.
                 </h2>
                 <div className="flex flex-wrap">
@@ -286,10 +291,13 @@ const AboutUs = () => {
             </div>
 
             {/* Last Section */}
-            <div className="container-fluid mx-auto py-16 bg-gradient-to-r from-yellow-600 to-yellow-400 p-10 my-10 min-h-80">
+            <div
+                className="container-fluid mx-auto py-16 bg-gradient-to-r from-yellow-600 to-yellow-400 p-10 my-10 min-h-80">
                 <div className="text-center">
                     <h1 className="text-gray-600">Ready to Join The Bigbrain Tech?</h1>
-                    <button className="bg-yellow-500 text-black py-2 px-4 mx-4 rounded hover:bg-yellow-400">Apply for Bootcamp</button>
+                    <button className="bg-yellow-500 text-black py-2 px-4 mx-4 rounded hover:bg-yellow-400">Apply for
+                        Bootcamp
+                    </button>
 
                 </div>
             </div>

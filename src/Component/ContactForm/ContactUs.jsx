@@ -1,5 +1,5 @@
-import React, { useRef, useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import React, {useEffect, useRef, useState} from "react";
+import {motion} from "framer-motion";
 import emailjs from "@emailjs/browser";
 // import Navbar from '../Homepage/Navbar/Navbar'
 // import Footer from "../Homepage/Footer/Footer";
@@ -45,9 +45,9 @@ const ContactForm = () => {
             <div id="form-container" className="lg:p-5 font-Encode-Sans my-16">
                 <div className="overflow-hidden">
                     <motion.h3
-                        initial={{ y: "200%" }}
-                        transition={{ ease: [0.455, 0.03, 0.515, 0.955], duration: 1 }}
-                        animate={{ y: 0 }}
+                        initial={{y: "200%"}}
+                        transition={{ease: [0.455, 0.03, 0.515, 0.955], duration: 1}}
+                        animate={{y: 0}}
                         className="text-center lg:text-5xl text-5xl mt-10 font-bold text-gray-600"
                     >
                         Contact Us
@@ -55,9 +55,9 @@ const ContactForm = () => {
                 </div>
                 {formError && (
                     <motion.div
-                        transition={{ duration: 0.5, delay: 0.5 }}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
+                        transition={{duration: 0.5, delay: 0.5}}
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
                     >
                         <p className="text-center text-lg mt-5 text-rose-600">
                             Something went wrong! Please try again later.
@@ -65,16 +65,16 @@ const ContactForm = () => {
                     </motion.div>
                 )}
                 <motion.div
-                    transition={{ duration: 0.5, delay: 0.7 }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
+                    transition={{duration: 0.5, delay: 0.7}}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
                     className="py-5"
                 >
                     {formSubmitted ? (
                         <motion.div
-                            transition={{ duration: 0.5, delay: 0.5 }}
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
+                            transition={{duration: 0.5, delay: 0.5}}
+                            initial={{opacity: 0}}
+                            animate={{opacity: 1}}
                         >
                             <p className="text-center text-green-500 text-xl lg:mt-40 mt-20 mb-20 ">
                                 Thank you for your message! We&apos;ll get back to you shortly!
@@ -153,8 +153,8 @@ const ContactForm = () => {
                                     </div>
                                     <div className="text-center">
                                         <motion.button
-                                            whileHover={{ scale: 1.1 }}
-                                            whileTap={{ scale: 0.9 }}
+                                            whileHover={{scale: 1.1}}
+                                            whileTap={{scale: 0.9}}
                                             type="submit"
                                             className="uppercase text-sm font-bold tracking-wide bg-yellow-500 text-gray-100 hover:bg-yellow-300 p-3 rounded-lg w-full"
                                         >

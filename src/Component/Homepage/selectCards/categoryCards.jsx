@@ -1,11 +1,11 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import {motion} from 'framer-motion';
 
 export default function CategoryCards() {
     const cardVariants = {
-        hidden: { opacity: 0, y: 50 },
-        visible: { opacity: 1, y: 0 },
-        hover: { scale: 1.09 }
+        hidden: {opacity: 0, y: 50},
+        visible: {opacity: 1, y: 0},
+        hover: {scale: 1.09}
     };
 
     return (
@@ -22,14 +22,16 @@ export default function CategoryCards() {
                         animate="visible"
                         whileHover="hover"
                         variants={cardVariants}
-                        transition={{ duration: 0.5, delay: 0.1 }}
+                        transition={{duration: 0.5, delay: 0.1}}
                     >
                         <div className="card-body drop-shadow-xl text-center bg-gray-200 rounded-lg min-h-65">
                             <h5 className="card-title text-gray-500 text-2xl pt-4">INDIVIDUALS</h5>
-                            <p className="card-text text-gray-500">Get ahead with expert-led training curated for individuals</p>
+                            <p className="card-text text-gray-500">Get ahead with expert-led training curated for
+                                individuals</p>
                             <div className="flex justify-center items-center">
                                 <div className="pb-5">
-                                    <button type="button" className="btn btn-sm bg-yellow-500 text-white py-2 px-4 mt-10 rounded">
+                                    <button type="button"
+                                            className="btn btn-sm bg-yellow-500 text-white py-2 px-4 mt-10 rounded">
                                         Browse Courses
                                     </button>
                                 </div>
@@ -42,14 +44,16 @@ export default function CategoryCards() {
                         animate="visible"
                         whileHover="hover"
                         variants={cardVariants}
-                        transition={{ duration: 0.5, delay: 0.1 }}
+                        transition={{duration: 0.5, delay: 0.1}}
                     >
                         <div className="card-body drop-shadow-xl text-center bg-gray-200 rounded-lg min-h-65">
                             <h5 className="card-title text-gray-500 text-2xl pt-4">EARLY LEARNERS PROGRAM</h5>
-                            <p className="card-text text-gray-500">Empower them with valuable skills and confidence for the future!</p>
+                            <p className="card-text text-gray-500">Empower them with valuable skills and confidence for
+                                the future!</p>
                             <div className="flex justify-center items-center">
                                 <div className="pb-5">
-                                    <button type="button" className="btn btn-sm bg-yellow-500 text-white py-2 px-4 mt-10 rounded">
+                                    <button type="button"
+                                            className="btn btn-sm bg-yellow-500 text-white py-2 px-4 mt-10 rounded">
                                         Browse Courses
                                     </button>
                                 </div>
@@ -62,14 +66,16 @@ export default function CategoryCards() {
                         animate="visible"
                         whileHover="hover"
                         variants={cardVariants}
-                        transition={{ duration: 0.5, delay: 0.1 }}
+                        transition={{duration: 0.5, delay: 0.1}}
                     >
                         <div className="card-body drop-shadow-xl text-center bg-gray-200 rounded-lg min-h-65">
                             <h5 className="card-title text-gray-500 text-2xl pt-4">CORPORATIONS</h5>
-                            <p className="card-text text-gray-500">Train your workforce with intensive training in Latest TechStack</p>
+                            <p className="card-text text-gray-500">Train your workforce with intensive training in
+                                Latest TechStack</p>
                             <div className="flex justify-center items-center">
                                 <div className="pb-5">
-                                    <button type="button" className="btn btn-sm bg-yellow-500 text-white py-2 px-4 mt-10 rounded">
+                                    <button type="button"
+                                            className="btn btn-sm bg-yellow-500 text-white py-2 px-4 mt-10 rounded">
                                         Find Solution
                                     </button>
                                 </div>

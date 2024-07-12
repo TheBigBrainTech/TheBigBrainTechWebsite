@@ -46,13 +46,16 @@ const EarlyLearners2Financing = () => {
                                 <h1 className="text-2xl font-bold">Pay In Full Tuition</h1>
                                 <h2 className="text-xl font-bold">Tuition Fee: $649.00</h2>
                                 <h2 className="text-xl font-bold">Administration Fee: $100.00</h2>
-                                <small className="text-sm text-gray-500"><sup>*</sup>Administration fee is exempt for students starting level 2 within 6 months of level 1 completion.contact admissions for refund</small>
+                                <small className="text-sm text-gray-500"><sup>*</sup>Administration fee is exempt for
+                                    students starting level 2 within 6 months of level 1 completion.contact admissions
+                                    for refund</small>
                                 <h2 className="text-xl font-bold">Total: $749.00</h2>
                                 <h5 className="text-gray-500">
                                     <sup>*</sup>Currently only available in select U.S. markets.
                                 </h5>
                                 <p className="mt-4 text-gray-400">
-                                    <sup>*</sup>The $100 administration fee is NOT a part of your overall tuition.<br></br>
+                                    <sup>*</sup>The $100 administration fee is NOT a part of your overall
+                                    tuition.<br></br>
                                     administration Fee is non-refundable and due at the time of enrollment.<br></br>
                                     Full tuition is due 1 week prior to your start date of your bootcamp.
                                 </p>
@@ -113,13 +116,15 @@ const EarlyLearners2Financing = () => {
                                 <h1 className="text-2xl font-bold">Smart Students Program</h1>
                                 <h3 className="text-lg font-bold mt-4">Special Discount for A Graders</h3>
                                 <p>
-                                    We offer a special discount of $50 for current students with minimum of 3 A graded classes a Year. To qualify, please
+                                    We offer a special discount of $50 for current students with minimum of 3 A graded
+                                    classes a Year. To qualify, please
                                     provide a valid student ID and Mark sheets.
                                 </p>
                                 <h3 className="text-lg font-bold mt-4">How to Apply:</h3>
                                 <p>
                                     Submit your application along with a copy of your student ID and current enrollment
-                                    status with Mark sheets. Once verified, you will receive the discount on your tuition fee.
+                                    status with Mark sheets. Once verified, you will receive the discount on your
+                                    tuition fee.
                                 </p>
                                 <p className="text-gray-500 mt-4">
                                     <sup>*</sup>The discount is only applicable for A grades students

@@ -1,7 +1,6 @@
-
 import React from 'react';
 import WeekCard from '../reusable/WeekCard';
-import { ReactCurriculum } from '../../../Assets/Data/ReacctCurriculam';
+import {ReactCurriculum} from '../../../Assets/Data/ReacctCurriculam';
 
 function FrontendCourseInfo() {
     return (

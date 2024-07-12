@@ -31,35 +31,35 @@ import NoJobImg from '../../Assets/images/character/career.png'
 // };
 
 //const JoinOurTeam = () => {
-    // const jobListings = jobListingsData;
-    // const [locationFilter, setLocationFilter] = useState('');
-    // const [jobTypeFilter, setJobTypeFilter] = useState('');
-    // const [typeFilter, setTypeFilter] = useState('');
+// const jobListings = jobListingsData;
+// const [locationFilter, setLocationFilter] = useState('');
+// const [jobTypeFilter, setJobTypeFilter] = useState('');
+// const [typeFilter, setTypeFilter] = useState('');
 
-    // Filter the job listings based on the selected filters
-    // const filteredJobListings = jobListings.filter((job) => {
-    //     if (locationFilter && job.location !== locationFilter) {
-    //         return false;
-    //     }
-    //     if (jobTypeFilter && job.jobType !== jobTypeFilter) {
-    //         return false;
-    //     }
-    //     if (typeFilter && job.type !== typeFilter) {
-    //         return false;
-    //     }
-    //     return true;
-    // });
+// Filter the job listings based on the selected filters
+// const filteredJobListings = jobListings.filter((job) => {
+//     if (locationFilter && job.location !== locationFilter) {
+//         return false;
+//     }
+//     if (jobTypeFilter && job.jobType !== jobTypeFilter) {
+//         return false;
+//     }
+//     if (typeFilter && job.type !== typeFilter) {
+//         return false;
+//     }
+//     return true;
+// });
 
-    // const clearFilters = () => {
-    //     setLocationFilter('');
-    //     setJobTypeFilter('');
-    //     setTypeFilter('');
-    // };
-const careers =()=>{
+// const clearFilters = () => {
+//     setLocationFilter('');
+//     setJobTypeFilter('');
+//     setTypeFilter('');
+// };
+const careers = () => {
     return (
         <div>
             <section>
-                <Navigation />
+                <Navigation/>
             </section>
             <div className="container mx-auto px-6 py-12">
                 <h1 className="text-4xl font-bold mb-8 text-center text-gray-500 mt-10">Join The Bigbrain Tech Team</h1>
@@ -127,7 +127,7 @@ const careers =()=>{
                             src={NoJobImg}
                             alt="Job Listings Placeholder"
                             className=" mb-6 rounded-lg shadow-md justify-items-center"
-                            style={{height:"300px" , width:"300px", marginLeft:"150px"}}
+                            style={{height: "300px", width: "300px", marginLeft: "150px"}}
                         />
                         {/*{filteredJobListings.map((job, index) => (*/}
                         {/*    <JobCard key={index} job={job} />*/}
@@ -136,7 +136,7 @@ const careers =()=>{
                 </div>
             </div>
             <section>
-                <Footer />
+                <Footer/>
             </section>
         </div>
     );

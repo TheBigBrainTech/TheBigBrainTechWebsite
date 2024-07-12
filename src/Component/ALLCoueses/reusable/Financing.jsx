@@ -1,19 +1,31 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, {useState} from 'react';
+import {motion} from 'framer-motion';
 import Navigation from "../../Homepage/Navbar/Navbar";
 import Footer from "../../Homepage/Footer/Footer";
 import FinanceBg from '../../../Assets/images/character/FinancePageBG.png';
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {Link} from "react-router-dom";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
     faAward,
     faBookOpen,
     faBriefcase,
     faChalkboardTeacher,
     faCheckCircle,
-    faChevronDown, faCoins, faGraduationCap, faHandsHelping, faIndustry,
-    faLandmark, faLaptopCode, faLifeRing, faMoneyBill, faNetworkWired, faPen, faPhone, faQuestionCircle,
-    faUserGraduate, faUsers
+    faChevronDown,
+    faCoins,
+    faGraduationCap,
+    faHandsHelping,
+    faIndustry,
+    faLandmark,
+    faLaptopCode,
+    faLifeRing,
+    faMoneyBill,
+    faNetworkWired,
+    faPen,
+    faPhone,
+    faQuestionCircle,
+    faUserGraduate,
+    faUsers
 } from '@fortawesome/free-solid-svg-icons';
 
 const FinancingOptions = () => {

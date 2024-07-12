@@ -5,7 +5,7 @@ import Footer from "../Homepage/Footer/Footer";
 const TestimonialsPage = () => {
     return (
         <div>
-            <Navbar />
+            <Navbar/>
             <div className="text-gray-300 pt-16 pb-10" id="reviews">
                 <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
                     <div className="mb-10 space-y-4 px-6 md:px-0">
@@ -126,7 +126,8 @@ const TestimonialsPage = () => {
                             className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-gradient-to-r from-yellow-600 to-yellow-400 shadow-2xl shadow-gray-600/10 text-gray-600">
                             <div className="flex gap-4">
                                 <img className="w-12 h-12 rounded-full"
-                                     src="https://media.istockphoto.com/id/1136418521/photo/junior-high-school-boy-smiles-at-the-camera-while-walking-to-class-in-hallway.jpg?s=1024x1024&w=is&k=20&c=oarW4UdVXDbA2AyqqLkB8gSoIMXhEKGbr9-gXUSMe54=" alt="user avatar"
+                                     src="https://media.istockphoto.com/id/1136418521/photo/junior-high-school-boy-smiles-at-the-camera-while-walking-to-class-in-hallway.jpg?s=1024x1024&w=is&k=20&c=oarW4UdVXDbA2AyqqLkB8gSoIMXhEKGbr9-gXUSMe54="
+                                     alt="user avatar"
                                      width="400" height="400" loading="lazy"/>
                                 <div>
                                     <p className="text-lg font-medium text-gray-700">Van Guerrero</p>
@@ -134,14 +135,16 @@ const TestimonialsPage = () => {
                                     <p className="text-sm text-gray-500">Age 14</p>
                                 </div>
                             </div>
-                            <p className="mt-4">I learned so much in such a short time. The curriculum was fun and engaging, and it prepared me well for my future studies in tech.</p>
+                            <p className="mt-4">I learned so much in such a short time. The curriculum was fun and
+                                engaging, and it prepared me well for my future studies in tech.</p>
                         </div>
 
                         <div
                             className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-gradient-to-r from-yellow-600 to-yellow-400 shadow-2xl shadow-gray-600/10 text-gray-600">
                             <div className="flex gap-4">
                                 <img className="w-12 h-12 rounded-full"
-                                     src="https://media.istockphoto.com/id/1161222735/photo/female-university-student-holding-a-small-tablet.jpg?s=1024x1024&w=is&k=20&c=iIIJEeZJdujSsrh89P7GOEZw8SZoAnG--3KzOl-pBA8=" alt="user avatar"
+                                     src="https://media.istockphoto.com/id/1161222735/photo/female-university-student-holding-a-small-tablet.jpg?s=1024x1024&w=is&k=20&c=iIIJEeZJdujSsrh89P7GOEZw8SZoAnG--3KzOl-pBA8="
+                                     alt="user avatar"
                                      width="200" height="200" loading="lazy"/>
                                 <div>
                                     <p className="text-lg font-medium text-gray-700">Elvira Hansen</p>
@@ -149,14 +152,17 @@ const TestimonialsPage = () => {
                                     <p className="text-sm text-gray-500">Age 16</p>
                                 </div>
                             </div>
-                            <p className="mt-4">The Bigbrain Tech bootcamp provided a comprehensive and immersive learning experience that was instrumental in my furure career goal to software development.</p>
+                            <p className="mt-4">The Bigbrain Tech bootcamp provided a comprehensive and immersive
+                                learning experience that was instrumental in my furure career goal to software
+                                development.</p>
                         </div>
 
                         <div
                             className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-gradient-to-r from-yellow-600 to-yellow-400 shadow-2xl shadow-gray-600/10 text-gray-600">
                             <div className="flex gap-4">
                                 <img className="w-12 h-12 rounded-full"
-                                     src="https://media.istockphoto.com/id/1474379095/photo/student-selfie-and-girl-with-a-smile-of-education-building-stairs-with-happiness-for-social.jpg?s=1024x1024&w=is&k=20&c=LgEtse_TqbCIB4KmXTL-ghGMMYJ83H3x4WIqbQBHPDw=" alt="user avatar"
+                                     src="https://media.istockphoto.com/id/1474379095/photo/student-selfie-and-girl-with-a-smile-of-education-building-stairs-with-happiness-for-social.jpg?s=1024x1024&w=is&k=20&c=LgEtse_TqbCIB4KmXTL-ghGMMYJ83H3x4WIqbQBHPDw="
+                                     alt="user avatar"
                                      width="200" height="200" loading="lazy"/>
                                 <div>
                                     <p className="text-lg font-medium text-gray-700">Max Gibbs</p>
@@ -172,7 +178,8 @@ const TestimonialsPage = () => {
                             className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-gradient-to-r from-yellow-600 to-yellow-400 shadow-2xl shadow-gray-600/10 text-gray-600">
                             <div className="flex gap-4">
                                 <img className="w-12 h-12 rounded-full"
-                                     src="https://media.istockphoto.com/id/1409086709/photo/head-shot-portrait-student-guy-in-glasses-posing-in-library.jpg?s=1024x1024&w=is&k=20&c=_xR1KSB05tE1r6rfnd6joAB6hav3Mtqs4djBOZBTe3U=" alt="user avatar" width="200"
+                                     src="https://media.istockphoto.com/id/1409086709/photo/head-shot-portrait-student-guy-in-glasses-posing-in-library.jpg?s=1024x1024&w=is&k=20&c=_xR1KSB05tE1r6rfnd6joAB6hav3Mtqs4djBOZBTe3U="
+                                     alt="user avatar" width="200"
                                      height="200" loading="lazy"/>
                                 <div>
                                     <p className="text-lg font-medium text-gray-700">Roderick Pratt</p>
@@ -180,7 +187,8 @@ const TestimonialsPage = () => {
                                     <p className="text-sm text-gray-500">Age 17</p>
                                 </div>
                             </div>
-                            <p className="mt-4">The hands-on projects and real-world applications were incredibly valuable. I now feel ready to pursue a career in tech.</p>
+                            <p className="mt-4">The hands-on projects and real-world applications were incredibly
+                                valuable. I now feel ready to pursue a career in tech.</p>
                         </div>
 
                         <div

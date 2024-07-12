@@ -12,21 +12,21 @@ import Clients from '../Clients/ClientsScroll';
 import Footer from '../Footer/Footer';
 
 function Homepage() {
-  return (
-    <div>
-      <CustomNavbar />
-      <Hero />
-      <StatCounter />
-        <Info />
-      {/*<CategoryCards />*/}
-      <BootcampCards />
-        <InfoTwo/>
-      <ContactSection />
-      <Testimonials />
-      <Clients />
-      <Footer />
-    </div>
-  );
+    return (
+        <div>
+            <CustomNavbar/>
+            <Hero/>
+            <StatCounter/>
+            <Info/>
+            {/*<CategoryCards />*/}
+            <BootcampCards/>
+            <InfoTwo/>
+            <ContactSection/>
+            <Testimonials/>
+            <Clients/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default Homepage;

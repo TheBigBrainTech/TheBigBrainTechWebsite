@@ -1,4 +1,3 @@
-
 export const ReactFAQ = [
     {
         question: 'What are the prerequisites and requirements for the program?',

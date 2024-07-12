@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
- const EarlyLearners1Financing = () => {
-     const [key, setKey] = useState("tuition");
+const EarlyLearners1Financing = () => {
+    const [key, setKey] = useState("tuition");
     return (
         <>
             <div className="container mx-auto p-6">
@@ -112,13 +112,15 @@ import React, {useState} from 'react';
                                 <h1 className="text-2xl font-bold">Smart Students Program</h1>
                                 <h3 className="text-lg font-bold mt-4">Special Discount for A Graders</h3>
                                 <p>
-                                    We offer a special discount of $50 for current students with minimum of 3 A graded classes a Year. To qualify, please
+                                    We offer a special discount of $50 for current students with minimum of 3 A graded
+                                    classes a Year. To qualify, please
                                     provide a valid student ID and Mark sheets.
                                 </p>
                                 <h3 className="text-lg font-bold mt-4">How to Apply:</h3>
                                 <p>
                                     Submit your application along with a copy of your student ID and current enrollment
-                                    status with Mark sheets. Once verified, you will receive the discount on your tuition fee.
+                                    status with Mark sheets. Once verified, you will receive the discount on your
+                                    tuition fee.
                                 </p>
                                 <p className="text-gray-500 mt-4">
                                     <sup>*</sup>The discount is only applicable for A grades students
@@ -132,5 +134,5 @@ import React, {useState} from 'react';
             </div>
         </>
     )
- };
+};
 export default EarlyLearners1Financing;

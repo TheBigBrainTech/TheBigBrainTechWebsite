@@ -8,7 +8,7 @@ const EnrollmentCard = () => {
     return (
         <div className="flex flex-col min-h-screen bg-gradient-to-r from-yellow-500 to-yellow-300">
             <section>
-                <Navigation />
+                <Navigation/>
             </section>
             <div className="flex-grow flex items-center justify-center m-20 p-12">
                 <div className="w-full max-w-4xl bg-white rounded-lg shadow-2xl p-6">

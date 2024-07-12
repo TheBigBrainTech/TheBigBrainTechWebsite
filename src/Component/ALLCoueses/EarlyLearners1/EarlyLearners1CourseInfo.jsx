@@ -1,7 +1,6 @@
-
 import React from 'react';
 import WeekCard from '../reusable/WeekCard';
-import { EarlyLearners1Curriculum } from '../../../Assets/Data/EarlyLearner1Curriculam';
+import {EarlyLearners1Curriculum} from '../../../Assets/Data/EarlyLearner1Curriculam';
 
 function EarlyLearners1CourseInfo() {
     return (

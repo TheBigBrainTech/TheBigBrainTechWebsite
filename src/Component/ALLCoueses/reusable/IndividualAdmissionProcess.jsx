@@ -14,7 +14,8 @@ const IndividualAdmissionProcess = () => {
                     </h5>
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                         <div className="flex flex-col items-center">
-                            <div className="bg-yellow-500 rounded-full w-12 h-12 flex justify-center items-center text-white">
+                            <div
+                                className="bg-yellow-500 rounded-full w-12 h-12 flex justify-center items-center text-white">
                                 <h3 className="text-xl">1</h3>
                             </div>
                             <h4 className="text-lg font-bold mt-4">No prerequisites</h4>
@@ -25,7 +26,8 @@ const IndividualAdmissionProcess = () => {
                             </p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <div className="bg-yellow-500 rounded-full w-12 h-12 flex justify-center items-center text-white">
+                            <div
+                                className="bg-yellow-500 rounded-full w-12 h-12 flex justify-center items-center text-white">
                                 <h3 className="text-xl">2</h3>
                             </div>
                             <h4 className="text-lg font-bold mt-4">
@@ -38,7 +40,8 @@ const IndividualAdmissionProcess = () => {
                             </p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <div className="bg-yellow-500 rounded-full w-12 h-12 flex justify-center items-center text-white">
+                            <div
+                                className="bg-yellow-500 rounded-full w-12 h-12 flex justify-center items-center text-white">
                                 <h3 className="text-xl">3</h3>
                             </div>
                             <h4 className="text-lg font-bold mt-4">Take our knowledge quiz</h4>
@@ -48,7 +51,8 @@ const IndividualAdmissionProcess = () => {
                             </p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <div className="bg-yellow-500 rounded-full w-12 h-12 flex justify-center items-center text-white">
+                            <div
+                                className="bg-yellow-500 rounded-full w-12 h-12 flex justify-center items-center text-white">
                                 <h3 className="text-xl">4</h3>
                             </div>
                             <h4 className="text-lg font-bold mt-4">

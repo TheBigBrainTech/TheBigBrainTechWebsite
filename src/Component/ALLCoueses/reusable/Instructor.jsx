@@ -1,5 +1,6 @@
 import React from 'react';
- const Instructor = () => {
+
+const Instructor = () => {
     return (
         <div>Instructor</div>
     )

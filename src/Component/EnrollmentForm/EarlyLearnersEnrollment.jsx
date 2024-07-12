@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import {useNavigate} from "react-router-dom";
 
 const EarlyLearnersEnrollment = () => {
@@ -27,8 +27,8 @@ const EarlyLearnersEnrollment = () => {
     const [showDialog, setShowDialog] = useState(false);
 
     const handleChange = (e) => {
-        const { name, value, type, checked } = e.target;
-        setFormData({ ...formData, [name]: type === 'checkbox' ? checked : value });
+        const {name, value, type, checked} = e.target;
+        setFormData({...formData, [name]: type === 'checkbox' ? checked : value});
     };
 
     const handleSubmit = (e) => {
@@ -351,7 +351,8 @@ const EarlyLearnersEnrollment = () => {
             </div>
 
             <div className="p-3">
-                <button type="button" onClick={handleCancel} className="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-400">
+                <button type="button" onClick={handleCancel}
+                        className="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-400">
                     Cancel
                 </button>
                 <button type="button" className="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-400 ml-4">
@@ -364,10 +365,11 @@ const EarlyLearnersEnrollment = () => {
                     <div className="bg-white p-6 rounded shadow-md">
                         <h3 className="text-lg font-medium">Are you sure you want to cancel the application?</h3>
                         <div className="mt-4 flex justify-end">
-                            <button onClick={handleDialogClose} className="bg-gray-300 text-gray-700 py-2 px-4 rounded mr-2">
+                            <button onClick={handleDialogClose}
+                                    className="bg-gray-300 text-gray-700 py-2 px-4 rounded mr-2">
                                 No
                             </button>
-                            <button onClick={()=>navigate(-1)} className="bg-red-500 text-white py-2 px-4 rounded">
+                            <button onClick={() => navigate(-1)} className="bg-red-500 text-white py-2 px-4 rounded">
                                 Yes
                             </button>
                         </div>

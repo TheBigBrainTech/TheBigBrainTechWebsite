@@ -1,4 +1,4 @@
-const { transformSync } = require('@babel/core');
+const {transformSync} = require('@babel/core');
 
 const code = `
   const obj = {
@@ -9,8 +9,8 @@ const code = `
 `;
 
 const options = {
-  configFile: true,
-  plugins: ['@babel/plugin-transform-private-property-in-object'],
+    configFile: true,
+    plugins: ['@babel/plugin-transform-private-property-in-object'],
 };
 
 const transformedCode = transformSync(code, options);

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 
 const EnrollmentForm = () => {
     const [formData, setFormData] = useState({
@@ -15,8 +15,8 @@ const EnrollmentForm = () => {
     });
 
     const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
+        const {name, value} = e.target;
+        setFormData({...formData, [name]: value});
     };
 
     const handleSubmit = (e) => {

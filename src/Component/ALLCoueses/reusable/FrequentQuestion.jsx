@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import questionData from "../../../Assets/Data/FAQ.json";
 
 export default function StaticFaqSection() {
@@ -27,7 +27,7 @@ export default function StaticFaqSection() {
                                 <button
                                     className="mb-1 text-yellow-500 cursor-pointer flex items-center justify-center w-full text-left"
                                     onClick={() => handleQuestionClick(index)}
-                                    style={{ background: "none", border: "none", padding: 0 }}
+                                    style={{background: "none", border: "none", padding: 0}}
                                 >
                                     <i className="fa-solid fa-circle-question mr-2"></i> {item.question}
                                     <i className="fa-solid fa-chevron-down p-2"></i>
