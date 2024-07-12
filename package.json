@@ -41,7 +41,8 @@
     "web-vitals": "^3.4.0",
     "webpack": "^5.92.1",
     "websocket": "^1.0.34",
-    "ws": "^8.13.0"
+    "ws": "^8.13.0",
+    "@aws-sdk/client-ses": "^3.0.0"
   },
   "scripts": {
     "start": "react-app-rewired start",
