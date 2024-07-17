@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import FrontendCourseInfo from "../react/FrontendCourseInfo";
 import FullstackCourseInfo from "../FullStack/FullstackcourseInfo";
@@ -37,114 +37,115 @@ import EarlyLearners3WhyBigBrainTech from "../reusable/EarlyLearnersWhyBigBrainT
 
 import Instructor from "../reusable/Instructor";
 
-const SecondNavi = ({module}) => {
+const SecondNavi = ({ module }) => {
     const [selectedComponent, setSelectedComponent] = useState("CourseInfo");
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const renderComponent = () => {
         switch (selectedComponent) {
             case "CourseInfo":
                 switch (module) {
                     case "frontend":
-                        return <FrontendCourseInfo/>;
+                        return <FrontendCourseInfo />;
                     case "fullstack":
-                        return <FullstackCourseInfo/>;
+                        return <FullstackCourseInfo />;
                     case "qa":
-                        return <QACourseInfo/>;
+                        return <QACourseInfo />;
                     case "earlylearners1":
-                        return <EarlyLearners1CourseInfo/>;
+                        return <EarlyLearners1CourseInfo />;
                     case "earlylearners2":
-                        return <EarlyLearners2CourseInfo/>;
+                        return <EarlyLearners2CourseInfo />;
                     case "earlylearners3":
-                        return <EarlyLearners3CourseInfo/>;
+                        return <EarlyLearners3CourseInfo />;
                     default:
-                        return <FrontendCourseInfo/>;
+                        return <FrontendCourseInfo />;
                 }
             case "StudentReview":
                 switch (module) {
                     case "frontend":
-                        return <FrontendStudentReview/>;
+                        return <FrontendStudentReview />;
                     case "fullstack":
-                        return <FullstackStudentReview/>;
+                        return <FullstackStudentReview />;
                     case "qa":
-                        return <QAStudentReview/>;
+                        return <QAStudentReview />;
                     case "earlylearners1":
-                        return <EarlyLearners1StudentReview/>;
+                        return <EarlyLearners1StudentReview />;
                     case "earlylearners2":
-                        return <EarlyLearners2StudentReview/>;
+                        return <EarlyLearners2StudentReview />;
                     case "earlylearners3":
-                        return <EarlyLearners3StudentReview/>;
+                        return <EarlyLearners3StudentReview />;
                     default:
-                        return <FrontendStudentReview/>;
+                        return <FrontendStudentReview />;
                 }
             case "Admission":
                 switch (module) {
                     case "frontend":
-                        return <FrontendAdmission/>;
+                        return <FrontendAdmission />;
                     case "fullstack":
-                        return <FullstackAdmission/>;
+                        return <FullstackAdmission />;
                     case "qa":
-                        return <QAAdmission/>;
+                        return <QAAdmission />;
                     case "earlylearners1":
-                        return <EarlyLearners1Admission/>;
+                        return <EarlyLearners1Admission />;
                     case "earlylearners2":
-                        return <EarlyLearners2Admission/>;
+                        return <EarlyLearners2Admission />;
                     case "earlylearners3":
-                        return <EarlyLearners3Admission/>;
+                        return <EarlyLearners3Admission />;
                     default:
-                        return <FrontendAdmission/>;
+                        return <FrontendAdmission />;
                 }
             case "FinancingOptions":
                 switch (module) {
                     case "frontend":
-                        return <FrontendFinancingOptions/>;
+                        return <FrontendFinancingOptions />;
                     case "fullstack":
-                        return <FullstackFinancingOptions/>;
+                        return <FullstackFinancingOptions />;
                     case "qa":
-                        return <QAFinancingOptions/>;
+                        return <QAFinancingOptions />;
                     case "earlylearners1":
-                        return <EarlyLearners1FinancingOptions/>;
+                        return <EarlyLearners1FinancingOptions />;
                     case "earlylearners2":
-                        return <EarlyLearners2FinancingOptions/>;
+                        return <EarlyLearners2FinancingOptions />;
                     case "earlylearners3":
-                        return <EarlyLearners3FinancingOptions/>;
+                        return <EarlyLearners3FinancingOptions />;
                     default:
-                        return <FrontendFinancingOptions/>;
+                        return <FrontendFinancingOptions />;
                 }
             case "WhyBigBrainTech":
                 switch (module) {
                     case "frontend":
-                        return <FrontendWhyBigBrainTech/>;
+                        return <FrontendWhyBigBrainTech />;
                     case "fullstack":
-                        return <FullstackWhyBigBrainTech/>;
+                        return <FullstackWhyBigBrainTech />;
                     case "qa":
-                        return <QAWhyBigBrainTech/>;
+                        return <QAWhyBigBrainTech />;
                     case "earlylearners1":
-                        return <EarlyLearners1WhyBigBrainTech/>;
+                        return <EarlyLearners1WhyBigBrainTech />;
                     case "earlylearners2":
-                        return <EarlyLearners2WhyBigBrainTech/>;
+                        return <EarlyLearners2WhyBigBrainTech />;
                     case "earlylearners3":
-                        return <EarlyLearners3WhyBigBrainTech/>;
+                        return <EarlyLearners3WhyBigBrainTech />;
                     default:
-                        return <FrontendWhyBigBrainTech/>;
+                        return <FrontendWhyBigBrainTech />;
                 }
             case "Instructor":
-                return <Instructor/>;
+                return <Instructor />;
             default:
                 switch (module) {
                     case "frontend":
-                        return <FrontendCourseInfo/>;
+                        return <FrontendCourseInfo />;
                     case "fullstack":
-                        return <FullstackCourseInfo/>;
+                        return <FullstackCourseInfo />;
                     case "qa":
-                        return <QACourseInfo/>;
+                        return <QACourseInfo />;
                     case "earlylearners1":
-                        return <EarlyLearners1CourseInfo/>;
+                        return <EarlyLearners1CourseInfo />;
                     case "earlylearners2":
-                        return <EarlyLearners2CourseInfo/>;
+                        return <EarlyLearners2CourseInfo />;
                     case "earlylearners3":
-                        return <EarlyLearners3CourseInfo/>;
+                        return <EarlyLearners3CourseInfo />;
                     default:
-                        return <FrontendCourseInfo/>;
+                        return <FrontendCourseInfo />;
                 }
         }
     };
@@ -155,21 +156,21 @@ const SecondNavi = ({module}) => {
                 <div className="container mx-auto flex justify-between items-center px-4 py-2">
                     {/* Toggle button */}
                     <button
-                        className="block lg:hidden text-gray-700 focus:outline-none"
+                        className="flex-1 lg:hidden text-gray-700 focus:outline-none"
                         type="button"
-                        data-mdb-toggle="collapse"
-                        data-mdb-target="#navbarCenteredExample"
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
                         aria-controls="navbarCenteredExample"
-                        aria-expanded="false"
+                        aria-expanded={isMenuOpen}
                         aria-label="Toggle navigation"
                     >
-                        <i className="fas fa-bars"></i>
+                        <i className="fas fa-bars p-6"></i>
+                        <p className="lg:hidden">View More</p>
                     </button>
 
                     {/* Collapsible wrapper */}
-                    <div className="hidden lg:flex justify-center w-full" id="navbarCenteredExample">
+                    <div className={`lg:flex justify-center w-full ${isMenuOpen ? "flex-1" : "hidden"}`} id="navbarCenteredExample">
                         {/* Links */}
-                        <ul className="flex space-x-8">
+                        <ul className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-8">
                             <li className="nav-item">
                                 <button
                                     className="nav-link text-gray-700 hover:text-yellow-500 border-b-2 border-transparent hover:border-yellow-500"
@@ -222,9 +223,7 @@ const SecondNavi = ({module}) => {
                     </div>
                 </div>
             </nav>
-            <div className="container mx-auto p-4">
-                {renderComponent()}
-            </div>
+            <div className="container mx-auto p-4">{renderComponent()}</div>
         </div>
     );
 };

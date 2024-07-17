@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Route, Routes, useLocation, useNavigate} from 'react-router-dom';
 import Homepage from './Component/Homepage/HomePageRender/Homepage';
 import LoginPage from './Component/LoginPage/StudentLogin';
-import InquiryForm from "./Component/Homepage/inquiry/signUpForm";
+import InquiryForm from "../src/Component/Homepage/inquiry/SignupForm"
 import AboutUsPage from './Component/About/AboutUs';
 import Questions from './Component/Questions/Questions';
 import Testimonials from "./Component/About/Testimonials";
@@ -21,6 +21,7 @@ import EarlyLearnersEnrollmentCard from "./Component/EnrollmentForm/EarlyLearner
 import FinancingOptions from "./Component/ALLCoueses/reusable/Financing";
 import Support from "./Component/Support/supportPage"
 import ErrorPage from "./Component/Error/ErrorPage";
+import ModalManager from "./Component/CommonComponents/ModalManager";
 
 function AppRoutes() {
     const [isInquiryFormOpen, setInquiryFormOpen] = useState(false);
@@ -41,6 +42,7 @@ function AppRoutes() {
     }, [location.pathname]);
 
     return (
+        <>
         <Routes>
             <Route path="/" element={<Homepage/>}/>
             <Route path="/Error" element={<ErrorPage/>}/>
@@ -75,6 +77,8 @@ function AppRoutes() {
             <Route path="/financing" element={<FinancingOptions/>}/>
             <Route path="/enroll" element={<EnrollmentCard/>}/>
         </Routes>
+        <ModalManager/>
+        </>
     );
 }
 

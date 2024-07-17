@@ -1,10 +1,10 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import PropTypes from 'prop-types';
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 import emailjs from '@emailjs/browser';
 import axios from 'axios';
 
-const Modal = ({isOpen, onClose, downloadUrl}) => {
+const CoursePacketDownloadForm = ({ isOpen, onClose, downloadUrl }) => {
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
@@ -26,7 +26,7 @@ const Modal = ({isOpen, onClose, downloadUrl}) => {
     };
 
     const handleChange = (e) => {
-        setFormData({...formData, [e.target.name]: e.target.value});
+        setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
     const handleSubmit = async (e) => {
@@ -44,7 +44,7 @@ const Modal = ({isOpen, onClose, downloadUrl}) => {
                 window.location.href = downloadUrl;
 
                 // Reset form
-                setFormData({fullName: '', email: '', phoneNumber: ''});
+                setFormData({ fullName: '', email: '', phoneNumber: '' });
                 onClose();
             } catch (error) {
                 console.error('Form submission error:', error);
@@ -60,13 +60,12 @@ const Modal = ({isOpen, onClose, downloadUrl}) => {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
             <motion.div
                 className="bg-white p-8 rounded-md"
-                initial={{scale: 0}}
-                animate={{scale: 1}}
-                exit={{scale: 0}}
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                exit={{ scale: 0 }}
             >
                 <h2 className="text-2xl mb-4 text-gray-600">Download Course Brochure</h2>
-                <p className="text-gray-500 pb-5">Tell us a little about you — and we’ll get in touch with more
-                    info. </p>
+                <p className="text-gray-500 pb-5">Tell us a little about you — and we’ll get in touch with more info.</p>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-4">
                         <label htmlFor="fullName" className="block text-gray-700">Full Name</label>
@@ -108,33 +107,24 @@ const Modal = ({isOpen, onClose, downloadUrl}) => {
                         {formErrors.phoneNumber && <p className="text-red-500 text-sm">{formErrors.phoneNumber}</p>}
                     </div>
                     <div className="flex justify-center">
-                        <button type="button" className="bg-red-500 text-white py-2 px-4 rounded mr-4 hover:bg-red-700"
-                                onClick={onClose}>Cancel
-                        </button>
-                        <button type="submit"
-                                className="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-400">Submit
-                        </button>
+                        <button type="button" className="bg-red-500 text-white py-2 px-4 rounded mr-4 hover:bg-red-700" onClick={onClose}>Cancel</button>
+                        <button type="submit" className="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-400">Submit</button>
                     </div>
-                    <p className="text-gray-400 pt-3"><sup>*</sup>By submitting this form, you agree to receive
-                        communications related to courses at The BigBrain
-                        Tech.<br></br>
-                        I have read and acknowledge The BigBrain Tech&apos;s <a href="/Privacy"
-                                                                                className="text-blue-400 text-decoration-line: underline">Privacy
-                            Policy</a> and <a href="/Terms" className="text-blue-400 text-decoration-line: underline">Terms
-                            of Service</a>.<br></br>
+                    <p className="text-gray-400 pt-3">
+                        <sup>*</sup>By submitting this form, you agree to receive communications related to courses at The BigBrain Tech.<br />
+                        I have read and acknowledge The BigBrain Tech&apos;s <a href="/Privacy" className="text-blue-400 text-decoration-line: underline">Privacy Policy</a> and <a href="/Terms" className="text-blue-400 text-decoration-line: underline">Terms of Service</a>.<br />
                         Communication frequency varies. Unsubscribe to opt-out from marketing E-mails.
                     </p>
                 </form>
-
             </motion.div>
         </div>
     );
 };
 
-Modal.propTypes = {
+CoursePacketDownloadForm.propTypes = {
     isOpen: PropTypes.bool.isRequired,
     onClose: PropTypes.func.isRequired,
     downloadUrl: PropTypes.string.isRequired,
 };
 
-export default Modal;
+export default CoursePacketDownloadForm;

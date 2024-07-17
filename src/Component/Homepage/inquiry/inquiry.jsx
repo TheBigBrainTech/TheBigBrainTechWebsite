@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import SignupForm from './signUpForm'
+import React, { useState } from 'react';
+import SignupForm from './SignupForm';
 
 const ContactSection = () => {
     const [showForm, setShowForm] = useState(false);
@@ -19,11 +19,11 @@ const ContactSection = () => {
                 <h1>Have Questions?</h1>
             </div>
             <div className="flex justify-center">
-                <div className="w-full md:w-1/2 mb-4  hover:scale-105">
-                    <div className="bg-white shadow-2xl rounded-lg p-4 ">
+                <div className="w-full md:w-1/2 mb-4 hover:scale-105">
+                    <div className="bg-white shadow-2xl rounded-lg p-4">
                         <div className="text-center mb-3">
                             <span className="info-box">
-                                <i className="fa-solid fa-circle-question fa-3x" style={{color: '#007bff'}}></i>
+                                <i className="fa-solid fa-circle-question fa-3x" style={{ color: '#007bff' }}></i>
                             </span>
                         </div>
                         <h4 className="info-title text-center pt-3">Schedule an appointment</h4>
@@ -51,7 +51,7 @@ const ContactSection = () => {
                     </div>
                 </div>
             </div>
-            {showForm && <SignupForm onClose={handleCloseForm}/>}
+            {showForm && <SignupForm onClose={handleCloseForm} />}
         </div>
     );
 };

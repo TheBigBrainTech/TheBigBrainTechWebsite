@@ -73,7 +73,7 @@ const Testimonials = () => {
                         </div>
                     ))}
                 </div>
-                <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <div className="absolute flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
                     {testimonials.map((_, index) => (
                         <button
                             key={index}
@@ -88,7 +88,7 @@ const Testimonials = () => {
                 </div>
                 <button
                     type="button"
-                    className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    className="absolute top-0 left-0  flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                     data-carousel-prev
                     onClick={prevSlide}
                 >
@@ -108,7 +108,7 @@ const Testimonials = () => {
                 </button>
                 <button
                     type="button"
-                    className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    className="absolute top-0 right-0  flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                     data-carousel-next
                     onClick={nextSlide}
                 >

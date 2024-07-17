@@ -3,7 +3,7 @@ import { CitySelect, CountrySelect, StateSelect } from "react-country-state-city
 import "react-country-state-city/dist/react-country-state-city.css";
 import PropTypes from "prop-types";
 
-const SignupForm = ({ onClose }) => {
+const signupForm = ({ onClose }) => {
     const [formData, setFormData] = useState({
         fullname: '',
         email: '',
@@ -79,7 +79,7 @@ const SignupForm = ({ onClose }) => {
     };
 
     return (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4 overflow-auto">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4 overflow-auto">
             <div className="max-w-screen-lg w-full bg-white shadow-md rounded-lg p-6 mt-12 relative">
                 <h2 className="text-2xl font-bold mb-6">Signup for a call from our recruiter</h2>
                 <form onSubmit={handleSubmit} className="flex flex-col md:flex-row flex-wrap">
@@ -158,7 +158,6 @@ const SignupForm = ({ onClose }) => {
                     </div>
                     <div className="mb-4 w-full md:w-1/2 px-2">
                         <label htmlFor="time" className="block text-sm font-medium text-gray-700">Preferred Time:</label>
-                        <p className="text-gray-600 text-sm"><sup>*</sup> USA EST</p>
                         <select
                             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                             id="time"
@@ -168,20 +167,20 @@ const SignupForm = ({ onClose }) => {
                             onChange={handleChange}
                         >
                             <option value="" disabled>Select Preferred Time</option>
-                            <option value="10:00 AM">10:00 AM</option>
-                            <option value="10:30 AM">10:30 AM</option>
-                            <option value="11:00 AM">11:00 AM</option>
-                            <option value="11:30 AM">11:30 AM</option>
-                            <option value="12:00 PM">12:00 PM</option>
-                            <option value="12:30 PM">12:30 PM</option>
-                            <option value="1:00 PM">1:00 PM</option>
-                            <option value="1:30 PM">1:30 PM</option>
-                            <option value="2:00 PM">2:00 PM</option>
-                            <option value="2:30 PM">2:30 PM</option>
-                            <option value="3:00 PM">3:00 PM</option>
-                            <option value="3:30 PM">3:30 PM</option>
-                            <option value="4:00 PM">4:00 PM</option>
-                            <option value="4:30 PM">4:30 PM</option>
+                            <option value="10:00 AM">10:00 AM USA EST</option>
+                            <option value="10:30 AM">10:30 AM USA EST</option>
+                            <option value="11:00 AM">11:00 AM USA EST</option>
+                            <option value="11:30 AM">11:30 AM USA EST</option>
+                            <option value="12:00 PM">12:00 PM USA EST</option>
+                            <option value="12:30 PM">12:30 PM USA EST</option>
+                            <option value="1:00 PM">1:00 PM USA EST</option>
+                            <option value="1:30 PM">1:30 PM USA EST</option>
+                            <option value="2:00 PM">2:00 PM USA EST</option>
+                            <option value="2:30 PM">2:30 PM USA EST</option>
+                            <option value="3:00 PM">3:00 PM USA EST</option>
+                            <option value="3:30 PM">3:30 PM USA EST</option>
+                            <option value="4:00 PM">4:00 PM USA EST</option>
+                            <option value="4:30 PM">4:30 PM USA EST</option>
                         </select>
                     </div>
                     <div className="mb-4 w-full px-2">
@@ -191,8 +190,10 @@ const SignupForm = ({ onClose }) => {
                             id="about"
                             name="about"
                             rows="5"
+                            required
                             value={formData.about}
                             onChange={handleChange}
+                            placeholder="Which Bootcamp are you interested in?"
                         ></textarea>
                     </div>
                     <div className="text-center w-full px-2">
@@ -205,8 +206,8 @@ const SignupForm = ({ onClose }) => {
     );
 };
 
-SignupForm.propTypes = {
+signupForm.propTypes = {
     onClose: PropTypes.func.isRequired,
 };
 
-export default SignupForm;
+export default signupForm;

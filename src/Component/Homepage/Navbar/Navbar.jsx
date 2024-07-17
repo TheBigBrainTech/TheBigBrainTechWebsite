@@ -6,16 +6,28 @@ import useMeasure from "react-use-measure";
 import PropTypes from "prop-types";
 import BrandImage from "../../../Assets/images/logo/BigBrainLogoBlue.png";
 import { Link, useNavigate } from 'react-router-dom';
+import CoursePacketDownloadForm from "../../ALLCoueses/reusable/CoursePacketDownloadForm";
 
 const Navigation = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleModalClose = () => {
+        setIsModalOpen(false);
+    };
+
     return (
         <>
-            <FlyoutNav />
+            <FlyoutNav setIsModalOpen={setIsModalOpen} />
+            <CoursePacketDownloadForm
+                isOpen={isModalOpen}
+                onClose={handleModalClose}
+                downloadUrl="/path/to/brochure.pdf" // Replace with complete brochure URL
+            />
         </>
     );
 };
 
-const FlyoutNav = () => {
+const FlyoutNav = ({ setIsModalOpen }) => {
     const [scrolled, setScrolled] = useState(false);
     const { scrollY } = useScroll();
 
@@ -33,13 +45,17 @@ const FlyoutNav = () => {
             <div className="mx-auto flex max-w-7xl items-center justify-between">
                 <Logo />
                 <div className="hidden gap-6 lg:flex">
-                    <Links />
+                    <Links setIsModalOpen={setIsModalOpen} />
                     <CTAs />
                 </div>
-                <MobileMenu />
+                <MobileMenu setIsModalOpen={setIsModalOpen} />
             </div>
         </nav>
     );
+};
+
+FlyoutNav.propTypes = {
+    setIsModalOpen: PropTypes.func.isRequired,
 };
 
 const Logo = () => {
@@ -56,11 +72,16 @@ Logo.propTypes = {
     color: PropTypes.string,
 };
 
-const Links = () => {
+const Links = ({ setIsModalOpen }) => {
     return (
         <div className="flex items-center gap-6">
             {LINKS.map((l) => (
-                <NavLink key={l.text} href={l.href} FlyoutContent={l.component}>
+                <NavLink
+                    key={l.text}
+                    href={l.href}
+                    FlyoutContent={l.component}
+                    onClick={l.onClick ? () => l.onClick(setIsModalOpen) : null}
+                >
                     {l.text}
                 </NavLink>
             ))}
@@ -68,16 +89,35 @@ const Links = () => {
     );
 };
 
-const NavLink = ({ children, href, FlyoutContent }) => {
+Links.propTypes = {
+    setIsModalOpen: PropTypes.func.isRequired,
+};
+
+const NavLink = ({ children, href, FlyoutContent, onClick }) => {
     const [open, setOpen] = useState(false);
 
     const showFlyout = FlyoutContent && open;
+
+    const handleClick = (e) => {
+        if (onClick) {
+            e.preventDefault();
+            onClick();
+        }
+    };
 
     return (
         <div
             onMouseEnter={() => setOpen(true)}
             onMouseLeave={() => setOpen(false)}
             className="relative h-fit w-fit"
+            onClick={handleClick}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    handleClick(e);
+                }
+            }}
         >
             <a href={href} className="relative">
                 {children}
@@ -111,8 +151,14 @@ const NavLink = ({ children, href, FlyoutContent }) => {
 
 NavLink.propTypes = {
     children: PropTypes.node.isRequired,
-    href: PropTypes.string.isRequired,
+    href: PropTypes.string,
     FlyoutContent: PropTypes.elementType,
+    onClick: PropTypes.func,
+};
+
+NavLink.defaultProps = {
+    href: "#",
+    onClick: () => {},
 };
 
 const CTAs = () => {
@@ -282,13 +328,21 @@ const CareersContent = () => {
     );
 };
 
-const MobileMenuLink = ({ children, href, FoldContent, setMenuOpen }) => {
+const MobileMenuLink = ({ children, href, FoldContent, setMenuOpen, onClick }) => {
     const [ref, { height }] = useMeasure();
     const [open, setOpen] = useState(false);
 
     const handleKeyDown = (e) => {
         if (e.key === "Enter" || e.key === " ") {
             setOpen((pv) => !pv);
+        }
+    };
+
+    const handleClick = (e) => {
+        if (onClick) {
+            e.preventDefault();
+            onClick();
+            setMenuOpen(false);
         }
     };
 
@@ -306,6 +360,7 @@ const MobileMenuLink = ({ children, href, FoldContent, setMenuOpen }) => {
                         onClick={(e) => {
                             e.stopPropagation();
                             setMenuOpen(false);
+                            onClick();
                         }}
                         href={href}
                     >
@@ -323,10 +378,7 @@ const MobileMenuLink = ({ children, href, FoldContent, setMenuOpen }) => {
                 </div>
             ) : (
                 <a
-                    onClick={(e) => {
-                        e.stopPropagation();
-                        setMenuOpen(false);
-                    }}
+                    onClick={handleClick}
                     href={href}
                     className="flex w-full cursor-pointer items-center justify-between border-b border-neutral-300 py-6 text-start text-2xl font-semibold"
                 >
@@ -355,12 +407,18 @@ const MobileMenuLink = ({ children, href, FoldContent, setMenuOpen }) => {
 
 MobileMenuLink.propTypes = {
     children: PropTypes.node.isRequired,
-    href: PropTypes.string.isRequired,
+    href: PropTypes.string,
     FoldContent: PropTypes.elementType,
     setMenuOpen: PropTypes.func.isRequired,
+    onClick: PropTypes.func,
 };
 
-const MobileMenu = () => {
+MobileMenuLink.defaultProps = {
+    href: "#",
+    onClick: () => {},
+};
+
+const MobileMenu = ({ setIsModalOpen }) => {
     const [open, setOpen] = useState(false);
     return (
         <div className="block lg:hidden">
@@ -389,6 +447,7 @@ const MobileMenu = () => {
                                     href={l.href}
                                     FoldContent={l.component}
                                     setMenuOpen={setOpen}
+                                    onClick={l.onClick ? () => l.onClick(setIsModalOpen) : null}
                                 >
                                     {l.text}
                                 </MobileMenuLink>
@@ -402,6 +461,10 @@ const MobileMenu = () => {
             </AnimatePresence>
         </div>
     );
+};
+
+MobileMenu.propTypes = {
+    setIsModalOpen: PropTypes.func.isRequired,
 };
 
 export default Navigation;
@@ -424,6 +487,8 @@ const LINKS = [
     },
     {
         text: "Program Brochure",
-        href: "./",
+        href: "#",
+        component: null,  // This will be handled by onClick
+        onClick: (setIsModalOpen) => setIsModalOpen(true),
     },
 ];
