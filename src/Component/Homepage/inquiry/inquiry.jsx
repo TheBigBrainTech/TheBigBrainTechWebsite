@@ -5,12 +5,12 @@ const ContactSection = () => {
     const [showForm, setShowForm] = useState(false);
 
     const handleJoinWebinarClick = (e) => {
-        e.preventDefault(); // Prevent the default action
-        setShowForm(true); // Show the form
+        e.preventDefault();
+        setShowForm(true);
     };
 
     const handleCloseForm = () => {
-        setShowForm(false); // Hide the form
+        setShowForm(false);
     };
 
     return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import Logo from '../../Assets/images/logo/BigBrainTechLogoBlack.png'
+import Logo from '../../Assets/images/logo/BigBrainTechLogoBlack.png';
 
 const WelcomeModal = ({ onClose, onSubmit }) => {
     const [formData, setFormData] = useState({
@@ -14,7 +14,7 @@ const WelcomeModal = ({ onClose, onSubmit }) => {
         setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
     };
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         onSubmit(formData);
     };
@@ -22,7 +22,7 @@ const WelcomeModal = ({ onClose, onSubmit }) => {
     return (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4">
             <div className="bg-white rounded-lg p-6 shadow-lg">
-                <img src={Logo} alt={"LogoImage"} className="LogoImage" style={{height:"50px", width:"100px"}} />
+                <img src={Logo} alt="LogoImage" className="LogoImage" style={{ height: "50px", width: "100px" }} />
                 <h2 className="text-2xl font-bold mb-4">Stay Connected</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-4">
@@ -60,6 +60,10 @@ const WelcomeModal = ({ onClose, onSubmit }) => {
                             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none"
                             required
                         />
+                    </div>
+                    <div>
+                        <p>By providing your email, you confirm you have read and acknowledge The Bigbrain Tech&apos;s Privacy Policy and Terms of Service.<br></br>
+                            This site uses cookies and the Google Privacy Policy and Google Terms of Service apply. SMS message and data rates may apply.</p>
                     </div>
                     <div className="flex justify-end">
                         <button type="submit" className="bg-yellow-500 text-white py-2 px-4 rounded">Submit</button>
