@@ -59,7 +59,7 @@ const ModalManager = () => {
     };
 
     const handleCloseCookiesModal = () => {
-        console.log('Closed cookies modal without choice, defaulting to accept all cookies');
+        // console.log('Closed cookies modal without choice, defaulting to accept all cookies');
         setShowCookieModal(false);
     };
 

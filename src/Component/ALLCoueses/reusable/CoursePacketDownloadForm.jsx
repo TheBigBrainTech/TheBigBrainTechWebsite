@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from 'prop-types';
 import { motion } from "framer-motion";
-import emailjs from '@emailjs/browser';
 import axios from 'axios';
 
 const CoursePacketDownloadForm = ({ isOpen, onClose, downloadUrl }) => {
@@ -34,11 +33,8 @@ const CoursePacketDownloadForm = ({ isOpen, onClose, downloadUrl }) => {
         const errors = validate();
         if (Object.keys(errors).length === 0) {
             try {
-                // Send data to PostgreSQL
-                await axios.post('YOUR_BACKEND_API_ENDPOINT', formData);
-
-                // Send email using EmailJS
-                await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID');
+                // Send data to the backend API (which will handle saving to DynamoDB and sending email)
+                await axios.post('https://rt056eege6.execute-api.us-east-1.amazonaws.com/Prod/CoursePacketDownload', formData);
 
                 // Trigger file download
                 window.location.href = downloadUrl;
@@ -48,6 +44,7 @@ const CoursePacketDownloadForm = ({ isOpen, onClose, downloadUrl }) => {
                 onClose();
             } catch (error) {
                 console.error('Form submission error:', error);
+                setFormErrors({ apiError: 'Failed to submit the form. Please try again.' });
             }
         } else {
             setFormErrors(errors);
@@ -60,12 +57,13 @@ const CoursePacketDownloadForm = ({ isOpen, onClose, downloadUrl }) => {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
             <motion.div
                 className="bg-white p-8 rounded-md"
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                exit={{ scale: 0 }}
+                initial={{scale: 0}}
+                animate={{scale: 1}}
+                exit={{scale: 0}}
             >
                 <h2 className="text-2xl mb-4 text-gray-600">Download Course Brochure</h2>
-                <p className="text-gray-500 pb-5">Tell us a little about you — and we’ll get in touch with more info.</p>
+                <p className="text-gray-500 pb-5">Tell us a little about you — and we’ll get in touch with more
+                    info.</p>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-4">
                         <label htmlFor="fullName" className="block text-gray-700">Full Name</label>
@@ -107,12 +105,21 @@ const CoursePacketDownloadForm = ({ isOpen, onClose, downloadUrl }) => {
                         {formErrors.phoneNumber && <p className="text-red-500 text-sm">{formErrors.phoneNumber}</p>}
                     </div>
                     <div className="flex justify-center">
-                        <button type="button" className="bg-red-500 text-white py-2 px-4 rounded mr-4 hover:bg-red-700" onClick={onClose}>Cancel</button>
-                        <button type="submit" className="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-400">Submit</button>
+                        <button type="submit"
+                                className="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-400 mr-4">Download
+                        </button>
+                        <button type="button" className="bg-red-500 text-white py-2 px-4 rounded mr-4 hover:bg-red-700"
+                                onClick={onClose}>Cancel
+                        </button>
                     </div>
+                    {formErrors.apiError && <p className="text-red-500 text-sm mt-4">{formErrors.apiError}</p>}
                     <p className="text-gray-400 pt-3">
-                        <sup>*</sup>By submitting this form, you agree to receive communications related to courses at The BigBrain Tech.<br />
-                        I have read and acknowledge The BigBrain Tech&apos;s <a href="/Privacy" className="text-blue-400 text-decoration-line: underline">Privacy Policy</a> and <a href="/Terms" className="text-blue-400 text-decoration-line: underline">Terms of Service</a>.<br />
+                        <sup>*</sup>By submitting this form, you agree to receive communications related to courses at
+                        The BigBrain Tech.<br/>
+                        I have read and acknowledge The BigBrain Tech&apos;s <a href="/Privacy"
+                                                                                className="text-blue-400 text-decoration-line: underline">Privacy
+                        Policy</a> and <a href="/Terms" className="text-blue-400 text-decoration-line: underline">Terms
+                        of Service</a>.<br/>
                         Communication frequency varies. Unsubscribe to opt-out from marketing E-mails.
                     </p>
                 </form>

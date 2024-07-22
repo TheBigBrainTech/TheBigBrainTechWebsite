@@ -25,8 +25,9 @@ function HeroImage() {
                             </h4>
                             <p className="text-neutral-700 mt-2">
                                 Our expertly crafted programming classes blend theory with hands-on experience,
-                                <p>empowering you to navigate the ever-evolving digital landscape with confidence and skill.</p>
                             </p>
+                            <p className="text-neutral-700 mt-2">empowering you to navigate the ever-evolving digital landscape with confidence and
+                                skill.</p>
                         </div>
                     </div>
                 </div>

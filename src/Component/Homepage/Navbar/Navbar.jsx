@@ -93,7 +93,7 @@ Links.propTypes = {
     setIsModalOpen: PropTypes.func.isRequired,
 };
 
-const NavLink = ({ children, href, FlyoutContent, onClick }) => {
+const NavLink = ({ children, href = "#", FlyoutContent, onClick = () => {} }) => {
     const [open, setOpen] = useState(false);
 
     const showFlyout = FlyoutContent && open;
@@ -154,11 +154,6 @@ NavLink.propTypes = {
     href: PropTypes.string,
     FlyoutContent: PropTypes.elementType,
     onClick: PropTypes.func,
-};
-
-NavLink.defaultProps = {
-    href: "#",
-    onClick: () => {},
 };
 
 const CTAs = () => {
@@ -304,13 +299,13 @@ const CareersContent = () => {
                 <div className="space-y-3">
                     <h3 className="font-semibold">Early Learners</h3>
                     <Link to="/Programs/EarlyLearners/Basic" className="block text-sm hover:underline">
-                        Entry Level Learners
+                        Early Learners I
                     </Link>
                     <Link to="/Programs/EarlyLearners/Intermediate" className="block text-sm hover:underline">
-                        Intermediate Learners
+                        Early Learners II
                     </Link>
                     <Link to="/Programs/EarlyLearners/Advanced" className="block text-sm hover:underline">
-                        Advanced Learners
+                        Early Learners III
                     </Link>
                 </div>
                 <div className="space-y-3">
@@ -328,7 +323,7 @@ const CareersContent = () => {
     );
 };
 
-const MobileMenuLink = ({ children, href, FoldContent, setMenuOpen, onClick }) => {
+const MobileMenuLink = ({ children, href = "#", FoldContent, setMenuOpen, onClick = () => {} }) => {
     const [ref, { height }] = useMeasure();
     const [open, setOpen] = useState(false);
 
@@ -411,11 +406,6 @@ MobileMenuLink.propTypes = {
     FoldContent: PropTypes.elementType,
     setMenuOpen: PropTypes.func.isRequired,
     onClick: PropTypes.func,
-};
-
-MobileMenuLink.defaultProps = {
-    href: "#",
-    onClick: () => {},
 };
 
 const MobileMenu = ({ setIsModalOpen }) => {
