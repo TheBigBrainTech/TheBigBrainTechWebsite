@@ -8,12 +8,12 @@ phases:
       - nvm install 20.15.0
       - nvm use 20.15.0
       - echo Installing dependencies...
-        - yarn install --frozen-lockfile
+        - npm install --frozen-lockfile
 
   build:
     commands:
       - echo Build started on `date`
-        - yarn build
+        - npm build
 
 artifacts:
   files:
