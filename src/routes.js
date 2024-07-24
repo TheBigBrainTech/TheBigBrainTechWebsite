@@ -22,8 +22,8 @@ import FinancingOptions from "./Component/ALLCoueses/reusable/Financing";
 import Support from "./Component/Support/supportPage"
 import ErrorPage from "./Component/Error/ErrorPage";
 import ModalManager from "./Component/CommonComponents/ModalManager";
-import Registration from "./Component/LoginPage/Registration";
-import ForgotPassword from "./Component/LoginPage/ForgotPassword";
+// import Registration from "./Component/LoginPage/Registration";
+// import ForgotPassword from "./Component/LoginPage/ForgotPassword";
 import Dashboard from "./Component/Dashboard/Dashboard";
 import Profile from "./Component/Dashboard/Profile";
 
@@ -82,8 +82,8 @@ function AppRoutes() {
             <Route path="/enroll" element={<EnrollmentCard/>}/>
 
 
-            <Route path="/Registration" element={<Registration/>}/>
-            <Route path="/ForgotPassword" element={<ForgotPassword/>}/>
+            {/*<Route path="/Registration" element={<Registration/>}/>*/}
+            {/*<Route path="/ForgotPassword" element={<ForgotPassword/>}/>*/}
             <Route path="/dashboard" element={<Dashboard/>}/>
             <Route path="/profile" element={<Profile/>}/>
         </Routes>
