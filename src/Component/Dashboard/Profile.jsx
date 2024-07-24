@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes, faChevronDown, faUser, faCogs, faSignOutAlt, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
+import AuthenticatedLayout from "../LoginPage/AuthenticatedLayout";
 
 const Profile = () => {
     const [navOpen, setNavOpen] = useState(false);
@@ -15,6 +16,7 @@ const Profile = () => {
     };
 
     return (
+        <AuthenticatedLayout>
         <div className="bg-gray-100">
             <div className="w-full text-white bg-main-color">
                 <div className="flex flex-col max-w-screen-xl px-4 mx-auto md:flex-row md:items-center md:justify-between md:px-6 lg:px-8">
@@ -232,6 +234,7 @@ const Profile = () => {
                 </div>
             </div>
         </div>
+        </AuthenticatedLayout>
     );
 };
 

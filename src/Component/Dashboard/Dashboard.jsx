@@ -1,11 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTachometerAlt, faBook, faShoppingCart, faUser, faSignOutAlt, faUpload } from '@fortawesome/free-solid-svg-icons';
+import { faTachometerAlt, faBook, faShoppingCart, faUser, faUpload } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
 import Logo from '../../Assets/images/logo/BigBrainTechLogoBlack.png';
+import AuthenticatedLayout from "../LoginPage/AuthenticatedLayout";
 
 const Dashboard = () => {
     return (
+        <AuthenticatedLayout>
         <div className="flex h-screen bg-gray-100">
             <aside className="w-64 bg-blue-900 text-white">
                 <div className="p-6">
@@ -28,10 +30,6 @@ const Dashboard = () => {
                         <li className="p-4 hover:bg-blue-700">
                             <FontAwesomeIcon icon={faUser} className="mr-3" />
                             <span>Profile Settings</span>
-                        </li>
-                        <li className="p-4 hover:bg-blue-700">
-                            <FontAwesomeIcon icon={faSignOutAlt} className="mr-3" />
-                            <span>Log Out</span>
                         </li>
                     </ul>
                 </nav>
@@ -88,6 +86,7 @@ const Dashboard = () => {
                 </section>
             </main>
         </div>
+        </AuthenticatedLayout>
     );
 };
 

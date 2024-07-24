@@ -1,67 +1,45 @@
-import React from 'react';
-import { Authenticator }  from '@aws-amplify/ui-react';
-import Logo from '../../Assets/images/logo/BigBrainLogoBlue.png';
+import React, { useEffect } from 'react';
+import { Authenticator, useAuthenticator } from '@aws-amplify/ui-react';
+import { useNavigate } from 'react-router-dom';
 import loginImg from '../../Assets/images/character/LoginPageBg.png';
 import Navigation from '../Homepage/Navbar/Navbar';
 import Footer from '../Homepage/Footer/Footer';
-import { useNavigate } from 'react-router-dom';
 
 function Login() {
+    const { route, user } = useAuthenticator((context) => [context.route, context.user]);
     const navigate = useNavigate();
-    // const [email, setEmail] = useState('');
-    // const [password, setPassword] = useState('');
 
-    // const handleLogin = async (e) => {
-    //     e.preventDefault();
-    //     try {
-    //         await Auth.signIn(email, password);
-    //         if (email.endsWith('@thebigbraintech.com')) {
-    //             navigate('/dashboard');
-    //             console.log("signin success to dashboard");
-    //         } else {
-    //             navigate('/profile');
-    //             console.log("signin success to profile");
-    //         }
-    //     } catch (error) {
-    //         console.log('Error signing in', error);
-    //     }
-    // };
+    useEffect(() => {
+        if (route === 'authenticated' && user) {
+            const email = user.signInDetails?.loginId;
 
-    const handleLogoClick = () => {
-        navigate('/');
-    };
+            if (email) {
+                if (email.endsWith('@thebigbraintech.com')) {
+                    navigate('/dashboard');
+                } else {
+                    navigate('/profile');
+                }
+            } else {
+                console.error('Unable to determine user email');
+                navigate('/profile'); // Default to profile if we can't determine the email
+            }
+        }
+    }, [route, user, navigate]);
+
+    if (route === 'authenticated') {
+        return null; // Render nothing while we're figuring out where to navigate
+    }
 
     return (
         <div>
-            <section className="mb-24">
-                <Navigation/>
-            </section>
-
-    <Authenticator>
-        {({signOut}) => (
-            <div>
-
+            <Navigation />
             <div className="relative min-h-screen">
-                    <img src={loginImg} className="w-screen h-[800px]" alt="Sign In"/>
-                    <div className="absolute top-0 right-0 mt-16 mr-16 w-full max-w-md">
-                        <div className="bg-white p-12 rounded-lg shadow-lg mt-20 mr-20">
-                            <div className="flex justify-center mb-6">
-                                <button onClick={handleLogoClick} className="focus:outline-none">
-                                    <img src={Logo} alt="Company Logo" className="w-48"/>
-                                </button>
-                            </div>
-                            <button onClick={signOut}>Sign Out</button>
-                        </div>
-                    </div>
+                <img src={loginImg} className="w-screen h-[800px]" alt="Sign In" />
+                <div className="absolute top-0 right-0 mt-24 mr-24 w-full max-w-md">
+                    <Authenticator />
                 </div>
-                <section>
-                    <Footer/>
-                </section>
             </div>
-
-
-        )}
-        </Authenticator>
+            <Footer />
         </div>
     );
 }
