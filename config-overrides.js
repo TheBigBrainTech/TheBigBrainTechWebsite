@@ -1,9 +1,11 @@
-// config-overrides.js
-const {override, addWebpackModuleRule} = require('customize-cra');
+const { override, addBabelPlugin } = require('customize-cra');
 
 module.exports = override(
-    addWebpackModuleRule({
-        test: /\.svg$/,
-        use: ['@svgr/webpack'],
-    })
+    addBabelPlugin([
+        "babel-plugin-root-import",
+        {
+            rootPathPrefix: "~",
+            rootPathSuffix: "src"
+        }
+    ])
 );

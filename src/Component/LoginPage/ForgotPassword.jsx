@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Auth } from 'aws-amplify';
+import  { Auth }  from 'aws-amplify';
 
 function ForgotPassword() {
     const [email, setEmail] = useState('');
@@ -9,6 +9,7 @@ function ForgotPassword() {
     const handleSendCode = async () => {
         try {
             await Auth.forgotPassword(email);
+            console.log('Code sent successfully');
         } catch (error) {
             console.log('Error sending code', error);
         }
@@ -17,6 +18,7 @@ function ForgotPassword() {
     const handleResetPassword = async () => {
         try {
             await Auth.forgotPasswordSubmit(email, code, newPassword);
+            console.log('Password reset successfully');
         } catch (error) {
             console.log('Error resetting password', error);
         }

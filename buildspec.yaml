@@ -5,15 +5,14 @@ phases:
     runtime-versions:
       nodejs: 20.15.0
     commands:
-      - nvm install 20.15.0
-      - nvm use 20.15.0
       - echo Installing dependencies...
-        - npm install --frozen-lockfile
+      - npm install
 
   build:
     commands:
       - echo Build started on `date`
-        - npm build
+      - export NODE_OPTIONS=--openssl-legacy-provider
+      - npm run build
 
 artifacts:
   files:
@@ -21,4 +20,4 @@ artifacts:
 
 deploy:
   commands:
-    - aws s3 cp build/ s3://my-bucket/
+    - aws s3 cp build/ s3://my-bucket/ --recursive
