@@ -15,13 +15,13 @@ function Login() {
 
             if (email) {
                 if (email.endsWith('@thebigbraintech.com')) {
-                    navigate('/dashboard');
-                } else {
                     navigate('/profile');
+                } else {
+                    navigate('/dashboard');
                 }
             } else {
-                console.error('Unable to determine user email');
-                navigate('/profile'); // Default to profile if we can't determine the email
+                alert(`Unable to determine user email: ${email}`);
+                navigate('/'); // Default to profile if we can't determine the email
             }
         }
     }, [route, user, navigate]);
