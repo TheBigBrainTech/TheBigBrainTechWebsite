@@ -20,6 +20,16 @@
           "appId": "dowmfvldiuuw9",
           "type": "cicd"
         }
+      },
+      "function": {
+        "thebigbraintech1a815229DefineAuthChallenge": {
+          "deploymentBucketName": "amplify-thebigbraintech-dev-31eba-deployment",
+          "s3Key": "amplify-builds/thebigbraintech1a815229DefineAuthChallenge-39347265447464676878-build.zip"
+        },
+        "thebigbraintech1a815229CreateAuthChallenge": {
+          "deploymentBucketName": "amplify-thebigbraintech-dev-31eba-deployment",
+          "s3Key": "amplify-builds/thebigbraintech1a815229CreateAuthChallenge-617a6863584246587046-build.zip"
+        }
       }
     }
   }

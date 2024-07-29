@@ -27,14 +27,57 @@
       "service": "Cognito"
     }
   },
+  "function": {
+    "thebigbraintech1a815229CreateAuthChallenge": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "thebigbraintech1a815229DefineAuthChallenge": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
   "hosting": {
     "amplifyhosting": {
-      "lastPushTimeStamp": "2024-07-24T03:21:57.865Z",
       "service": "amplifyhosting",
       "type": "cicd"
     }
   },
   "parameters": {
+    "AMPLIFY_function_thebigbraintech1a815229CreateAuthChallenge_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "thebigbraintech1a815229CreateAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_thebigbraintech1a815229CreateAuthChallenge_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "thebigbraintech1a815229CreateAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_thebigbraintech1a815229DefineAuthChallenge_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "thebigbraintech1a815229DefineAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_thebigbraintech1a815229DefineAuthChallenge_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "thebigbraintech1a815229DefineAuthChallenge"
+        }
+      ]
+    },
     "AMPLIFY_hosting_amplifyhosting_appId": {
       "usedBy": [
         {

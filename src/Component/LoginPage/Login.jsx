@@ -33,10 +33,11 @@ function Login() {
     return (
         <div>
             <Navigation />
-            <div className="relative min-h-screen">
-                <img src={loginImg} className="w-screen h-[800px]" alt="Sign In" />
-                <div className="absolute top-0 right-0 mt-24 mr-24 w-full max-w-md">
-                    <Authenticator />
+            <div className="relative min-h-screen flex items-center bg-gray-100">
+                <img src={loginImg} className="absolute inset-0 w-full h-full object-cover" alt="Sign In" />
+                <div className="relative flex-1 flex justify-end p-6 pr-24">
+                        <Authenticator />
+
                 </div>
             </div>
             <Footer />
