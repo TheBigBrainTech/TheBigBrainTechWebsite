@@ -1,6 +1,8 @@
 {
   "version": "1",
   "cognitoConfig": {
+    "identityPoolName": "thebigbraintech08dc8f49_identitypool_08dc8f49",
+    "allowUnauthenticatedIdentities": false,
     "resourceNameTruncated": "thebig1a815229",
     "userPoolName": "thebigbraintech1a815229_userpool_1a815229",
     "autoVerifiedAttributes": [
@@ -12,7 +14,7 @@
     ],
     "smsAuthenticationMessage": "Your authentication code is {####}",
     "smsVerificationMessage": "Your verification code is {####}",
-    "emailVerificationSubject": "The Bigbrain Tech Verrification Code",
+    "emailVerificationSubject": "The BigBrain Tech Verification Code",
     "emailVerificationMessage": "Your verification code is {####}",
     "defaultPasswordPolicy": false,
     "passwordPolicyMinLength": 8,
@@ -49,7 +51,7 @@
     "userpoolClientSetAttributes": true,
     "sharedId": "1a815229",
     "resourceName": "thebigbraintech1a815229",
-    "authSelections": "userPoolOnly",
+    "authSelections": "identityPoolAndUserPool",
     "useDefault": "manual",
     "usernameAttributes": [
       "email"
@@ -76,10 +78,11 @@
     "adminQueries": false,
     "triggers": {},
     "hostedUI": false,
-    "authProviders": [],
     "parentStack": {
       "Ref": "AWS::StackId"
     },
-    "permissions": []
+    "permissions": [],
+    "authProviders": [],
+    "thirdPartyAuth": false
   }
 }

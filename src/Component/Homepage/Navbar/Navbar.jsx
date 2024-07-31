@@ -170,7 +170,7 @@ const CTAs = () => {
         <div className="flex items-center gap-3">
             <button
                 onClick={handleSignInClick}
-                className="flex items-center gap-2 rounded-lg border-2 border-blue-950 px-4 py-2 font-semibold text-black transition-colors hover:bg-[#DCAD32] hover:text-white md:bg-yellow-300/10 md:text-black md:hover:bg-[#DCAD32] md:hover:text-white"
+                className="flex items-center gap-2 rounded-lg border-2 border-blue-950 px-4 py-2 font-semibold text-black transition-colors hover:bg-[#DCAD32] hover:text-white md:bg-yellow-300/0 md:text-black md:hover:bg-[#DCAD32] md:hover:text-white"
             >
                 <FaUserCircle />
                 <span>Sign in</span>
@@ -178,7 +178,7 @@ const CTAs = () => {
 
             <button
                 onClick={handleScheduleCallClick}
-                className="flex items-center gap-2 rounded-lg border-2 border-blue-950 px-4 py-2 font-semibold text-black transition-colors hover:bg-[#DCAD32] hover:text-white md:bg-yellow-300/10 md:text-black md:hover:bg-[#DCAD32] md:hover:text-white"
+                className="flex items-center gap-2 rounded-lg border-2 border-blue-950 px-4 py-2 font-semibold text-black transition-colors hover:bg-[#DCAD32] hover:text-white md:bg-yellow-300/0 md:text-black md:hover:bg-[#DCAD32] md:hover:text-white"
             >
                 <FaHeadset />
                 <span>Schedule a Call</span>
