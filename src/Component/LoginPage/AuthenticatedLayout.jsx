@@ -10,24 +10,31 @@ function AuthenticatedLayout({ children }) {
     const navigate = useNavigate();
 
     const handleSignOut = async () => {
-        await signOut();
-        navigate('/');
+        try {
+            await signOut();
+            navigate('/');
+        } catch (error) {
+            console.error('Error signing out:', error);
+            // Optionally, display an error message to the user
+        }
     };
 
     return (
-        <div>
+        <div className="flex flex-col min-h-screen"> {/* Ensure full-height layout */}
             <Navigation />
-            <div className="min-h-screen">
-                <div className="flex justify-end p-4 mt-24">
-                    <button
-                        onClick={handleSignOut}
-                        className="bg-yellow-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded"
-                    >
-                        Sign Out
-                    </button>
+            <main className="flex-grow mb-24 bg-gray-200"> {/* Make main content expandable */}
+                <div className="container mx-auto p-4"> {/* Add container for content */}
+                    <div className="flex justify-end p-4 pt-20">
+                        <button
+                            onClick={handleSignOut}
+                            className="bg-yellow-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded"
+                        >
+                            Sign Out
+                        </button>
+                    </div>
+                    {children}
                 </div>
-                {children}
-            </div>
+            </main>
             <Footer />
         </div>
     );

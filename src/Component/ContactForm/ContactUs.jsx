@@ -1,4 +1,4 @@
-// import React, {useEffect, useRef, useState} from "react";
+// import React, {useEffect , useState, useRef} from "react";
 // import {motion} from "framer-motion";
 //
 // // import Navbar from '../Homepage/Navbar/Navbar'
@@ -124,20 +124,6 @@
 //                                             />
 //                                         </label>
 //                                     </div>
-//                                     {/*<div className="overflow-hidden">*/}
-//                                     {/*    <label htmlFor="company" className="block border-b py-2">*/}
-//                                     {/*        Company*/}
-//                                     {/*        <input*/}
-//                                     {/*            id="company"*/}
-//                                     {/*            name="company"*/}
-//                                     {/*            type="text"*/}
-//                                     {/*            placeholder="Company"*/}
-//                                     {/*            required="required"*/}
-//                                     {/*            className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none font-bold uppercase text-md"*/}
-//                                     {/*        />*/}
-//                                     {/*    </label>*/}
-//                                     {/*</div>*/}
-//
 //                                     <div className="overflow-hidden">
 //                                         <label htmlFor="message" className="block border-b py-2">
 //                                             Message

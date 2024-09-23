@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useAuthenticator } from '@aws-amplify/ui-react';
 import { useNavigate } from 'react-router-dom';
-import loginImg from '../../Assets/images/character/LoginPageBg.png';
+import  loginImg  from '../../Assets/images/character/LoginPageBg.png';
 import Navigation from '../Homepage/Navbar/Navbar';
 import Footer from '../Homepage/Footer/Footer';
 import CustomSignUpFields from './CustomSignUpFields';
@@ -31,7 +31,7 @@ function Login() {
             <div>
                 <Navigation />
                 <div className="relative min-h-screen flex items-center bg-gray-100 pt-24 pr-24">
-                    <img src={loginImg} className="absolute inset-0 w-full h-full object-cover" alt="Sign In" />
+                    <img src={ loginImg } className="absolute inset-0 w-full h-full object-cover" alt="Sign In" />
                     <div className="relative flex-1 flex justify-end p-6 pr-24">
                         <CustomSignUpFields />
                     </div>

@@ -1,17 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './App.css';
+import { createRoot } from 'react-dom/client';
+import './tailwind.css';
 import App from './App';
 import { Amplify } from 'aws-amplify';
-import config from './aws-exports';
-import '@aws-amplify/ui-react';
-import '@aws-amplify/ui-react/styles.css';
+import awsconfig from './aws-exports';
+import '@aws-amplify/ui-react/styles.css'; // Import Amplify UI styles
 
-Amplify.configure(config);
+Amplify.configure(awsconfig);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <App />
+            <App />
     </React.StrictMode>
 );

@@ -24,7 +24,7 @@ import Support from "./Component/Support/supportPage";
 import ErrorPage from "./Component/Error/ErrorPage";
 import ModalManager from "./Component/CommonComponents/ModalManager";
 import Dashboard from "./Component/Dashboard/Dashboard";
-import Profile from "./Component/Dashboard/Profile";
+import Profile from "./Component/Profile/Profile";
 
 function InquiryFormWrapper() {
     const [isInquiryFormOpen, setInquiryFormOpen] = useState(true);

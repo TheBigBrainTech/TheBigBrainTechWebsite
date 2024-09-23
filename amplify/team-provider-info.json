@@ -30,6 +30,9 @@
           "deploymentBucketName": "amplify-thebigbraintech-dev-31eba-deployment",
           "s3Key": "amplify-builds/thebigbraintech1a815229CreateAuthChallenge-617a6863584246587046-build.zip"
         }
+      },
+      "storage": {
+        "s3023a8fe3": {}
       }
     }
   }

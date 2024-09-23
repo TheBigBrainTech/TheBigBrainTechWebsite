@@ -1,6 +1,6 @@
 {
   "presets": [
-    "react-app"
+    "react-app","@babel/preset-env"
   ],
   "plugins": [
     ["babel-plugin-root-import", {
